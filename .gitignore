@@ -1,0 +1,5 @@
+# Windows Thumbnails
+Thumbs.db
+
+# Packed Bohemia Interactive PBO files
+*.pbo

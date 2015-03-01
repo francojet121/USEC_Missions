@@ -1,0 +1,31 @@
+Replayable Mission
+
+Helicopter shot down at a random location on map.  Only a very large generic area is "known" (eg: en route to Kavala might imply a 3-5km wide corridor stretching from the airbase to kavala)
+
+Mission task is to locate the site, fight your way to it, (hopefully) save the survivors, and destroy the helicopter.
+May include optional task such as recovering cargo or 'crypto module' that has requirements such as:
+  a. Need a transport truck at site to haul gear
+  b. Specialist needed to remove item
+  c. Time delays (eg: 5 minutes till module removed)
+---------------
+
+1) Generate crash site.
+  a. Helicopter or C17 if you feel like being different
+  b. Spawn for 4-8 survivors of the crash.  Maybe a 10-20 minute delay before the survivors are active
+  c. Short range radios only.  You want communications to be bad.  
+  
+2) Enemy patrols around the area.  
+
+3) Friendly Resources
+  a. Depends on mission variant.
+    i.  "Light" - AI will be ground mobile with infantry and light vehicles only.
+    ii. "Heavy" - AI will be equipped with air and heavy assets
+  b. Friendlies should be primarily ground mobile where possible.  Air for light transport/CAS only.
+    i.  Scenarios should work where landing nearby the wreck is difficult and/or highly dangerous.  They other helo did get shot down...
+  c. If it takes a while for the ground teams to get there...tough luck.  Use heliopters to get a few teams in close for initial security.  
+    
+4) Win Conditions
+  a.  Return downed crew to main base
+  b.  Recover "crypto module" from wreck (some time-in-area based requirement for rescuers)
+  c.  Destroy wreck.
+    i.  If condition b is not possible, destroying the wreck counts as a partial win

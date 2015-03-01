@@ -1,0 +1,23 @@
+Primary Objective:    
+  Start Cond.   :     
+  Win Cond.     :     
+  Loss Cond.    :     
+  Start Location:     
+  End Location  :     
+  Notes         :     
+
+Primary Objective:    Escort USEC Convoy to FOB Sandon
+  Start Cond.   :     Start of Operation
+  Win Cond.     :     NONE
+  Loss Cond.    :     STORY - On entering Zargabad city limits
+  Start Location:     South end of map
+  End Location  :     FOB Sandon north of Zargabad (the military base)
+  Notes         :     
+  
+Primary Objective:    Capture Insurgent Leader(s), <Name(s)>
+  Start Cond.   :     Start of Operation
+  Win Cond.     :     Task Completetion for each of the units captured,  Overall task completion for % captured.
+  Loss Cond.    :     Time Limit?
+  Start Location:     <Any>
+  End Location  :     Zargabad Mosque, Zargabad Villa, Other
+  Notes         :     Intended to be completed on their drive through town to FOB Sandon.  The idea is to have a few "critical targets of interest" at key locations.  Additional secondary targets may be assigned.

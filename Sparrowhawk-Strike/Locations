@@ -1,0 +1,10 @@
+Grid Coordinates and Descriptions of locations to use as key points.
+
+Describe areas where we can build additional 'world' into the map - buildings, trees, bunkers
+Describe areas where we can build mission objectives, hide captives, store caches
+Mark locations for 'respawn centers', patrol routes, areas of extra activity for the AI (planning on using DAC)
+
+Name:     FOB Sandon
+Coord:    xxx,yyy
+Notes:    Military base north of Zargabad.  Needs to be outfitted with supplies, vehicles, equipment, personnel.
+          FOB will be take by insurgent forces early during day 1.  Base supplies and people to be scattered.

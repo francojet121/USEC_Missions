@@ -1,0 +1,79 @@
+Sahrani Operation
+
+To Do
+-Plan all missions
+-OpOrd
+-Ribbon
+-Create Missions
+-Mod JJ showed?
+
+
+Background:
+Brent's alternate world: https://github.com/DavidCamre/USECRepository/issues/59
+
+The island nation of Sahrani, a former Spanish colony, is located in the Atlantic Ocean off the coast of Northern Africa.
+Since 1973 it has been split into two sepeate nations, northern The People's Democratic Republic of Sahrani (DPRS), allied to 
+the former communist block, and the southern Republic of Sahrani (ROS), a pro-western nation.
+
+The island has been split in two since the Sahrani War of 1972-3, which was triggered when pro-communist rebels seized power in a 
+violent coup. NATO did not like the idea of a communist Sahrani hosting Soviet long range bombers in the event of WW3, and
+intervened to assist the former pro-western goverment. The conflict, which spanned eight months, eventually came to and end with a
+shaky ceasefire agreement after NATO and loyalist forces has taken the south peninsula from the communist forced, who had been 
+heavily backed by the Soviets. 
+
+The ceasefire is still shaky today - the only reason why it has held for so long is that while NATO had captured the strategic
+airport and the capital Paraiso, the communists still held the mineral rich north, were happy to concede the south for the 
+chance to enjoy the north's riches.
+
+At the time of the ceasefire, the fighting had reached the town of Corazol, with both sides occupying the area. Over the years,
+a Demilitrized Zone has come into being - a 100m wide stretch of abandoned buildings, littered with mines and barbed wire.
+Both sides have recovered economically, with the north profiting well from selling their rare earth minerals to the west for
+electronics manufacturing, and the south hosting a thriving tourism industry, sunburning many Emglish tourists a year. 
+
+However last year, DPRS President-for-life Richardicz died suddently from a heart attack. He was replaced by a well known party
+hardliner, Torrez. The new president announced that he would re-unite Sahrani, and quickly began revitalising his country's
+military. Defence analysists have thought that Torrez has done this in order to accept payment for disarming, in order to keep
+the peace in Sahrani.
+
+SMEAC
+
+SITUATION
+
+At around 0100Z this morning, DPRS forces attacked the ROS.  The main brunt of the attack was focused on the border town of 
+Corazol, with the entire town taken within an hour. The DPRS assault then forked and push both north to the airport, and south
+towards Ortego. The north DPRS thrust was quickly stopped due to both the timely arrival of the ROS QRF from the airport, and 
+the steep terrain. The DPRS push south however, gained momentum and has taken most of the hinterland around Ortego, as well as
+the city itself. The DPRS assault was stopped here by the ROS garrison from Dolores, however it is likely DPRS reinforcements 
+will tip the balance in their favour.
+
+SITUATION ENEMY
+Known OOB of the DPRS forces as of several months ago is as follows:
+
+DPR Army HQ
+1 BN (Light Inf)
+2 BN (Light Inf)
+3 BN (Motorised Inf)
+A Cav Sqn (Armed Recon, Wheeled IFV)
+5 Bty (AA - MANPADs)
+6 Bty (Mortar battery)
+1 Eng Troop (Engineers)
+1 Support Bn (POGs)
+8 Avn Sqn (4 Med Helos)
+Comando Sqn (SF - vehicles & boats)
+
+Current Enemy disposition at 0600Z:
+A Cav and 3 BN appear to be operating in and around Ortego, with 2 BN occupying Corazol and the area to the north. 
+Elemnts of 6 Bty have set up somewhere west of Corazol, possibly in vicinity of the ROS Esteban barracks, caputired in the 
+initial assault. 3 BN seem to have been kept in reserve, however it is unlikely they are in their known barracks south of 
+Bagango - they probably have dispersed and are patrolling the northern side of Sahrani. 8 Avn Sqn with their 4 helos are 
+located at their airfeld at Pita, on the NE tip of Sahrani. The whereabouts of the Commando Sqn's operators is currently unknown,
+although it can be assumed they are not sitting this conflict out. Other DPRS Army units will be dispersed around the AO, however
+the bulk will be using their reguluar base at Cabo Santa Lucia as home.
+
+SITUATION FRIENDLY
+
+OOB of the souther ROS Defence Force at <date> is as follows
+
+
+
+

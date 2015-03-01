@@ -1,0 +1,79 @@
+#include "Zen_FrameworkFunctions\Zen_LoadoutFunctions\Zen_LoadoutDialog.hpp"
+class CfgNotifications {
+    #include "Zen_FrameworkFunctions\Zen_TaskSystem\Zen_TaskNotifications.hpp"
+};
+class CfgCommunicationMenu {
+    #include "Zen_FrameworkFunctions\Zen_FireSupportSystem\Zen_FireSupportMenu.hpp"
+};
+
+onLoadName = "Fallen Angel";
+author = "USEC";
+OnLoadMission = "Locate and recover the downed helicopter.";
+//loadScreen = "USEC.jpg";
+
+overviewText = "Insert behind enemy lines and disrupt enemy operations.";
+overviewTextLocked = "If you are seeing this message, an error has occurred.";
+//overviewPicture = "USEC.jpg";
+
+class Header {
+    gameType = COOP;
+    minPlayers = 1;
+    maxPlayers = 72;
+};
+
+class Params {
+    class AISkill {
+        title = "AI Overall Skill";
+        values[] = {0, 1, 2};
+        texts[] = {"Easy", "Medium", "Hard"};
+        default = 1;
+    };
+    class AIStr {
+        title = "AI Numerical Strength";
+        values[] = {0, 1, 2};
+        texts[] = {"Fewer", "Standard", "More"};
+        default = 1;
+    };
+    class AISquadSize {
+        title = "AI Average Squad Size";
+        values[] = {0, 1, 2};
+        texts[] = {"Small", "Medium", "Large"};
+        default = 1;
+    };
+    class WeatherStart {
+        title = "Starting Weather";
+        values[] = {0, 1, 2, 3};
+        texts[] = {"Sunny", "Stormy", "Foggy", "Random"};
+        default = 0;
+    };
+    class WeatherEnd {
+        title = "Future Weather";
+        values[] = {0, 1, 2, 3};
+        texts[] = {"Sunny", "Stormy", "Foggy", "Random"};
+        default = 0;
+    };
+    class WeatherTime {
+        title = "Weather Change Time";
+        values[] = {0, 1, 2};
+        texts[] = {"Short", "Medium", "Long"};
+        default = 1;
+    };
+    class TOD {
+        title = "Starting Time of Day";
+        values[] = {0, 1, 2};
+        texts[] = {"Day", "Night", "Random"};
+        default = 2;
+    };
+    class IncreaseDamage {
+        title = "Increase Bullet Damage";
+        values[] = {0, 1};
+        texts[] = {"No", "Yes"};
+        default = 1;
+    };
+    class CivCars {
+        title = "Civilian Cars in Towns";
+        values[] = {0, 1};
+        texts[] = {"No", "Yes"};
+        default = 1;
+    };
+};
