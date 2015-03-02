@@ -186,3 +186,5 @@ _hitmx = (count (configFile >> "CfgVehicles" >> _vehicleType >> "HitPoints")) - 
   };
   
 };
+
+//missionNamespace setVariable ["ChronosLoaded","true"];//Same as: YourString = 3;

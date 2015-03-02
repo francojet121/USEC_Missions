@@ -10,3 +10,5 @@
   
   hint "";
 };
+
+Chronos_fnc_saveToChronos = compile preprocessFileLineNumbers "CronosUSEC\saveToChronos.sqf";

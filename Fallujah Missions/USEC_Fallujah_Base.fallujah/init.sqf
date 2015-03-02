@@ -11,7 +11,6 @@
 **********************************************/
 // Chronos - Uncomment before playing!
 //#include "CronosUSEC\chronosInit.sqf"
-[] execVM "VCOM_Driving\init.sqf";
 
 
 // The following functions will be executed on the specificed Headless Client, if that one does NOT exist it will fall-back to another Headless Client and if NONE are present, fall-back to execution on Server

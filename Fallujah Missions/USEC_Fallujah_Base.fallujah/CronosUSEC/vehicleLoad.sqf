@@ -60,6 +60,11 @@ _vehicleInvulnerable = true;
           //sleep (0.1);
         };
         _vehicleInvulnerable = false;
+        
+        ChronosLoaded = "true";
+        publicVariable "ChronosLoaded";
+
+        
       };
 		
 	//	not vehicleInvulnerable;

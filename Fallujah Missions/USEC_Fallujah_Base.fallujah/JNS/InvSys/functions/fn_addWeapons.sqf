@@ -21,4 +21,4 @@ if (_isWeapon) then {
 
 _configWeaponSimulation = getText (configFile >> "CfgWeapons" >> _x >> "simulation");
 
-if (_configWeaponSimulation == "Weapon" || _configWeaponSimulation == "Binocular") then {_player addWeaponGlobal _x};
+if (_configWeaponSimulation == "Weapon" || _configWeaponSimulation == "Binocular") then {_player addWeapon _x};

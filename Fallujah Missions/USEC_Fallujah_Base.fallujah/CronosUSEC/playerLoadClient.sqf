@@ -63,19 +63,36 @@ playerLoadPacket = "";
       cutText ["", "PLAIN"];
       
 	};
-  /**
-  
-  [] spawn{
-			
-      player allowDamage true;
-      player enableSimulation true;
-      
-      //Remove Image
-      cutText ["", "PLAIN"];
-  };
-  **/
+
 };
 
-playerObject = player;
-publicVariableServer "playerObject";
+if (isNil "ChronosLoaded") then{
+  titleText ["", "BLACK IN", 0];
+	titleText ["Chronos is not yet loaded - please try again in 60 seconds", "black"]; titleFadeOut 9999;
+	[] spawn {sleep 65; endMission "Chronos Not Loaded";};
+}else{
+
+  //hintSilent format ["Chronos is doing something %1", ChronosLoaded ];
+  
+  if (ChronosLoaded == "true") then{
+  
+    playerObject = player;
+    publicVariableServer "playerObject";
+  } 
+  else{
+  
+    titleText ["", "BLACK IN", 0];
+    titleText ["Chronos is not yet loaded - please try again in 60 seconds", "black"]; titleFadeOut 9999;
+    [] spawn {sleep 65; endMission "Chronos Not Loaded";};
+  
+  };
+
+
+
+};
+
+
+
+
+
 

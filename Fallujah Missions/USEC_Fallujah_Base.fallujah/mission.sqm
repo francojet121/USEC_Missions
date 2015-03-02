@@ -3302,7 +3302,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_MapBoard_F";
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""Images\radionet.paa""];";
+			init="this setObjectTexture [0, ""usec_resources/images/Whiteboard/radionet.paa""];";
 		};
 		class Item163
 		{
