@@ -3800,8 +3800,8 @@ class Mission
 		};
 		class Item211
 		{
-			position[]={7821.3833,7,2157.7622};
-			azimut=56.0821;
+			position[]={7826.5918,7,2141.9309};
+			azimut=58.717247;
 			offsetY=0.5;
 			id=294;
 			side="EMPTY";
@@ -3810,8 +3810,8 @@ class Mission
 		};
 		class Item212
 		{
-			position[]={7821.2676,7,2157.9368};
-			azimut=-124.153;
+			position[]={7826.4839,7,2142.1106};
+			azimut=-121.51786;
 			offsetY=1.3;
 			id=295;
 			side="EMPTY";
@@ -3887,8 +3887,8 @@ class Mission
 		};
 		class Item219
 		{
-			position[]={7821.6118,7,2157.4771};
-			azimut=-203.82899;
+			position[]={7826.8066,7,2141.635};
+			azimut=-201.19383;
 			offsetY=1.3200001;
 			id=302;
 			side="EMPTY";
