@@ -1068,7 +1068,7 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={7869.481,7,2177.5886};
+					position[]={7830.2778,7,2172.0247};
 					azimut=-215.522;
 					special="NONE";
 					id=67;
@@ -1588,7 +1588,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=227;
+		items=238;
 		class Item0
 		{
 			position[]={7858.1304,7,2224.342};
@@ -2563,9 +2563,9 @@ class Mission
 		};
 		class Item96
 		{
-			position[]={7752.5674,7,2185.3159};
-			azimut=-33.394943;
-			offsetY=3.7;
+			position[]={7809.8457,7,2150.1802};
+			azimut=-117.76215;
+			offsetY=0.5;
 			id=179;
 			side="EMPTY";
 			vehicle="Land_OfficeCabinet_01_F";
@@ -2573,9 +2573,9 @@ class Mission
 		};
 		class Item97
 		{
-			position[]={7751.8374,7,2184.7656};
-			azimut=-124.34483;
-			offsetY=3.7;
+			position[]={7824.0503,7,2159.7734};
+			azimut=64.418747;
+			offsetY=0.5;
 			id=180;
 			side="EMPTY";
 			vehicle="Land_ShelvesWooden_khaki_F";
@@ -2682,20 +2682,20 @@ class Mission
 		};
 		class Item107
 		{
-			position[]={7751.6587,7,2184.7358};
-			azimut=-7.1478405;
-			offsetY=4.6500001;
+			position[]={7824.2227,7,2159.7749};
+			azimut=139.98994;
+			offsetY=1.45;
 			id=190;
 			side="EMPTY";
 			vehicle="Land_Microwave_01_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this setdir -25";
+			init="this enableSimulation false; ";
 		};
 		class Item108
 		{
-			position[]={7751.9893,7,2184.9802};
-			azimut=-7.1478405;
-			offsetY=4.6700001;
+			position[]={7823.8652,7,2159.5842};
+			azimut=181.61595;
+			offsetY=0.80000001;
 			id=191;
 			side="EMPTY";
 			vehicle="Land_GasCooker_F";
@@ -2715,9 +2715,9 @@ class Mission
 		};
 		class Item110
 		{
-			position[]={7751.5938,7,2184.5874};
-			azimut=-7.1478405;
-			offsetY=4.3299999;
+			position[]={7824.3101,7,2159.9111};
+			azimut=129.98994;
+			offsetY=1.13;
 			id=193;
 			side="EMPTY";
 			vehicle="Land_CerealsBox_F";
@@ -2726,9 +2726,9 @@ class Mission
 		};
 		class Item111
 		{
-			position[]={7751.9155,7,2184.7751};
-			azimut=-7.1478405;
-			offsetY=4.3299999;
+			position[]={7823.9707,7,2159.7751};
+			azimut=181.61595;
+			offsetY=1.13;
 			id=194;
 			side="EMPTY";
 			vehicle="Land_BakedBeans_F";
@@ -2737,9 +2737,9 @@ class Mission
 		};
 		class Item112
 		{
-			position[]={7751.7734,7,2184.7236};
-			azimut=-7.1478405;
-			offsetY=4.3299999;
+			position[]={7824.1216,7,2159.8064};
+			azimut=154.98994;
+			offsetY=1.13;
 			id=195;
 			side="EMPTY";
 			vehicle="Land_CerealsBox_F";
@@ -2748,9 +2748,9 @@ class Mission
 		};
 		class Item113
 		{
-			position[]={7752.0811,7,2184.8955};
-			azimut=-7.1478405;
-			offsetY=4.3299999;
+			position[]={7823.7896,7,2159.6782};
+			azimut=181.61595;
+			offsetY=1.13;
 			id=196;
 			side="EMPTY";
 			vehicle="Land_BakedBeans_F";
@@ -2759,8 +2759,8 @@ class Mission
 		};
 		class Item114
 		{
-			position[]={7751.9893,7,2184.9802};
-			azimut=-7.1478405;
+			position[]={7823.8652,7,2159.5842};
+			azimut=181.61595;
 			offsetY=4.6700001;
 			id=197;
 			side="EMPTY";
@@ -2770,9 +2770,9 @@ class Mission
 		};
 		class Item115
 		{
-			position[]={7752.062,7,2184.7917};
-			azimut=-7.1478405;
-			offsetY=4.6700001;
+			position[]={7823.8218,7,2159.7783};
+			azimut=181.61595;
+			offsetY=1.47;
 			id=198;
 			side="EMPTY";
 			vehicle="Land_CanOpener_F";
@@ -2811,9 +2811,9 @@ class Mission
 		};
 		class Item119
 		{
-			position[]={7751.6362,7,2184.6394};
-			azimut=-7.1478405;
-			offsetY=4;
+			position[]={7824.2549,7,2159.8652};
+			azimut=181.61595;
+			offsetY=0.81;
 			id=202;
 			side="EMPTY";
 			vehicle="Land_Can_V3_F";
@@ -2822,9 +2822,9 @@ class Mission
 		};
 		class Item120
 		{
-			position[]={7751.6406,7,2184.4758};
-			azimut=-7.1478405;
-			offsetY=4;
+			position[]={7824.2847,7,2160.0273};
+			azimut=94.989944;
+			offsetY=0.81;
 			id=203;
 			side="EMPTY";
 			vehicle="Land_Can_V3_F";
@@ -2833,9 +2833,9 @@ class Mission
 		};
 		class Item121
 		{
-			position[]={7751.9214,7,2184.5938};
-			azimut=-7.1478405;
-			offsetY=4;
+			position[]={7823.9907,7,2159.9565};
+			azimut=114.98994;
+			offsetY=0.81;
 			id=204;
 			side="EMPTY";
 			vehicle="Land_Can_V3_F";
@@ -2844,9 +2844,9 @@ class Mission
 		};
 		class Item122
 		{
-			position[]={7751.8237,7,2184.7122};
-			azimut=-7.1478405;
-			offsetY=4;
+			position[]={7824.0723,7,2159.8188};
+			azimut=235.08768;
+			offsetY=0.81;
 			id=205;
 			side="EMPTY";
 			vehicle="Land_Can_V3_F";
@@ -2855,9 +2855,9 @@ class Mission
 		};
 		class Item123
 		{
-			position[]={7751.9966,7,2184.783};
-			azimut=-7.1478405;
-			offsetY=4;
+			position[]={7823.8867,7,2159.7764};
+			azimut=144.98994;
+			offsetY=0.81;
 			id=206;
 			side="EMPTY";
 			vehicle="Land_Can_V3_F";
@@ -2866,9 +2866,9 @@ class Mission
 		};
 		class Item124
 		{
-			position[]={7752.0889,7,2184.8284};
-			azimut=-7.1478405;
-			offsetY=4;
+			position[]={7823.7871,7,2159.7485};
+			azimut=144.98994;
+			offsetY=0.81;
 			id=207;
 			side="EMPTY";
 			vehicle="Land_Can_V3_F";
@@ -2877,9 +2877,9 @@ class Mission
 		};
 		class Item125
 		{
-			position[]={7751.9746,7,2184.9612};
-			azimut=-7.1478405;
-			offsetY=4;
+			position[]={7823.8799,7,2159.5996};
+			azimut=181.61595;
+			offsetY=0.81;
 			id=208;
 			side="EMPTY";
 			vehicle="Land_Can_V3_F";
@@ -3200,9 +3200,9 @@ class Mission
 		};
 		class Item155
 		{
-			position[]={7759.9546,7,2181.6785};
-			azimut=-265.85684;
-			offsetY=3.7;
+			position[]={7827.7495,7,2152.8672};
+			azimut=180;
+			offsetY=0.52999997;
 			id=238;
 			side="EMPTY";
 			vehicle="Land_MapBoard_F";
@@ -3971,6 +3971,126 @@ class Mission
 			id=309;
 			side="EMPTY";
 			vehicle="Land_OfficeChair_01_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item227
+		{
+			position[]={7827.0063,7,2157.0874};
+			azimut=348.64163;
+			offsetY=0.5;
+			id=310;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item228
+		{
+			position[]={7827.7261,7,2157.1636};
+			azimut=2.0981977;
+			offsetY=0.5;
+			id=311;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item229
+		{
+			position[]={7829.1128,7,2156.8877};
+			azimut=28.64164;
+			offsetY=0.5;
+			id=312;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item230
+		{
+			position[]={7828.3945,7,2157.1135};
+			azimut=369.27347;
+			offsetY=0.5;
+			id=313;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item231
+		{
+			position[]={7829.6802,7,2156.5129};
+			azimut=36.946915;
+			offsetY=0.5;
+			id=314;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item232
+		{
+			position[]={7826.3369,7,2156.8821};
+			azimut=-20.649431;
+			offsetY=0.5;
+			id=315;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item233
+		{
+			position[]={7825.3628,7,2162.3987};
+			azimut=-25.5909;
+			offsetY=0.5;
+			id=316;
+			side="EMPTY";
+			vehicle="FoldTable";
+			skill=0.60000002;
+		};
+		class Item234
+		{
+			position[]={7824.5366,7,2162.8867};
+			azimut=-24.818436;
+			offsetY=0.5;
+			id=317;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item235
+		{
+			position[]={7825.4429,7,2163.3167};
+			azimut=-24.095455;
+			offsetY=0.5;
+			id=318;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item236
+		{
+			position[]={7826.1812,7,2161.8926};
+			azimut=155.42007;
+			offsetY=0.5;
+			id=319;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item237
+		{
+			position[]={7825.2764,7,2161.51};
+			azimut=155.95667;
+			offsetY=0.5;
+			id=320;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
 			init="this call USEC_Misc_fnc_chair;";
 		};
