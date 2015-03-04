@@ -1141,8 +1141,9 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={7830.6704,7,2178.574};
-					azimut=-383.37299;
+					position[]={7824.1899,7,2145.813};
+					azimut=-540.29681;
+					offsetY=1;
 					special="NONE";
 					id=67;
 					side="WEST";
@@ -1613,7 +1614,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={7746.0767,7,2186.8794};
+					position[]={7772.3667,7,2196.0315};
 					azimut=-7.1478405;
 					id=80;
 					side="LOGIC";
@@ -1632,7 +1633,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={7748.0376,7,2187.8921};
+					position[]={7774.3276,7,2197.0442};
 					azimut=-7.1478405;
 					id=81;
 					side="LOGIC";
@@ -1651,7 +1652,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={7750.1318,7,2188.6128};
+					position[]={7776.4219,7,2197.7649};
 					azimut=-7.1478405;
 					id=82;
 					side="LOGIC";
@@ -1665,7 +1666,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=275;
+		items=293;
 		class Item0
 		{
 			position[]={7842.7021,7,2231.7063};
@@ -2595,9 +2596,9 @@ class Mission
 		};
 		class Item92
 		{
-			position[]={7809.8457,7,2150.1802};
-			azimut=-117.76215;
-			offsetY=0.5;
+			position[]={7815.0396,7,2148.8652};
+			azimut=-117.762;
+			offsetY=1;
 			id=175;
 			side="EMPTY";
 			vehicle="Land_OfficeCabinet_01_F";
@@ -3040,9 +3041,9 @@ class Mission
 		};
 		class Item133
 		{
-			position[]={7762.8369,7,2203.946};
-			azimut=143.73752;
-			offsetY=3.7;
+			position[]={7821.2104,7,2147.9309};
+			azimut=152.0479;
+			offsetY=0.5;
 			id=216;
 			side="EMPTY";
 			vehicle="Fridge_01_closed_F";
@@ -3349,7 +3350,8 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_MilOffices_V1_F";
 			skill=0.60000002;
-			init="this setVariable ['bis_disabled_Door_2',1,true]; this setVariable ['bis_disabled_Door_3',1,true];";
+			text="Officers_Office";
+			init="this setVariable ['bis_disabled_Door_2',1,true]; this setVariable ['bis_disabled_Door_3',1,true];  this setVariable ['bis_disabled_Door_4',1,true];";
 		};
 		class Item165
 		{
@@ -3460,7 +3462,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this setObjectTextureGlobal [0, ""usec_resources\images\Misc\matt.paa""];";
+			init="this enableSimulation false; this setObjectTextureGlobal [0, ""usec_resources\images\Misc\matt.paa""]; null = [this] execVM ""USEC\ArmourySec.sqf"";";
 		};
 		class Item175
 		{
@@ -4545,6 +4547,199 @@ class Mission
 			skill=0.60000002;
 			init="this setObjectTexture [0, ""usec_resources\images\Whiteboard\equipmentUCOM.paa""];";
 		};
+		class Item275
+		{
+			position[]={7816.1548,7,2152.1956};
+			azimut=-118.80302;
+			offsetY=0.5;
+			id=358;
+			side="EMPTY";
+			vehicle="Desk";
+			skill=0.60000002;
+		};
+		class Item276
+		{
+			position[]={7816.3521,7,2152.2205};
+			azimut=61.714031;
+			offsetY=1.3200001;
+			id=359;
+			side="EMPTY";
+			vehicle="Land_PensAndPencils_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this setdir -20";
+		};
+		class Item277
+		{
+			position[]={7816.0298,7,2152.8242};
+			azimut=394.55652;
+			offsetY=1.3200001;
+			id=360;
+			side="EMPTY";
+			vehicle="Land_PCSet_01_screen_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this setObjectTextureGlobal [0, ""usec_resources\images\misc\missStark.paa""];";
+		};
+		class Item278
+		{
+			position[]={7815.6084,7,2153.1196};
+			azimut=61.527035;
+			offsetY=0.5;
+			id=361;
+			side="EMPTY";
+			vehicle="Land_PCSet_01_case_F";
+			skill=0.60000002;
+			init="this enableSimulation false; ";
+		};
+		class Item279
+		{
+			position[]={7815.7427,7,2152.5786};
+			azimut=19.406965;
+			offsetY=1.3200001;
+			id=362;
+			side="EMPTY";
+			vehicle="Land_PCSet_01_keyboard_F";
+			skill=0.60000002;
+			init="this enableSimulation false; ";
+		};
+		class Item280
+		{
+			position[]={7816.0815,7,2152.3752};
+			azimut=19.406965;
+			offsetY=1.3200001;
+			id=363;
+			side="EMPTY";
+			vehicle="Land_PCSet_01_mouse_F";
+			skill=0.60000002;
+			init="this enableSimulation false; ";
+		};
+		class Item281
+		{
+			position[]={7816.0371,7,2151.8887};
+			azimut=-20.25807;
+			offsetY=1.3200001;
+			id=364;
+			side="EMPTY";
+			vehicle="Land_Notepad_F";
+			skill=0.60000002;
+			init="this enableSimulation false;";
+		};
+		class Item282
+		{
+			position[]={7815.4282,7,2151.7683};
+			azimut=243.99603;
+			offsetY=0.5;
+			id=365;
+			side="EMPTY";
+			vehicle="Land_OfficeChair_01_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item283
+		{
+			position[]={7826.6929,7,2143.7715};
+			azimut=-57.343468;
+			offsetY=0.5;
+			id=366;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item284
+		{
+			position[]={7827.7974,7,2144.3049};
+			azimut=-1.1005222;
+			offsetY=0.5;
+			id=367;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item285
+		{
+			position[]={7824.0024,7,2142.2244};
+			azimut=-60.849857;
+			offsetY=0.5;
+			id=368;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item286
+		{
+			position[]={7825.0718,7,2142.8242};
+			azimut=-4.6069088;
+			offsetY=0.5;
+			id=369;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item287
+		{
+			position[]={7817.5186,7,2153.0452};
+			azimut=61.602058;
+			offsetY=0.5;
+			id=370;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this call USEC_Misc_fnc_chair;";
+		};
+		class Item288
+		{
+			position[]={7823.8247,7,2138.8289};
+			azimut=-29.644154;
+			offsetY=1;
+			id=371;
+			side="EMPTY";
+			vehicle="Land_OfficeCabinet_01_F";
+			skill=0.60000002;
+		};
+		class Item289
+		{
+			position[]={7820.3721,7,2147.3159};
+			azimut=-211.95468;
+			offsetY=0.5;
+			id=372;
+			side="EMPTY";
+			vehicle="Land_WaterCooler_01_old_F";
+			skill=0.60000002;
+		};
+		class Item290
+		{
+			position[]={7812.9697,7,2139.1218};
+			azimut=239.70291;
+			offsetY=1;
+			id=373;
+			side="EMPTY";
+			vehicle="Fridge_01_closed_F";
+			skill=0.60000002;
+		};
+		class Item291
+		{
+			position[]={7817.3574,7,2146.1655};
+			azimut=149.17004;
+			offsetY=0.5;
+			id=374;
+			side="EMPTY";
+			vehicle="SmallTable";
+			skill=0.60000002;
+		};
+		class Item292
+		{
+			position[]={7817.5381,7,2146.2749};
+			azimut=-31.0651;
+			offsetY=1.3;
+			id=375;
+			side="EMPTY";
+			vehicle="Land_Printer_01_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this setdir 245";
+		};
 	};
 	class Markers
 	{
@@ -4648,7 +4843,7 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={7816.4014,7,2152.7095};
+			position[]={7816.3296,7,2152.7095};
 			name="UCOM_marker";
 			markerType="RECTANGLE";
 			type="Empty";
