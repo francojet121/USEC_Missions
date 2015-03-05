@@ -36,6 +36,7 @@ player addRating 90000;
 // SQF functions cannot continue running after loading a saved game, do not delete this line
 enableSaving [false, false];
 
+
 /*********************************************
   All clients stop executing here
   DO NOT PUT ANY EXTRA CODE IN THIS PART!

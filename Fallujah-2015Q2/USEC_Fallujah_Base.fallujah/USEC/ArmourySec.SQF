@@ -11,7 +11,7 @@
 // Format is "Text Message, "imageURL"
  
 
-_this  addAction ["<t color='#FF0000'>Unlock Officers Armoury</t>", {hint "debug 1"}];
+this addAction ["<t color='#FF0000'>Unlock Officers Armoury</t>", {hint "debug 1"}];
   
 
 // ============================== EDIT STOPS HERE

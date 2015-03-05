@@ -8,6 +8,7 @@
   Arguments: [player:Object, didJIP:Boolean]
 --------------------------------------------------------------------*/
 
+
 // Types a structured text on the screen, letter by letter, cursor blinking.
 [ 
   [ 
