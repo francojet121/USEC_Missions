@@ -45,7 +45,9 @@ class Mission
 		"rhsusf_c_hmmwv",
 		"rhsusf_vehicles",
 		"rhsusf_c_m1a1",
-		"rhsusf_c_m109"
+		"rhsusf_c_m109",
+		"dar_c2",
+		"A3_Structures_F_Heli_Items_Airport"
 	};
 	addOnsAuto[]=
 	{
@@ -91,7 +93,9 @@ class Mission
 		"rhsusf_vehicles",
 		"RHS_US_A2Port_Armor",
 		"rhsusf_c_m1a1",
-		"rhsusf_c_m109"
+		"rhsusf_c_m109",
+		"dar_c2",
+		"A3_Structures_F_Heli_Items_Airport"
 	};
 	randomSeed=12108944;
 	class Intel
@@ -1670,7 +1674,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=314;
+		items=327;
 		class Item0
 		{
 			position[]={7842.7021,7,2231.7063};
@@ -4975,10 +4979,174 @@ class Mission
 			skill=0.60000002;
 			description="UCOM - FULLCOM";
 		};
+		class Item314
+		{
+			position[]={7937.7168,7,1947.509};
+			azimut=240;
+			offsetY=-1;
+			id=397;
+			side="EMPTY";
+			vehicle="Land_dar_ilpdn";
+			skill=0.60000002;
+			text="lhdCommandCenter";
+		};
+		class Item315
+		{
+			position[]={7935.8901,7,1950.2916};
+			azimut=330;
+			offsetY=1.46;
+			id=398;
+			side="EMPTY";
+			vehicle="Land_FlatTV_01_F";
+			skill=0.60000002;
+			text="lhdInterface";
+			init="this enableSimulation false; lhdInterface setObjectTexture [0, ""usec_resources\images\LHD\lhdmain.paa""]; this addaction [""Open Garage"",""LHD\functions\createDialog.sqf""];";
+		};
+		class Item316
+		{
+			position[]={7939.6113,7,1949.1573};
+			azimut=60;
+			offsetY=0.40000001;
+			id=399;
+			side="EMPTY";
+			vehicle="Land_MapBoard_F";
+			leader=1;
+			skill=0.60000002;
+			text="lhdProjectorScreen";
+			init="this enableSimulation false; lhdProjectorScreen setObjectTexture [0, ""usec_resources\images\USEC\usec_roster.paa""]; ";
+		};
+		class Item317
+		{
+			position[]={7936.979,7,1943.9271};
+			azimut=150;
+			offsetY=0.5;
+			id=400;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V1_F";
+			skill=0.60000002;
+			init="this enableSimulation false; [this, [usec_alarm1, usec_alarm2]] call USEC_Misc_fnc_toggleAlarm;";
+		};
+		class Item318
+		{
+			position[]={7886.5513,7,1914.4087};
+			azimut=-478.32101;
+			offsetY=5;
+			special="NONE";
+			id=401;
+			side="EMPTY";
+			vehicle="PortableHelipadLight_01_white_F";
+			leader=1;
+			skill=0.60000002;
+			text="bay1";
+		};
+		class Item319
+		{
+			position[]={7899.5479,7,1921.068};
+			azimut=-478.32101;
+			offsetY=5;
+			special="NONE";
+			id=402;
+			side="EMPTY";
+			vehicle="PortableHelipadLight_01_white_F";
+			leader=1;
+			skill=0.60000002;
+			text="bay2";
+		};
+		class Item320
+		{
+			position[]={7906.3052,7,1909.0745};
+			azimut=-478.32101;
+			offsetY=1;
+			special="NONE";
+			id=403;
+			side="EMPTY";
+			vehicle="PortableHelipadLight_01_white_F";
+			leader=1;
+			skill=0.60000002;
+			text="bay3";
+		};
+		class Item321
+		{
+			position[]={7900.6006,7,1894.2423};
+			azimut=-478.32101;
+			offsetY=1;
+			special="NONE";
+			id=404;
+			side="EMPTY";
+			vehicle="PortableHelipadLight_01_white_F";
+			leader=1;
+			skill=0.60000002;
+			text="bay4";
+		};
+		class Item322
+		{
+			position[]={7915.4658,7,1871.0535};
+			azimut=-478.32101;
+			offsetY=1;
+			special="NONE";
+			id=405;
+			side="EMPTY";
+			vehicle="PortableHelipadLight_01_white_F";
+			leader=1;
+			skill=0.60000002;
+			text="bay5";
+		};
+		class Item323
+		{
+			position[]={7928.7109,7,1846.5848};
+			azimut=-478.32101;
+			offsetY=1;
+			special="NONE";
+			id=406;
+			side="EMPTY";
+			vehicle="PortableHelipadLight_01_white_F";
+			leader=1;
+			skill=0.60000002;
+			text="bay6";
+		};
+		class Item324
+		{
+			position[]={7959.9614,7,1818.4784};
+			azimut=-478.32101;
+			offsetY=1;
+			special="NONE";
+			id=407;
+			side="EMPTY";
+			vehicle="PortableHelipadLight_01_white_F";
+			leader=1;
+			skill=0.60000002;
+			text="bay8";
+		};
+		class Item325
+		{
+			position[]={7954.0396,7,1798.9529};
+			azimut=-478.32101;
+			offsetY=1;
+			special="NONE";
+			id=408;
+			side="EMPTY";
+			vehicle="PortableHelipadLight_01_white_F";
+			leader=1;
+			skill=0.60000002;
+			text="bay9";
+		};
+		class Item326
+		{
+			position[]={7942.4712,7,1815.9111};
+			azimut=-478.32101;
+			offsetY=1;
+			special="NONE";
+			id=409;
+			side="EMPTY";
+			vehicle="PortableHelipadLight_01_white_F";
+			leader=1;
+			skill=0.60000002;
+			text="bay7";
+		};
 	};
 	class Markers
 	{
-		items=28;
+		items=38;
 		class Item0
 		{
 			position[]={7847.7876,7,2192.2813};
@@ -5249,6 +5417,86 @@ class Mission
 			name="Takistanni Army FOB";
 			text="Takistanni Army FOB";
 			type="flag_NATO";
+		};
+		class Item28
+		{
+			position[]={7951.4565,7,1795.4641};
+			name="mrkLHD_center";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=20;
+			b=125;
+		};
+		class Item29
+		{
+			position[]={7925.4893,7,1753.6965};
+			name="mrkLHD_left";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=6;
+			b=8;
+		};
+		class Item30
+		{
+			position[]={7977.3979,7,1705.7219};
+			name="mrkLHD_right";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=6;
+			b=8;
+		};
+		class Item31
+		{
+			position[]={7960.144,7,1776.2385};
+			name="mrkLHD";
+			text="UXS Syed";
+			type="b_naval";
+		};
+		class Item32
+		{
+			position[]={7960.021,7,1773.0676};
+			name="respawn_west_1";
+			text="Respawn Base";
+			type="Empty";
+		};
+		class Item33
+		{
+			position[]={7934.8154,7,1787.8713};
+			name="respawn_west_1";
+			text="Respawn Base";
+			type="Empty";
+			angle=47.791374;
+		};
+		class Item34
+		{
+			position[]={7958.2788,7,1794.9594};
+			name="mrkLHD_center_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=20;
+			b=125;
+		};
+		class Item35
+		{
+			position[]={7966.9668,7,1775.7338};
+			name="mrkLHD_1";
+			text="UXS Syed";
+			type="b_naval";
+		};
+		class Item36
+		{
+			position[]={7966.8438,7,1772.5629};
+			name="respawn_west_1_1";
+			text="Respawn Base";
+			type="Empty";
+		};
+		class Item37
+		{
+			position[]={7941.6382,7,1787.3666};
+			name="respawn_west_1_1";
+			text="Respawn Base";
+			type="Empty";
+			angle=47.791374;
 		};
 	};
 	class Sensors
