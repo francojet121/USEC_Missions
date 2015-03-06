@@ -16,7 +16,7 @@
 // The following functions will be executed on the specificed Headless Client, if that one does NOT exist it will fall-back to another Headless Client and if NONE are present, fall-back to execution on Server
 _headlessClientInit1 = {
   // Put script initializations for Headless Client 1 here
-  null = [] execVM "cos/cosInit.sqf";
+  null = [] execVM "cos\cosInit.sqf";
 };
 _headlessClientInit2 = {
   // Put script initializations for Headless Client 2 here
