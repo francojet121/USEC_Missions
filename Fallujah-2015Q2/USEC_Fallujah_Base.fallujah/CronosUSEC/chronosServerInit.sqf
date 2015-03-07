@@ -46,8 +46,41 @@ _hitmx = (count (configFile >> "CfgVehicles" >> _vehicleType >> "HitPoints")) - 
   _fuel = fuel _vehicleObject;
   
   _vehicleNamePretty = getText(configFile >> "CfgVehicles" >> _vehicleType >> "displayName");
+  _vehicleClass = "Unknown";
   
-  _serverReply = ["storeVehicleGarage", _playerID, _vehicleID, _vehicleType, _hitpoints, _playerName, _vehicleDamageStr, _fuel, _vehicleNamePretty] call invoke_java_method;
+  	if(_vehicleObject isKindOf "Car") then
+	{
+		_vehicleClass = "Car";
+	};
+
+	if(_vehicleObject isKindOf "Plane") then
+	{
+		_vehicleClass = "Plane";
+	};
+
+	if(_vehicleObject isKindOf "Helicopter") then
+	{
+		_vehicleClass = "Helicopter";
+	};
+
+	if(_vehicleObject isKindOf "Tank") then
+	{
+		_vehicleClass = "Tank";
+	};
+	
+	
+	if(_vehicleObject isKindOf "Motorcycle") then
+	{
+		_vehicleClass = "Motorcycle";
+	};
+	
+	
+	if(_vehicleObject isKindOf "Ship") then
+	{
+		_vehicleClass = "Ship";
+	};
+  
+  _serverReply = ["storeVehicleGarage", _playerID, _vehicleID, _vehicleType, _hitpoints, _playerName, _vehicleDamageStr, _fuel, _vehicleNamePretty, _vehicleClass] call invoke_java_method;
 
   if (_serverReply == "done") then {
     deleteVehicle _vehicleObject;

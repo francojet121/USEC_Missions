@@ -33,10 +33,12 @@ class Header {
 // ----------------------------------------
 
 #include "headlessClient\description.ext" // AI Distribution and Caching to Headless Clients
+#include "LHD\menu.h" // LHD Garage Menu
 #include "CronosUSEC\loadingscreen.h" // Chronos loading screen
 
 class CfgFunctions {
   #include "JNS\InvSys\functions.h" // JNS Inventory System
+  #include "LHD\functions.h" // LHD Garage Menu
 };
 
 class CfgVehicles {
