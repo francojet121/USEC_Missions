@@ -13,22 +13,38 @@
 */
 
 if (isNil "server" && {count USEC_headlessClients == 0}) then {
-  hint "You must ADD a object named SERVER or run a Headless Client";
-  player sideChat "You must ADD a object named SERVER or run a Headless Client";
+  diag_log "You must ADD a object named 'server' or run a Headless Client";
+  player sideChat "You must ADD a object named 'server' or run a Headless Client";
 } else {
 if (isServer || (!hasInterface && !isServer)) then {
-If (!isNil ("COScomplete")) then {Hint "Check your call. COS was called twice!";}else{
+If (!isNil ("COScomplete")) then {diag_log "Check your call. COS was called twice!";}else{
 
-server = server;
+server = objNull; // For IFs
+// If Headless Client(s) is/are present
 if (count USEC_headlessClients > 0) then {
-  server = USEC_headlessClients select 0; // Hard-coded to run on Headless Client 1, need to find a way around
-  hint "COS running on Headless Client";
+  // Check which Headless Client is running this script and set the variable to it
+  if (local (missionNamespace getVariable [USEC_headlessClients select 0, objNull])) then {
+    server = missionNamespace getVariable (USEC_headlessClients select 0);
+  } else {
+    if (local (missionNamespace getVariable [USEC_headlessClients select 1, objNull])) then {
+      server = missionNamespace getVariable (USEC_headlessClients select 1);
+    } else {
+      if (local (missionNamespace getVariable [USEC_headlessClients select 2, objNull])) then {
+        server = missionNamespace getVariable (USEC_headlessClients select 2);
+			} else {
+				diag_log "COS Error: No Headless Client present anymore!";
+			};
+    };
+  };
+  diag_log format ["COS running on %1", str(server)];
 } else {
-  hint "COS running on Server";
+	server = server;
+  diag_log "COS running on Server";
 };
 
+
 COS_distance=500;//Set spawn distance
-_aerielActivation=true;// Set if flying units can activate civilian Zones
+_aerielActivation=false;// Set if flying units can activate civilian Zones
 
 blackListTowns = ["sagonisi"];// Remove towns from COS
 
@@ -43,7 +59,7 @@ showTownLabel = true;// Show town information when entering COS zones
 debugCOS=false;// Show spawned units on the map
 
 COSpedestrians=true; //Spawn pedestrians
-COScars=true;// Spawn Cars
+COScars=false;// Spawn Cars
 COSparked=true;// Spawn parked cars
 
 // Types of units that will be spawned as civilians.

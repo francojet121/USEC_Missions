@@ -1204,7 +1204,6 @@ class Mission
 				class Item0
 				{
 					position[]={7812.3003,7,2180.0151};
-					azimut=-7.1478405;
 					class args
 					{
 						items=4;
@@ -1253,7 +1252,6 @@ class Mission
 				class Item0
 				{
 					position[]={7811.5864,7,2180.9946};
-					azimut=-7.1478405;
 					class args
 					{
 						items=4;
@@ -1568,7 +1566,6 @@ class Mission
 				class Item0
 				{
 					position[]={7856.6626,7,2197.4348};
-					azimut=-7.1478405;
 					class args
 					{
 						items=4;
@@ -4949,12 +4946,11 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={7887.2451,7,2187.844};
+			position[]={7890.1646,7,2188.2029};
 			name="501_marker";
 			text="501 Armory";
 			type="b_support";
 			colorName="ColorBlack";
-			angle=-9.8004084;
 		};
 		class Item5
 		{
@@ -4970,12 +4966,11 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={7830.4819,7,2234.0425};
+			position[]={7831.29,7,2233.1443};
 			name="411_marker";
 			text="411 Armory";
 			type="o_support";
 			colorName="ColorBlack";
-			angle=-9.1025591;
 		};
 		class Item7
 		{
@@ -4991,12 +4986,11 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={7822.2808,7,2228.0894};
+			position[]={7821.4282,7,2228.1785};
 			name="152_marker";
 			text="152 Armory";
 			type="n_support";
 			colorName="ColorBlack";
-			angle=-7.8284636;
 		};
 		class Item9
 		{
@@ -5073,7 +5067,7 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={7876.5151,7,2218.2136};
+			position[]={7876.605,7,2218.3479};
 			name="barrack_marker_3";
 			text="Individual Issue Facility";
 			type="b_support";
@@ -5087,15 +5081,13 @@ class Mission
 			text="Officers Lounge";
 			type="o_hq";
 			colorName="ColorBlack";
-			angle=-7.1478405;
 		};
 		class Item19
 		{
-			position[]={7809.4907,7,2198.8621};
+			position[]={7809.4458,7,2198.7717};
 			name="briefing_1";
 			text="Briefing Area";
 			type="waypoint";
-			angle=-64.901299;
 		};
 		class Item20
 		{
@@ -5111,7 +5103,7 @@ class Mission
 		};
 		class Item21
 		{
-			position[]={7873.1797,7,2225.1277};
+			position[]={7873.6289,7,2224.2747};
 			name="barrack_marker_3_1";
 			text="Individual Issue Facility";
 			type="b_support";
