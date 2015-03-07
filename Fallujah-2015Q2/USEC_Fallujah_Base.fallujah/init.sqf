@@ -11,7 +11,7 @@
 **********************************************/
 // Chronos - Uncomment before playing!
 #include "CronosUSEC\chronosInit.sqf"
-
+null = [] execVM "cos\cosInit.sqf";
 
 // The following functions will be executed on the specificed Headless Client, if that one does NOT exist it will fall-back to another Headless Client and if NONE are present, fall-back to execution on Server
 _headlessClientInit1 = {
@@ -20,11 +20,11 @@ _headlessClientInit1 = {
 };
 _headlessClientInit2 = {
   // Put script initializations for Headless Client 2 here
-  
+
 };
 _headlessClientInit3 = {
   // Put script initializations for Headless Client 3 here
-  null = [] execVM "cos\cosInit.sqf";
+
 };
 #include "USEC\headlessClientInit.sqf"
 

@@ -4,4 +4,4 @@ _unit = unit. Refer to Unit as _unit.
 */
 
 _unit =(_this select 0);
-_unit addAction ["Hello", {hint "Open AddScript_Unit.sqf to apply pedestrian scripts"}];// EXAMPLE SCRIPT
+//_unit addAction ["Hello", {hint "Open AddScript_Unit.sqf to apply pedestrian scripts"}];// EXAMPLE SCRIPT

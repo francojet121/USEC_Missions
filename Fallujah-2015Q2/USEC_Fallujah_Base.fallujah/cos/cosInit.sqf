@@ -19,42 +19,21 @@ if (isNil "server" && {count USEC_headlessClients == 0}) then {
 if (isServer || (!hasInterface && !isServer)) then {
 If (!isNil ("COScomplete")) then {diag_log "Check your call. COS was called twice!";}else{
 
-server = objNull; // For IFs
-// If Headless Client(s) is/are present
-if (count USEC_headlessClients > 0) then {
-  // Check which Headless Client is running this script and set the variable to it
-  if (local (missionNamespace getVariable [USEC_headlessClients select 0, objNull])) then {
-    server = missionNamespace getVariable (USEC_headlessClients select 0);
-  } else {
-    if (local (missionNamespace getVariable [USEC_headlessClients select 1, objNull])) then {
-      server = missionNamespace getVariable (USEC_headlessClients select 1);
-    } else {
-      if (local (missionNamespace getVariable [USEC_headlessClients select 2, objNull])) then {
-        server = missionNamespace getVariable (USEC_headlessClients select 2);
-			} else {
-				diag_log "COS Error: No Headless Client present anymore!";
-			};
-    };
-  };
-  diag_log format ["COS running on %1", str(server)];
-} else {
-	server = server;
-  diag_log "COS running on Server";
-};
-
+server = headlessClient3; // Hard-coded to run on Headless Client 3
+publicVariable "server";
 
 COS_distance=500;//Set spawn distance
 _aerielActivation=false;// Set if flying units can activate civilian Zones
 
-blackListTowns = ["sagonisi"];// Remove towns from COS
+blackListTowns = ["Jolan", "Mualimeen", "Muhandisin", "Al-Fallujah", "Shurta", "Jeghaifi", "Askari", "Industrial Park", "Nazal Old City", "Resafa", "Sinai", "Shuhada"];// Remove towns from COS
 
-whiteListMkrs=[];// Add Custom Markers for COS to populate 
+whiteListMkrs=["cosSpawn1", "cosSpawn2", "cosSpawn3", "cosSpawn4"];// Add Custom Markers for COS to populate 
 
 DefaultSide = Civilian;// Set side of units spawned
 
 _showMarker=false;// Show COS markers on map
 
-showTownLabel = true;// Show town information when entering COS zones
+showTownLabel = false;// Show town information when entering COS zones
 
 debugCOS=false;// Show spawned units on the map
 
@@ -105,36 +84,36 @@ if (({_name==_x} count blackListTowns)>0 OR (_name == "")) then {}else{
 
 		
 // Customise population by number of houses
-_randomisation=10;
+_randomisation=5;
 	if (_houses <= 10) 
 		then {
-	_civilians=10+ round(random _randomisation);// Civilians spawned
+	_civilians=5+ round(random _randomisation);// Civilians spawned
 	_vehicles=0;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};		
  	if (_houses <= 30 and _houses > _randomisation) 
 		then {
-	_civilians=20+ round(random _randomisation);// Civilians spawned
+	_civilians=10+ round(random _randomisation);// Civilians spawned
 	_vehicles=2;// Moving Vehicles Spawned
 	_parked=2;// Parked Vehicles Spawned
 			};
 			
  	if (_houses <= 70 and _houses > 30) 
 		then {
-	_civilians=25+ round(random _randomisation);// Civilians spawned
+	_civilians=15+ round(random _randomisation);// Civilians spawned
 	_vehicles=4;// Moving Vehicles Spawned
 	_parked=2;// Parked Vehicles Spawned
 			};
 			
  	if (_houses <= 140 and _houses > 70) 
 		then {
-	_civilians=30+ round(random _randomisation);// Civilians spawned
+	_civilians=20+ round(random _randomisation);// Civilians spawned
 	_vehicles=5;// Moving Vehicles Spawned
 	_parked=3;// Parked Vehicles Spawned
 			};
  	if (_houses > 140) 
 		then {
-	_civilians=40+ round(random _randomisation);// Civilians spawned
+	_civilians=25+ round(random _randomisation);// Civilians spawned
 	_vehicles=5;// Moving Vehicles Spawned
 	_parked=3;// Parked Vehicles Spawned
 			};
