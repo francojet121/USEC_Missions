@@ -4,23 +4,20 @@
  
  null=[] execVM "cos/cosInit.sqf";
  
- IMPORTANT: BEFORE PROCEEDING ADD AN OBJECT NAMED SERVER INTO THE EDITOR.
+ IMPORTANT: BEFORE PROCEEDING ADD AN OBJECT NAMED 'headlessClient3' INTO THE EDITOR.
  
  To edit population of zones browse to line 95
  Open COS/AddScript_Unit.sqf to apply scripts to spawned units.
  Open COS/AddScript_Vehicle.sqf to apply scripts to spawned vehicles.
- To get Array of COS markers use _allMarkers=SERVER getvariable "COSmarkers";
+ To get Array of COS markers use _allMarkers=headlessClient3 getvariable "COSmarkers";
 */
 
-if (isNil "server" && {count USEC_headlessClients == 0}) then {
-  diag_log "You must ADD a object named 'server' or run a Headless Client";
-  player sideChat "You must ADD a object named 'server' or run a Headless Client";
+if (isNil "headlessClient3") then {
+  diag_log "You must ADD a object named 'headlessClient3'";
+  player sideChat "You must ADD a object named 'headlessClient3'";
 } else {
-if (isServer || (!hasInterface && !isServer)) then {
+if (!isServer && !hasInterface)) then {
 If (!isNil ("COScomplete")) then {diag_log "Check your call. COS was called twice!";}else{
-
-server = headlessClient3; // Hard-coded to run on Headless Client 3
-publicVariable "server";
 
 COS_distance=500;//Set spawn distance
 _aerielActivation=false;// Set if flying units can activate civilian Zones
@@ -52,7 +49,7 @@ private ["_sizeX","_sizeY","_name","_pos","_mSize","_rad","_civilians","_vehicle
 breakPatrol_FNC=compile preprocessFileLineNumbers "cos\patrolFnc.sqf";unitScript_FNC=compile preprocessFileLineNumbers "cos\addScript_Unit.sqf";vehScript_FNC=compile preprocessFileLineNumbers "cos\addScript_Vehicle.sqf";
 COScomplete=false;publicvariable "COScomplete";publicvariable "COS_distance";populating_COS=false;
 cosMkrArray=[];
-server setvariable ["cosGrpCount",0];//Set global group count
+headlessClient3 setvariable ["cosGrpCount",0];//Set global group count
 _rad=50;// Radius increase increment for finding minimum spawn points
 _slack=2;// Additional spawn points
 
@@ -161,7 +158,7 @@ _roadlist=_roadlist call BIS_fnc_arrayShuffle;
 // Save all information
 	_information=[_civilians,_vehicles,_parked,_roadPosArray];
 	_popVar=format["population%1",_foo];
-	server setvariable [_popVar,_information];
+	headlessClient3 setvariable [_popVar,_information];
 		
 // Create a trigger over town	
 		_trigger = createTrigger ["EmptyDetector",_pos]; 
@@ -175,21 +172,21 @@ _roadlist=_roadlist call BIS_fnc_arrayShuffle;
 					_actCond="{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 50} count allunits > 0";
 						};
 		_var=format["trig%1", _markerID];
-		_trigAct=format ["null= [%1] execVM ""cos\cosCore.sqf"";server setvariable [%2,true];",str _foo,str _var];
-		_trigDe=format ["server setvariable [%1,false];",str _var];
+		_trigAct=format ["null= [%1] execVM ""cos\cosCore.sqf"";headlessClient3 setvariable [%2,true];",str _foo,str _var];
+		_trigDe=format ["headlessClient3 setvariable [%1,false];",str _var];
 		_trigger setTriggerStatements [_actCond,_trigAct,_trigDe];
 	};
 
 }foreach (nearestLocations [getArray (configFile >> "CfgWorlds" >> worldName >> "centerPosition"), ["NameCityCapital","NameCity","NameVillage","CityCenter"], 25000]) +whiteListMkrs;
 
 // All towns have been saved into cos Marker Array.
-SERVER setvariable ["COSmarkers",cosMkrArray,true];
+headlessClient3 setvariable ["COSmarkers",cosMkrArray,true];
 COScomplete=true;publicvariable "COScomplete";
 };
 
 // LOCAL SCRIPTS
 waituntil {COScomplete};
-_mkrs=SERVER getvariable "COSmarkers";// Use this to get all town markers
+_mkrs=headlessClient3 getvariable "COSmarkers";// Use this to get all town markers
 null=[] execVM "COS\localScript.sqf";// This shows messages for players during multiplayer
 
 };

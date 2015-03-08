@@ -1,14 +1,14 @@
-if (!isServer) exitWith {};
+if (isServer || hasInterface) exitWith {};
 private ["_groupCount","_localGrpCount","_grp","_rdCount","_n","_r","_tempUnit","_tempVeh"];
 _mkr= (_this select 0);
 
 // Get trigger status
 _trigID=format["trig%1", _mkr];
-_isActive=server getvariable _trigID;
+_isActive=headlessClient3 getvariable _trigID;
 
 // Get stored town variables
 _popVar=format["population%1", _mkr];
-_information=server getvariable _popVar;
+_information=headlessClient3 getvariable _popVar;
 	_civilians=(_information select 0);
 	_vehicles=(_information select 1);
 	_parked=(_information select 2);
@@ -33,13 +33,13 @@ _showRoads=false;
 		};
 					
 
-_glbGrps=server getvariable "cosGrpCount";
+_glbGrps=headlessClient3 getvariable "cosGrpCount";
 _townGrp=createGroup DefaultSide;
 _localGrps=1;
 
 waituntil {!populating_COS};
 populating_COS=true;
-_glbGrps=server getvariable "cosGrpCount";
+_glbGrps=headlessClient3 getvariable "cosGrpCount";
 
 
 //SPAWN CIVILIANS NOW
@@ -59,7 +59,7 @@ _rdCount=0;
 
 // SPAWN PEDESTRIANS
 for "_i" from 1 to _civilians do {
-	if (!(server getvariable _trigID)) exitwith {_isActive=false;};
+	if (!(headlessClient3 getvariable _trigID)) exitwith {_isActive=false;};
 		
 		if (_i >= _countPool) 
 			then {
@@ -100,7 +100,7 @@ for "_i" from 1 to _civilians do {
 // SPAWN VEHICLES
 for "_i" from 1 to _vehicles do {
 
-if (!(server getvariable _trigID)) exitwith {_isActive=false;};
+if (!(headlessClient3 getvariable _trigID)) exitwith {_isActive=false;};
 
 		if (_i >= _countVehPool) 
 			then {
@@ -166,7 +166,7 @@ null =[_unit] execVM "cos\addScript_Unit.sqf";
 // SPAWN PARKED VEHICLES
 for "_i" from 1 to _parked do {
 
-if (!(server getvariable _trigID)) exitwith {_isActive=false;};
+if (!(headlessClient3 getvariable _trigID)) exitwith {_isActive=false;};
 
 		if (_i >= _countVehPool) 
 			then {
@@ -210,13 +210,13 @@ null =[_civilianArray,_PatrolVehArray,_roadPosArray] execVM "cos\CosPatrol.sqf";
 if (debugCOS) then {player sidechat  (format ["Roads used:%1. Roads Stored %2",_rdCount,count _roadPosArray])};		
 			
 // Count groups 		
-_glbGrps=server getvariable "cosGrpCount";
+_glbGrps=headlessClient3 getvariable "cosGrpCount";
 _glbGrps=_glbGrps+_localGrps;
-server setvariable ["cosGrpCount",_glbGrps];
+headlessClient3 setvariable ["cosGrpCount",_glbGrps];
 populating_COS=false;
 
 // Show town label if town still active
-if (showTownLabel and (server getvariable _trigID)) 
+if (showTownLabel and (headlessClient3 getvariable _trigID)) 
 	then {
 	
 	COSTownLabel=[(_civilians+_vehicles),_mkr];PUBLICVARIABLE "COSTownLabel";
@@ -228,7 +228,7 @@ if (showTownLabel and (server getvariable _trigID))
 // Check every second until trigger is deactivated
  while {_isActive} do
 		{
-	_isActive=server getvariable _trigID;
+	_isActive=headlessClient3 getvariable _trigID;
 		if (!_isActive) exitwith {};
 		sleep 1;
 		};
@@ -283,6 +283,6 @@ waituntil {!populating_COS};
 deletegroup _townGrp;
 
 // Update global groups
-_glbGrps=server getvariable "cosGrpCount";
+_glbGrps=headlessClient3 getvariable "cosGrpCount";
 _glbGrps=_glbGrps-_localGrps;
-server setvariable ["cosGrpCount",_glbGrps];
+headlessClient3 setvariable ["cosGrpCount",_glbGrps];
