@@ -1,0 +1,59 @@
+author = "J. Takel";										
+briefingName = "Virtualised Skirmish Environment";									
+overviewText = "2 Teams try to eliminate each other over some pixels";							
+onLoadName = "Virtualised Skirmish Environment";										
+onLoadMission = "Clear the AO of enemies";	
+
+disableChannels[]={3,4,5,6};
+disabledAI = 1;						
+enableDebugConsole = 1;
+deathmessages=0;
+joinUnassigned = 0;
+
+class Header {
+	gameType = TDM;	
+	maxPlayers = 16;	
+	minPlayers = 1;	
+};
+
+respawn = 3;
+respawnTemplates[] = {"A3GSpectatorCam"};
+
+class CfgRespawnTemplates {
+	class A3GSpectatorCam {
+		displayName = "A3GSpectatorCam";
+		onPlayerKilled = "a3g-spectatorcam\initCam.sqf";
+		respawnDelay = 259200;
+	};
+};
+
+class RscTitles {
+	#include "a3g-spectatorcam\dialog.hpp"
+};
+class CfgFunctions {
+	#include "a3g-spectatorcam\CfgFunctions.hpp"
+};
+
+
+
+class CfgDebriefing
+{  
+	class end1
+	{
+		title = "Blue Team Wins!!!";
+		subtitle = "";
+		description = "Red Team were wiped out!";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class end2
+	{
+		title = "Red Team Wins!!!";
+		subtitle = "";
+		description = "Blue Team were wiped out!";
+		pictureBackground = "";
+		picture = "o_inf";
+		pictureColor[] = {0.6,0.0,0.1,1};
+	};
+};

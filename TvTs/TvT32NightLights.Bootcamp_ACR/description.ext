@@ -1,0 +1,61 @@
+author = "J. Takel";										
+briefingName = "Nightlights - TVT 32";									
+overviewText = "Mercs try to defend their compound from a small but well equipped rival team - try to keep teams roughly 1:2/3";								
+onLoadName = "Night Lights";										
+onLoadMission = "Attack/Defend the Compound";	
+
+disableChannels[]={1,2,3,4,5,6};
+disabledAI = 1;						
+enableDebugConsole = 1;
+
+class Header {
+	gameType = TDM;	
+	maxPlayers = 24;	
+	minPlayers = 1;	
+};
+
+class AGM_Parameters {
+	AGM_Interaction_PlayerNamesMaxAlpha = 0;
+}
+
+respawn = 3;
+respawnTemplates[] = {"A3GSpectatorCam"};
+
+class CfgRespawnTemplates {
+	class A3GSpectatorCam {
+		displayName = "A3GSpectatorCam";
+		onPlayerKilled = "a3g-spectatorcam\initCam.sqf";
+		respawnDelay = 259200;
+	};
+};
+
+class RscTitles {
+	#include "a3g-spectatorcam\dialog.hpp"
+};
+class CfgFunctions {
+	#include "a3g-spectatorcam\CfgFunctions.hpp"
+};
+
+
+
+class CfgDebriefing
+{  
+	class end1
+	{
+		title = "RedSky PMC Wins!";
+		subtitle = "";
+		description = "RedSky mercenaries successfully cleared the compound of all Burning Field PMC personnel.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class end2
+	{
+		title = "Burning Field PMC Wins!";
+		subtitle = "";
+		description = "Burning Field mercenaries killed the RedSky team, successfully defending the compound.";
+		pictureBackground = "";
+		picture = "o_inf";
+		pictureColor[] = {0.6,0.0,0.1,1};
+	};
+};

@@ -1,0 +1,2 @@
+Zen_GenerateVRArea = compileFinal preprocessFileLineNumbers "Zen_GenerateVRArea.sqf"; 
+0 = ["N", 15, 8] call Zen_GenerateVRArea;  0 = ["S", 15, 8] call Zen_GenerateVRArea;  0 = ["W", 15, 8] call Zen_GenerateVRArea;  0 = ["E", 15, 8] call Zen_GenerateVRArea;   

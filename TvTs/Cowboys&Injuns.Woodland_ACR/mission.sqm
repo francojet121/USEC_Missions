@@ -1,0 +1,1175 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"aia_bohemia_config",
+		"A3_Data_F_Curator_Characters",
+		"A3_Structures_F_Civ_Camping",
+		"a3_trees",
+		"CABuildings",
+		"fallujah_hou",
+		"A3_Modules_F_Intel",
+		"A3_Missions_F_Curator",
+		"A3_Modules_F_Curator_Multiplayer",
+		"A3_Modules_F_Multiplayer",
+		"A3_Modules_F_Curator_Animals",
+		"A3_Animals_F_Goat",
+		"A3_Animals_F_Sheep",
+		"A3_Animals_F_Dog",
+		"A3_Modules_F_Curator_Effects"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Data_F_Curator_Characters",
+		"A3_Modules_F_Intel",
+		"A3_Missions_F_Curator",
+		"A3_Modules_F_Curator_Multiplayer",
+		"A3_Modules_F_Multiplayer",
+		"A3_Modules_F_Curator_Animals",
+		"A3_Structures_F_Civ_Camping",
+		"a3_trees",
+		"CABuildings",
+		"fallujah_hou",
+		"A3_Animals_F_Goat",
+		"A3_Animals_F_Sheep",
+		"aia_bohemia_config"
+	};
+	randomSeed=16541184;
+	class Intel
+	{
+		startWeather=0.15000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.15000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2010;
+		month=7;
+		day=6;
+		hour=17;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=21;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2934.2483,443.97559,6708.1646};
+					azimut=-30.286009;
+					id=0;
+					side="WEST";
+					vehicle="b_survivor_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;      this forceAddUniform ""U_BG_Guerilla2_2"";  this addVest ""rhs_vest_commander"";  for ""_i"" from 1 to 4 do {this addItemToVest ""6Rnd_45ACP_Cylinder"";};  this addItemToVest ""rhs_mag_rdg2_white"";  this addItemToVest ""rhs_mag_rdg2_black"";  this addHeadgear ""H_Booniehat_tan"";  this addGoggles ""rhs_scarf""; this addWeapon ""hgun_Pistol_heavy_02_F"";";
+					description="Cowboy";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2942.9329,442.89893,6706.0171};
+					azimut=-30.286009;
+					id=1;
+					side="WEST";
+					vehicle="b_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;      this forceAddUniform ""U_BG_Guerilla2_2"";  this addVest ""rhs_vest_commander"";  for ""_i"" from 1 to 4 do {this addItemToVest ""6Rnd_45ACP_Cylinder"";};  this addItemToVest ""rhs_mag_rdg2_white"";  this addItemToVest ""rhs_mag_rdg2_black"";  this addHeadgear ""H_Booniehat_tan"";  this addGoggles ""rhs_scarf""; this addWeapon ""hgun_Pistol_heavy_02_F"";";
+					description="Cowboy";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2946.269,438.68109,6689.688};
+					azimut=-30.286009;
+					id=2;
+					side="WEST";
+					vehicle="b_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;      this forceAddUniform ""U_BG_Guerilla2_2"";  this addVest ""rhs_vest_commander"";  for ""_i"" from 1 to 4 do {this addItemToVest ""6Rnd_45ACP_Cylinder"";};  this addItemToVest ""rhs_mag_rdg2_white"";  this addItemToVest ""rhs_mag_rdg2_black"";  this addHeadgear ""H_Booniehat_tan"";  this addGoggles ""rhs_scarf""; this addWeapon ""hgun_Pistol_heavy_02_F"";";
+					description="Cowboy";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2916.0933,442.98672,6700.5171};
+					azimut=-30.286009;
+					id=3;
+					side="WEST";
+					vehicle="b_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;      this forceAddUniform ""U_BG_Guerilla2_2"";  this addVest ""rhs_vest_commander"";  for ""_i"" from 1 to 4 do {this addItemToVest ""6Rnd_45ACP_Cylinder"";};  this addItemToVest ""rhs_mag_rdg2_white"";  this addItemToVest ""rhs_mag_rdg2_black"";  this addHeadgear ""H_Booniehat_tan"";  this addGoggles ""rhs_scarf""; this addWeapon ""hgun_Pistol_heavy_02_F"";";
+					description="Cowboy";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2929.9575,438.54196,6686.7754};
+					azimut=-30.286009;
+					id=4;
+					side="WEST";
+					vehicle="b_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;      this forceAddUniform ""U_BG_Guerilla2_2"";  this addVest ""rhs_vest_commander"";  for ""_i"" from 1 to 4 do {this addItemToVest ""6Rnd_45ACP_Cylinder"";};  this addItemToVest ""rhs_mag_rdg2_white"";  this addItemToVest ""rhs_mag_rdg2_black"";  this addHeadgear ""H_Booniehat_tan"";  this addGoggles ""rhs_scarf""; this addWeapon ""hgun_Pistol_heavy_02_F"";";
+					description="Cowboy";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2929.855,441.91772,6697.2266};
+					azimut=-30.286009;
+					id=5;
+					side="WEST";
+					vehicle="b_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;      this forceAddUniform ""U_BG_Guerilla2_2"";  this addVest ""rhs_vest_commander"";  for ""_i"" from 1 to 4 do {this addItemToVest ""6Rnd_45ACP_Cylinder"";};  this addItemToVest ""rhs_mag_rdg2_white"";  this addItemToVest ""rhs_mag_rdg2_black"";  this addHeadgear ""H_Booniehat_tan"";  this addGoggles ""rhs_scarf""; this addWeapon ""hgun_Pistol_heavy_02_F"";";
+					description="Cowboy";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2939.9216,441.39359,6697.394};
+					azimut=-30.286009;
+					id=6;
+					side="WEST";
+					vehicle="b_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;      this forceAddUniform ""U_BG_Guerilla2_2"";  this addVest ""rhs_vest_commander"";  for ""_i"" from 1 to 4 do {this addItemToVest ""6Rnd_45ACP_Cylinder"";};  this addItemToVest ""rhs_mag_rdg2_white"";  this addItemToVest ""rhs_mag_rdg2_black"";  this addHeadgear ""H_Booniehat_tan"";  this addGoggles ""rhs_scarf""; this addWeapon ""hgun_Pistol_heavy_02_F"";";
+					description="Cowboy";
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2937.1252,438.37094,6687.0825};
+					azimut=-30.286009;
+					id=7;
+					side="WEST";
+					vehicle="b_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;      this forceAddUniform ""U_BG_Guerilla2_2"";  this addVest ""rhs_vest_commander"";  for ""_i"" from 1 to 4 do {this addItemToVest ""6Rnd_45ACP_Cylinder"";};  this addItemToVest ""rhs_mag_rdg2_white"";  this addItemToVest ""rhs_mag_rdg2_black"";  this addHeadgear ""H_Booniehat_tan"";  this addGoggles ""rhs_scarf""; this addWeapon ""hgun_Pistol_heavy_02_F"";";
+					description="Cowboy";
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2921.4666,440.73853,6692.915};
+					azimut=-30.286009;
+					id=8;
+					side="WEST";
+					vehicle="b_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;      this forceAddUniform ""U_BG_Guerilla2_2"";  this addVest ""rhs_vest_commander"";  for ""_i"" from 1 to 4 do {this addItemToVest ""6Rnd_45ACP_Cylinder"";};  this addItemToVest ""rhs_mag_rdg2_white"";  this addItemToVest ""rhs_mag_rdg2_black"";  this addHeadgear ""H_Booniehat_tan"";  this addGoggles ""rhs_scarf""; this addWeapon ""hgun_Pistol_heavy_02_F"";";
+					description="Cowboy";
+				};
+			};
+		};
+		class Item9
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2706.4478,446.82919,7048.7017};
+					azimut=146.73578;
+					id=9;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_BG_Guerilla1_1"";  this addVest ""rhs_6sh46"";  for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_m576"";};  this addItemToVest ""rhs_mag_nspd"";  this addGoggles ""G_Balaclava_oli"";      this addWeapon ""rhs_weap_M320"";";
+					description="Injun";
+				};
+			};
+		};
+		class Item10
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2712.9175,447.16901,7044.0708};
+					azimut=146.73578;
+					id=10;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_BG_Guerilla1_1"";  this addVest ""rhs_6sh46"";  for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_m576"";};  this addItemToVest ""rhs_mag_nspd"";  this addGoggles ""G_Balaclava_oli"";      this addWeapon ""rhs_weap_M320"";";
+					description="Injun";
+				};
+			};
+		};
+		class Item11
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2698.6509,446.64996,7041.1118};
+					azimut=146.73578;
+					id=11;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_BG_Guerilla1_1"";  this addVest ""rhs_6sh46"";  for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_m576"";};  this addItemToVest ""rhs_mag_nspd"";  this addGoggles ""G_Balaclava_oli"";      this addWeapon ""rhs_weap_M320"";";
+					description="Injun";
+				};
+			};
+		};
+		class Item12
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2700.8975,446.68857,7044.6729};
+					azimut=146.73578;
+					id=12;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_BG_Guerilla1_1"";  this addVest ""rhs_6sh46"";  for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_m576"";};  this addItemToVest ""rhs_mag_nspd"";  this addGoggles ""G_Balaclava_oli"";      this addWeapon ""rhs_weap_M320"";";
+					description="Injun";
+				};
+			};
+		};
+		class Item13
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2710.3599,446.99573,7047.377};
+					azimut=146.73578;
+					id=13;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_BG_Guerilla1_1"";  this addVest ""rhs_6sh46"";  for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_m576"";};  this addItemToVest ""rhs_mag_nspd"";  this addGoggles ""G_Balaclava_oli"";      this addWeapon ""rhs_weap_M320"";";
+					description="Injun";
+				};
+			};
+		};
+		class Item14
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2704.3257,446.45413,7053.1846};
+					azimut=146.73578;
+					id=14;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_BG_Guerilla1_1"";  this addVest ""rhs_6sh46"";  for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_m576"";};  this addItemToVest ""rhs_mag_nspd"";  this addGoggles ""G_Balaclava_oli"";      this addWeapon ""rhs_weap_M320"";";
+					description="Injun";
+				};
+			};
+		};
+		class Item15
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2708.9382,446.77338,7051.5181};
+					azimut=146.73578;
+					id=15;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_BG_Guerilla1_1"";  this addVest ""rhs_6sh46"";  for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_m576"";};  this addItemToVest ""rhs_mag_nspd"";  this addGoggles ""G_Balaclava_oli"";      this addWeapon ""rhs_weap_M320"";";
+					description="Injun";
+				};
+			};
+		};
+		class Item16
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2702.8418,446.9137,7040.0195};
+					azimut=146.73578;
+					id=16;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_BG_Guerilla1_1"";  this addVest ""rhs_6sh46"";  for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_m576"";};  this addItemToVest ""rhs_mag_nspd"";  this addGoggles ""G_Balaclava_oli"";      this addWeapon ""rhs_weap_M320"";";
+					description="Injun";
+				};
+			};
+		};
+		class Item17
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2695.7341,446.20996,7045.8936};
+					azimut=146.73578;
+					id=17;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_BG_Guerilla1_1"";  this addVest ""rhs_6sh46"";  for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_m576"";};  this addItemToVest ""rhs_mag_nspd"";  this addGoggles ""G_Balaclava_oli"";      this addWeapon ""rhs_weap_M320"";";
+					description="Injun";
+				};
+			};
+		};
+		class Item18
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2914.5881,439.98566,6690.9082};
+					azimut=-30.286009;
+					id=18;
+					side="WEST";
+					vehicle="b_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;      this forceAddUniform ""U_BG_Guerilla2_2"";  this addVest ""rhs_vest_commander"";  for ""_i"" from 1 to 4 do {this addItemToVest ""6Rnd_45ACP_Cylinder"";};  this addItemToVest ""rhs_mag_rdg2_white"";  this addItemToVest ""rhs_mag_rdg2_black"";  this addHeadgear ""H_Booniehat_tan"";  this addGoggles ""rhs_scarf""; this addWeapon ""hgun_Pistol_heavy_02_F"";";
+					description="Cowboy";
+				};
+			};
+		};
+		class Item19
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2698.551,446.30978,7049.6724};
+					azimut=146.73578;
+					id=19;
+					side="GUER";
+					vehicle="i_survivor_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_BG_Guerilla1_1"";  this addVest ""rhs_6sh46"";  for ""_i"" from 1 to 7 do {this addItemToVest ""rhs_mag_m576"";};  this addItemToVest ""rhs_mag_nspd"";  this addGoggles ""G_Balaclava_oli"";      this addWeapon ""rhs_weap_M320"";";
+					description="Injun";
+				};
+			};
+		};
+		class Item20
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={2817.1826,434.21082,6873.4521};
+					azimut=56.916885;
+					class args
+					{
+						items=7;
+						class Item0
+						{
+							value="3";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="Attack";
+							parentCls="ModuleTaskCreate_F";
+							typeName="ID";
+						};
+						class Item2
+						{
+							value="Take and Hold Campsite";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Title";
+						};
+						class Item3
+						{
+							value="Take the Campsite and hold off the enemy attacks!";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Description";
+						};
+						class Item4
+						{
+							value="Campsite";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Marker";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Destination";
+						};
+						class Item6
+						{
+							value="ASSIGNED";
+							parentCls="ModuleTaskCreate_F";
+							typeName="State";
+						};
+					};
+					id=20;
+					side="LOGIC";
+					vehicle="ModuleTaskCreate_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={2817.1902,434.20596,6873.4155};
+					azimut=56.916901;
+					id=21;
+					side="LOGIC";
+					vehicle="ModuleMPTypeSectorControl_F";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={2835.6113,432.39792,6868.6294};
+					azimut=56.916901;
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="1";
+							parentCls="ModuleBleedTickets_F";
+							typeName="ticketBleedRatio";
+						};
+						class Item1
+						{
+							value="5";
+							parentCls="ModuleBleedTickets_F";
+							typeName="delay";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ModuleBleedTickets_F";
+							typeName="ticketBleedMax";
+						};
+					};
+					id=22;
+					side="LOGIC";
+					vehicle="ModuleBleedTickets_F";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={2806.4646,437.77896,6889.0313};
+					azimut=56.916901;
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="30";
+							parentCls="ModuleRespawnTickets_F";
+							typeName="WEST";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleRespawnTickets_F";
+							typeName="EAST";
+						};
+						class Item2
+						{
+							value="30";
+							parentCls="ModuleRespawnTickets_F";
+							typeName="GUER";
+						};
+						class Item3
+						{
+							value="";
+							parentCls="ModuleRespawnTickets_F";
+							typeName="CIV";
+						};
+					};
+					id=23;
+					side="LOGIC";
+					vehicle="ModuleRespawnTickets_F";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item4
+				{
+					position[]={2934.3413,441.01483,6694.9478};
+					azimut=56.916885;
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleRespawnPosition_F";
+							typeName="Name";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ModuleRespawnPosition_F";
+							typeName="Type";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ModuleRespawnPosition_F";
+							typeName="Side";
+						};
+						class Item3
+						{
+							value="2";
+							parentCls="ModuleRespawnPosition_F";
+							typeName="Marker";
+						};
+					};
+					id=24;
+					side="LOGIC";
+					vehicle="ModuleRespawnPosition_F";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item5
+				{
+					position[]={2704.6265,446.80139,7046.709};
+					azimut=56.916885;
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleRespawnPosition_F";
+							typeName="Name";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ModuleRespawnPosition_F";
+							typeName="Type";
+						};
+						class Item2
+						{
+							value="2";
+							parentCls="ModuleRespawnPosition_F";
+							typeName="Side";
+						};
+						class Item3
+						{
+							value="2";
+							parentCls="ModuleRespawnPosition_F";
+							typeName="Marker";
+						};
+					};
+					id=25;
+					side="LOGIC";
+					vehicle="ModuleRespawnPosition_F";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item6
+				{
+					position[]={2711.4946,447.30701,7035.8462};
+					azimut=56.916885;
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="ButterFly_random";
+							parentCls="ModuleAnimals_F";
+							typeName="Type";
+						};
+						class Item1
+						{
+							value="10";
+							parentCls="ModuleAnimals_F";
+							typeName="Count";
+						};
+					};
+					id=26;
+					side="LOGIC";
+					vehicle="ModuleAnimals_F";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item7
+				{
+					position[]={2922.6917,445.28409,6712.5034};
+					azimut=56.916885;
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="ButterFly_random";
+							parentCls="ModuleAnimals_F";
+							typeName="Type";
+						};
+						class Item1
+						{
+							value="10";
+							parentCls="ModuleAnimals_F";
+							typeName="Count";
+						};
+					};
+					id=27;
+					side="LOGIC";
+					vehicle="ModuleAnimals_F";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item8
+				{
+					position[]={2833.6665,432.70999,6875.2656};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="420";
+							parentCls="ModuleCountdown_F";
+							typeName="Value";
+						};
+						class Item1
+						{
+							value="SideScore";
+							parentCls="ModuleCountdown_F";
+							typeName="Type";
+						};
+					};
+					id=28;
+					side="LOGIC";
+					vehicle="ModuleCountdown_F";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=33;
+		class Item0
+		{
+			position[]={2926.8811,444.09256,6705.7588};
+			azimut=56.916885;
+			id=29;
+			side="EMPTY";
+			vehicle="Campfire_burning_F";
+			leader=1;
+			skill=0.60000002;
+			description="Cowboy";
+		};
+		class Item1
+		{
+			position[]={2823.897,433.62384,6870.8843};
+			azimut=58.658108;
+			id=30;
+			side="EMPTY";
+			vehicle="Branch_Big";
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={2810.0098,434.55621,6875.9136};
+			azimut=58.658108;
+			id=31;
+			side="EMPTY";
+			vehicle="Fallen_Branch3";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={2816.6204,433.24219,6866.3447};
+			azimut=-41.238804;
+			id=32;
+			side="EMPTY";
+			vehicle="Fallen_Branch2";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={2818.0767,435.18829,6880.0996};
+			azimut=-40.083244;
+			id=33;
+			side="EMPTY";
+			vehicle="Fallen_Branch1";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={2817.2007,434.21194,6873.4673};
+			azimut=56.916885;
+			id=34;
+			side="EMPTY";
+			vehicle="Campfire_burning_F";
+			leader=1;
+			skill=0.60000002;
+			description="Cowboy";
+		};
+		class Item6
+		{
+			position[]={2708.7351,447.16492,7040.8159};
+			azimut=56.916885;
+			id=35;
+			side="EMPTY";
+			vehicle="Campfire_burning_F";
+			leader=1;
+			skill=0.60000002;
+			description="Cowboy";
+		};
+		class Item7
+		{
+			position[]={2812.0554,435.90201,6882.1299};
+			azimut=58.658108;
+			id=36;
+			side="EMPTY";
+			vehicle="Land_Ruiny_3_prasklina";
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={2822.6106,433.25906,6865.2412};
+			azimut=99.65316;
+			id=37;
+			side="EMPTY";
+			vehicle="Land_Ruiny_3_roh";
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={2808.4924,432.98892,6868.4878};
+			azimut=58.658108;
+			id=38;
+			side="EMPTY";
+			vehicle="Land_Ruiny_3_dvere";
+			skill=0.60000002;
+		};
+		class Item10
+		{
+			position[]={2825.5298,434.22873,6878.8647};
+			azimut=99.653198;
+			id=39;
+			side="EMPTY";
+			vehicle="Land_Ruiny_3_stena";
+			skill=0.60000002;
+		};
+		class Item11
+		{
+			position[]={2783.5122,442.64713,6913.8604};
+			azimut=56.916885;
+			id=40;
+			side="AMBIENT LIFE";
+			vehicle="Goat_random_F";
+			skill=0.60000002;
+		};
+		class Item12
+		{
+			position[]={2734.5679,413.25592,6832.7202};
+			azimut=56.916885;
+			id=41;
+			side="AMBIENT LIFE";
+			vehicle="Goat_random_F";
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={2815.5784,429.18948,6825.2734};
+			azimut=56.916885;
+			id=42;
+			side="AMBIENT LIFE";
+			vehicle="Goat_random_F";
+			skill=0.60000002;
+		};
+		class Item14
+		{
+			position[]={2788.5271,431.92151,6874.0894};
+			azimut=56.916885;
+			id=43;
+			side="AMBIENT LIFE";
+			vehicle="Goat_random_F";
+			skill=0.60000002;
+		};
+		class Item15
+		{
+			position[]={2881.9375,414.26837,6869.8608};
+			azimut=56.916885;
+			id=44;
+			side="AMBIENT LIFE";
+			vehicle="Goat_random_F";
+			skill=0.60000002;
+		};
+		class Item16
+		{
+			position[]={2909.5789,400.05829,6921.2388};
+			azimut=56.916885;
+			id=45;
+			side="AMBIENT LIFE";
+			vehicle="Goat_random_F";
+			skill=0.60000002;
+		};
+		class Item17
+		{
+			position[]={2832.0967,433.97287,6899.8384};
+			azimut=56.916885;
+			id=46;
+			side="AMBIENT LIFE";
+			vehicle="Goat_random_F";
+			skill=0.60000002;
+		};
+		class Item18
+		{
+			position[]={2811.7397,432.41577,6863.3862};
+			azimut=56.916885;
+			id=47;
+			side="AMBIENT LIFE";
+			vehicle="Goat_random_F";
+			skill=0.60000002;
+		};
+		class Item19
+		{
+			position[]={2859.7144,432.76184,6817.9331};
+			azimut=56.916885;
+			id=48;
+			side="AMBIENT LIFE";
+			vehicle="Goat_random_F";
+			skill=0.60000002;
+		};
+		class Item20
+		{
+			position[]={2828.177,433.22421,6867.2314};
+			azimut=56.916885;
+			id=49;
+			side="AMBIENT LIFE";
+			vehicle="Goat_random_F";
+			skill=0.60000002;
+		};
+		class Item21
+		{
+			position[]={2816.1616,436.48984,6886.6948};
+			azimut=56.916885;
+			id=50;
+			side="AMBIENT LIFE";
+			vehicle="Goat_random_F";
+			skill=0.60000002;
+		};
+		class Item22
+		{
+			position[]={2881.3909,411.44324,6903.4839};
+			azimut=56.916885;
+			id=51;
+			side="AMBIENT LIFE";
+			vehicle="Sheep_random_F";
+			skill=0.60000002;
+		};
+		class Item23
+		{
+			position[]={2699.7075,420.16913,6875.0723};
+			azimut=56.916885;
+			id=52;
+			side="AMBIENT LIFE";
+			vehicle="Sheep_random_F";
+			skill=0.60000002;
+		};
+		class Item24
+		{
+			position[]={2820.2019,424.81516,6760.9907};
+			azimut=56.916885;
+			id=53;
+			side="AMBIENT LIFE";
+			vehicle="Sheep_random_F";
+			skill=0.60000002;
+		};
+		class Item25
+		{
+			position[]={2736.2622,429.58554,6903.6802};
+			azimut=56.916885;
+			id=54;
+			side="AMBIENT LIFE";
+			vehicle="Sheep_random_F";
+			skill=0.60000002;
+		};
+		class Item26
+		{
+			position[]={2853.3804,432.40237,6786.2813};
+			azimut=56.916885;
+			id=55;
+			side="AMBIENT LIFE";
+			vehicle="Sheep_random_F";
+			skill=0.60000002;
+		};
+		class Item27
+		{
+			position[]={2753.0015,405.2366,6770.249};
+			azimut=56.916885;
+			id=56;
+			side="AMBIENT LIFE";
+			vehicle="Sheep_random_F";
+			skill=0.60000002;
+		};
+		class Item28
+		{
+			position[]={2784.6665,425.99619,6851.3013};
+			azimut=56.916885;
+			id=57;
+			side="AMBIENT LIFE";
+			vehicle="Sheep_random_F";
+			skill=0.60000002;
+		};
+		class Item29
+		{
+			position[]={2784.6687,446.51785,6958.3672};
+			azimut=56.916885;
+			id=58;
+			side="AMBIENT LIFE";
+			vehicle="Sheep_random_F";
+			skill=0.60000002;
+		};
+		class Item30
+		{
+			position[]={2853.8608,422.80777,6953.6274};
+			azimut=56.916885;
+			id=59;
+			side="AMBIENT LIFE";
+			vehicle="Sheep_random_F";
+			skill=0.60000002;
+		};
+		class Item31
+		{
+			position[]={2795.7021,418.05673,6772.8096};
+			azimut=56.916885;
+			id=60;
+			side="AMBIENT LIFE";
+			vehicle="Sheep_random_F";
+			skill=0.60000002;
+		};
+		class Item32
+		{
+			position[]={2908.5791,405.75415,6855.4717};
+			azimut=56.916885;
+			id=61;
+			side="AMBIENT LIFE";
+			vehicle="Sheep_random_F";
+			skill=0.60000002;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"aia_bohemia_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_bohemia_config"
+	};
+	randomSeed=7643029;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.15000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.15000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2010;
+		month=7;
+		day=6;
+		hour=10;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"aia_bohemia_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_bohemia_config"
+	};
+	randomSeed=3740389;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.15000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.15000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2010;
+		month=7;
+		day=6;
+		hour=10;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"aia_bohemia_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_bohemia_config"
+	};
+	randomSeed=6619223;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.15000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.15000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2010;
+		month=7;
+		day=6;
+		hour=10;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};

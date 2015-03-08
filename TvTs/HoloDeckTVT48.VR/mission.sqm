@@ -1,0 +1,1752 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"map_vr",
+		"A3_Characters_F_OPFOR",
+		"A3_Structures_F_Bootcamp_VR_Blocks",
+		"a3_trees",
+		"A3_Structures_F_Research",
+		"dar_c2",
+		"CABuildings",
+		"fallujah_hou",
+		"CAStructures_E_Misc_Misc_Construction",
+		"aia_misc_e_config",
+		"aia_misc3_config",
+		"CAStructures_E_Misc_Misc_Interier",
+		"A3_Soft_F_Quadbike",
+		"aia_buildings_config",
+		"CAStructures_E_Misc_Misc_Well",
+		"A3_Structures_F_Ind_FuelStation",
+		"A3_Structures_F_Ind_FuelStation_Small",
+		"A3_Structures_F_EPC_Dominants_GhostHotel",
+		"A3_Structures_F_Civ_Offices",
+		"A3_Structures_F_Households_House_Shop01",
+		"A3_Structures_F_Dominants_WIP",
+		"A3_Structures_F_Dominants_Amphitheater",
+		"A3_Structures_F_Civ_Ancient",
+		"A3_Structures_F_Civ_BellTowers",
+		"A3_Structures_F_Dominants_Castle",
+		"A3_Structures_F_Civ_Statues",
+		"A3_Structures_F_Ind_Factory",
+		"A3_Structures_F_Ind_ConcreteMixingPlant",
+		"A3_Structures_F_Ind_Shed",
+		"A3_Structures_F_Ind_Windmill",
+		"A3_Structures_F_Ind_DieselPowerPlant",
+		"A3_Structures_F_Households_Stone_Big",
+		"A3_Structures_F_Households_Stone_Shed",
+		"WarfareBuildings",
+		"CAMisc_E_WF",
+		"rhsusf_c_heavyweapons",
+		"a3_bush",
+		"a3_plants",
+		"a3_stones",
+		"CAStructures_Rail",
+		"A3_Structures_F_EPA_Mil_Scrapyard",
+		"A3_Modules_F_Curator_Environment",
+		"task_force_radio_items"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"A3_Characters_F_OPFOR",
+		"A3_Modules_F_Curator_Environment",
+		"task_force_radio_items",
+		"CABuildings",
+		"fallujah_hou",
+		"rhsusf_c_heavyweapons",
+		"a3_bush",
+		"a3_plants",
+		"a3_trees",
+		"aia_buildings_config",
+		"aia_misc_e_config",
+		"A3_Structures_F_EPA_Mil_Scrapyard",
+		"map_vr"
+	};
+	randomSeed=14556478;
+	class Intel
+	{
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=17;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=9;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={3975.0027,5,2766.8105};
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_2"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""SmokeShellBlue"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  this addHeadgear ""H_RacingHelmet_2_F"";     this addWeapon ""rhs_weap_m4a1_grip"";  this addPrimaryWeaponItem ""rhsusf_acc_compm4"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";";
+					syncId=0;
+					synchronizations[]={48};
+				};
+				class Item1
+				{
+					position[]={3980.5044,5,2766.7876};
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_2"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""SmokeShellBlue"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  this addHeadgear ""H_RacingHelmet_1_blue_F"";     this addWeapon ""rhs_weap_m4a1_grip"";  this addPrimaryWeaponItem ""rhsusf_acc_compm4"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";";
+					syncId=1;
+					synchronizations[]={48};
+				};
+				class Item2
+				{
+					position[]={3991.0811,5,2766.9111};
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_blue"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  this addHeadgear ""H_RacingHelmet_1_blue_F"";     this addWeapon ""rhs_weap_m16a4_grip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_4"";";
+					syncId=2;
+					synchronizations[]={48};
+				};
+				class Item3
+				{
+					position[]={3985.7119,5,2767.0488};
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_blue"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  this addHeadgear ""H_RacingHelmet_1_blue_F"";     this addWeapon ""rhs_weap_m16a4_grip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";";
+					syncId=3;
+					synchronizations[]={48};
+				};
+				class Item4
+				{
+					position[]={3996.2173,5,2766.6572};
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="B_soldier_M_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_blue"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 5 do {this addItemToVest ""20Rnd_762x51_Mag"";};  this addHeadgear ""H_RacingHelmet_1_black_F"";     this addWeapon ""rhs_weap_m14ebrri"";  this addPrimaryWeaponItem ""optic_DMS"";  this addWeapon ""hgun_Rook40_F""; this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_5"";";
+					syncId=4;
+					synchronizations[]={48};
+				};
+				class Item5
+				{
+					position[]={4002.1226,5,2766.8447};
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_blue"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhsusf_100Rnd_556x45_soft_pouch"";};  this addHeadgear ""H_RacingHelmet_1_white_F"";     this addWeapon ""rhs_weap_m249_pip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_6"";";
+					syncId=5;
+					synchronizations[]={48};
+				};
+				class Item6
+				{
+					position[]={4011.6174,5,2766.7261};
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_green"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 7 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  this addHeadgear ""H_RacingHelmet_1_green_F"";     this addWeapon ""rhs_weap_m4a1"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_8"";";
+					syncId=6;
+					synchronizations[]={48};
+				};
+				class Item7
+				{
+					position[]={4007.9116,5,2766.7979};
+					special="NONE";
+					id=7;
+					side="WEST";
+					vehicle="B_Soldier_GL_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_m4009"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""rhs_mag_m576"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""3Rnd_SmokeBlue_Grenade_shell"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""rhs_mag_M441_HE"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""H_RacingHelmet_1_F"";     this addWeapon ""rhs_weap_M320"";  this addWeapon ""hgun_Rook40_F"";        this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_7""";
+					syncId=7;
+					synchronizations[]={48};
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={3974.4348,5,2758.6328};
+					special="NONE";
+					id=8;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_2"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""SmokeShellBlue"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  this addHeadgear ""H_RacingHelmet_2_F"";     this addWeapon ""rhs_weap_m4a1_grip"";  this addPrimaryWeaponItem ""rhsusf_acc_compm4"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_9"";";
+					syncId=8;
+					synchronizations[]={48};
+				};
+				class Item1
+				{
+					position[]={3980.4136,5,2758.4907};
+					special="NONE";
+					id=9;
+					side="WEST";
+					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_2"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""SmokeShellBlue"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  this addHeadgear ""H_RacingHelmet_1_blue_F"";     this addWeapon ""rhs_weap_m4a1_grip"";  this addPrimaryWeaponItem ""rhsusf_acc_compm4"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_10"";";
+					syncId=9;
+					synchronizations[]={48};
+				};
+				class Item2
+				{
+					position[]={3991.229,5,2758.7329};
+					special="NONE";
+					id=10;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_blue"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  this addHeadgear ""H_RacingHelmet_1_blue_F"";     this addWeapon ""rhs_weap_m16a4_grip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_12"";";
+					syncId=10;
+					synchronizations[]={48};
+				};
+				class Item3
+				{
+					position[]={3985.8596,5,2758.5137};
+					special="NONE";
+					id=11;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_blue"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  this addHeadgear ""H_RacingHelmet_1_blue_F"";     this addWeapon ""rhs_weap_m16a4_grip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_11"";";
+					syncId=11;
+					synchronizations[]={48};
+				};
+				class Item4
+				{
+					position[]={3996.127,5,2758.8369};
+					special="NONE";
+					id=12;
+					side="WEST";
+					vehicle="B_soldier_M_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_blue"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 5 do {this addItemToVest ""20Rnd_762x51_Mag"";};  this addHeadgear ""H_RacingHelmet_1_black_F"";     this addWeapon ""rhs_weap_m14ebrri"";  this addPrimaryWeaponItem ""optic_DMS"";  this addWeapon ""hgun_Rook40_F""; this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_13"";";
+					syncId=12;
+					synchronizations[]={48};
+				};
+				class Item5
+				{
+					position[]={4001.4351,5,2758.9067};
+					special="NONE";
+					id=13;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_blue"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhsusf_100Rnd_556x45_soft_pouch"";};  this addHeadgear ""H_RacingHelmet_1_white_F"";     this addWeapon ""rhs_weap_m249_pip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_14"";";
+					syncId=13;
+					synchronizations[]={48};
+				};
+				class Item6
+				{
+					position[]={4010.9302,5,2759.0259};
+					special="NONE";
+					id=14;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_green"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 7 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  this addHeadgear ""H_RacingHelmet_1_green_F"";     this addWeapon ""rhs_weap_m4a1"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_16"";";
+					syncId=14;
+					synchronizations[]={48};
+				};
+				class Item7
+				{
+					position[]={4006.5088,5,2758.978};
+					special="NONE";
+					id=15;
+					side="WEST";
+					vehicle="B_Soldier_GL_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_m4009"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""rhs_mag_m576"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""3Rnd_SmokeBlue_Grenade_shell"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""rhs_mag_M441_HE"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""H_RacingHelmet_1_F"";     this addWeapon ""rhs_weap_M320"";  this addWeapon ""hgun_Rook40_F"";        this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_15""";
+					syncId=15;
+					synchronizations[]={48};
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={4013.5972,5,4010.9368};
+					azimut=-178.853;
+					special="NONE";
+					id=16;
+					side="EAST";
+					vehicle="O_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_4"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 2 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""SmokeShellRed"";};  this addHeadgear ""H_RacingHelmet_4_F"";     this addWeapon ""rhs_weap_m4a1_grip"";  this addPrimaryWeaponItem ""rhsusf_acc_compm4"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_1"";";
+					syncId=16;
+					synchronizations[]={49};
+				};
+				class Item1
+				{
+					position[]={4010.6184,5,4010.9111};
+					azimut=-178.85298;
+					special="NONE";
+					id=17;
+					side="EAST";
+					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_4"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 2 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""SmokeShellRed"";};  this addHeadgear ""H_RacingHelmet_1_red_F"";     this addWeapon ""rhs_weap_m4a1_grip"";  this addPrimaryWeaponItem ""rhsusf_acc_compm4"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_2"";";
+					syncId=17;
+					synchronizations[]={49};
+				};
+				class Item2
+				{
+					position[]={4004.8198,5,4010.8074};
+					azimut=-178.85298;
+					special="NONE";
+					id=18;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_red"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_red_F"";     this addWeapon ""rhs_weap_m16a4_grip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_3"";";
+					syncId=18;
+					synchronizations[]={49};
+				};
+				class Item3
+				{
+					position[]={4001.4836,5,4010.6797};
+					azimut=-178.85298;
+					special="NONE";
+					id=19;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_red"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_red_F"";     this addWeapon ""rhs_weap_m16a4_grip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_4"";";
+					syncId=19;
+					synchronizations[]={49};
+				};
+				class Item4
+				{
+					position[]={3996.699,5,4010.6777};
+					azimut=-178.85298;
+					special="NONE";
+					id=20;
+					side="EAST";
+					vehicle="O_soldier_M_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_C_Driver_1_red"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 5 do {this addItemToVest ""20Rnd_762x51_Mag"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_black_F"";    this addWeapon ""rhs_weap_m14ebrri"";  this addPrimaryWeaponItem ""optic_DMS"";  this addWeapon ""hgun_Rook40_F"";    this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_5"";  ";
+					syncId=20;
+					synchronizations[]={49};
+				};
+				class Item5
+				{
+					position[]={3991.3164,5,4010.5186};
+					azimut=-178.85298;
+					special="NONE";
+					id=21;
+					side="EAST";
+					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_C_Driver_1_red"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhsusf_100Rnd_556x45_soft_pouch"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_white_F"";    this addWeapon ""rhs_weap_m249_pip"";  this addWeapon ""hgun_Rook40_F"";    this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_6"";  ";
+					syncId=21;
+					synchronizations[]={49};
+				};
+				class Item6
+				{
+					position[]={3988.073,5,4010.709};
+					azimut=-178.853;
+					special="NONE";
+					id=22;
+					side="EAST";
+					vehicle="O_Soldier_GL_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_C_Driver_1_yellow"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_m4009"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""rhs_mag_m576"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""3Rnd_SmokeRed_Grenade_shell"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""rhs_mag_M441_HE"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_yellow_F"";    this addWeapon ""rhs_weap_M320"";  this addWeapon ""hgun_Rook40_F"";    this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_7"";";
+					syncId=22;
+					synchronizations[]={49};
+				};
+				class Item7
+				{
+					position[]={3984.6084,5,4010.5681};
+					azimut=-178.85298;
+					special="NONE";
+					id=23;
+					side="EAST";
+					vehicle="O_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_C_Driver_1_orange"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 7 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_orange_F"";    this addWeapon ""rhs_weap_m4a1"";  this addWeapon ""hgun_Rook40_F"";    this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_8"";  ";
+					syncId=23;
+					synchronizations[]={49};
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={4013.0447,5,4018.1128};
+					azimut=-178.85298;
+					special="NONE";
+					id=24;
+					side="EAST";
+					vehicle="O_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_4"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 2 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""SmokeShellRed"";};  this addHeadgear ""H_RacingHelmet_4_F"";     this addWeapon ""rhs_weap_m4a1_grip"";  this addPrimaryWeaponItem ""rhsusf_acc_compm4"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_9"";";
+					syncId=24;
+					synchronizations[]={49};
+				};
+				class Item1
+				{
+					position[]={4009.5278,5,4018.084};
+					azimut=-178.85298;
+					special="NONE";
+					id=25;
+					side="EAST";
+					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_4"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 2 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""SmokeShellRed"";};  this addHeadgear ""H_RacingHelmet_1_red_F"";     this addWeapon ""rhs_weap_m4a1_grip"";  this addPrimaryWeaponItem ""rhsusf_acc_compm4"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_10"";";
+					syncId=25;
+					synchronizations[]={49};
+				};
+				class Item2
+				{
+					position[]={4004.1011,5,4018.0801};
+					azimut=-178.85298;
+					special="NONE";
+					id=26;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_red"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_red_F"";     this addWeapon ""rhs_weap_m16a4_grip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_11"";";
+					syncId=26;
+					synchronizations[]={49};
+				};
+				class Item3
+				{
+					position[]={4000.9661,5,4017.9922};
+					azimut=-178.85298;
+					special="NONE";
+					id=27;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_red"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_red_F"";     this addWeapon ""rhs_weap_m16a4_grip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_12"";";
+					syncId=27;
+					synchronizations[]={49};
+				};
+				class Item4
+				{
+					position[]={3995.8857,5,4018.0459};
+					azimut=-178.85298;
+					special="NONE";
+					id=28;
+					side="EAST";
+					vehicle="O_soldier_M_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_C_Driver_1_red"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 5 do {this addItemToVest ""20Rnd_762x51_Mag"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_black_F"";    this addWeapon ""rhs_weap_m14ebrri"";  this addPrimaryWeaponItem ""optic_DMS"";  this addWeapon ""hgun_Rook40_F"";    this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_13"";  ";
+					syncId=28;
+					synchronizations[]={49};
+				};
+				class Item5
+				{
+					position[]={3991.3262,5,4018.0044};
+					azimut=-178.85298;
+					special="NONE";
+					id=29;
+					side="EAST";
+					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_C_Driver_1_red"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhsusf_100Rnd_556x45_soft_pouch"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_white_F"";    this addWeapon ""rhs_weap_m249_pip"";  this addWeapon ""hgun_Rook40_F"";    this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_14"";  ";
+					syncId=29;
+					synchronizations[]={49};
+				};
+				class Item6
+				{
+					position[]={3988.0669,5,4018.0244};
+					azimut=-178.853;
+					special="NONE";
+					id=30;
+					side="EAST";
+					vehicle="O_Soldier_GL_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_C_Driver_1_yellow"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_m4009"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""rhs_mag_m576"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""3Rnd_SmokeRed_Grenade_shell"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""rhs_mag_M441_HE"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_yellow_F"";    this addWeapon ""rhs_weap_M320"";  this addWeapon ""hgun_Rook40_F"";    this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_15"";";
+					syncId=30;
+					synchronizations[]={49};
+				};
+				class Item7
+				{
+					position[]={3984.6724,5,4017.9268};
+					azimut=-178.85298;
+					special="NONE";
+					id=31;
+					side="EAST";
+					vehicle="O_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_C_Driver_1_orange"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 7 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_orange_F"";    this addWeapon ""rhs_weap_m4a1"";  this addWeapon ""hgun_Rook40_F"";    this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_16"";  ";
+					syncId=31;
+					synchronizations[]={49};
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={3973.0476,5,2749.7051};
+					special="NONE";
+					id=32;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_2"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""SmokeShellBlue"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  this addHeadgear ""H_RacingHelmet_2_F"";     this addWeapon ""rhs_weap_m4a1_grip"";  this addPrimaryWeaponItem ""rhsusf_acc_compm4"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_17"";";
+					syncId=32;
+					synchronizations[]={48};
+				};
+				class Item1
+				{
+					position[]={3977.8337,5,2749.6826};
+					special="NONE";
+					id=33;
+					side="WEST";
+					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_2"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""SmokeShellBlue"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  this addHeadgear ""H_RacingHelmet_1_blue_F"";     this addWeapon ""rhs_weap_m4a1_grip"";  this addPrimaryWeaponItem ""rhsusf_acc_compm4"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_18"";";
+					syncId=33;
+					synchronizations[]={48};
+				};
+				class Item2
+				{
+					position[]={3988.053,5,2749.8066};
+					special="NONE";
+					id=34;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_blue"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  this addHeadgear ""H_RacingHelmet_1_blue_F"";     this addWeapon ""rhs_weap_m16a4_grip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_20"";";
+					syncId=34;
+					synchronizations[]={48};
+				};
+				class Item3
+				{
+					position[]={3982.564,5,2749.7051};
+					special="NONE";
+					id=35;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_blue"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  this addHeadgear ""H_RacingHelmet_1_blue_F"";     this addWeapon ""rhs_weap_m16a4_grip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_19"";";
+					syncId=35;
+					synchronizations[]={48};
+				};
+				class Item4
+				{
+					position[]={3994.5012,5,2749.6709};
+					special="NONE";
+					id=36;
+					side="WEST";
+					vehicle="B_soldier_M_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_blue"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 5 do {this addItemToVest ""20Rnd_762x51_Mag"";};  this addHeadgear ""H_RacingHelmet_1_black_F"";     this addWeapon ""rhs_weap_m14ebrri"";  this addPrimaryWeaponItem ""optic_DMS"";  this addWeapon ""hgun_Rook40_F""; this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_21"";";
+					syncId=36;
+					synchronizations[]={48};
+				};
+				class Item5
+				{
+					position[]={4002.0759,5,2749.8594};
+					special="NONE";
+					id=37;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_blue"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhsusf_100Rnd_556x45_soft_pouch"";};  this addHeadgear ""H_RacingHelmet_1_white_F"";     this addWeapon ""rhs_weap_m249_pip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_22"";";
+					syncId=37;
+					synchronizations[]={48};
+				};
+				class Item6
+				{
+					position[]={4013.9568,5,2749.979};
+					special="NONE";
+					id=38;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_green"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 7 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green"";};  this addHeadgear ""H_RacingHelmet_1_green_F"";     this addWeapon ""rhs_weap_m4a1"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_24"";";
+					syncId=38;
+					synchronizations[]={48};
+				};
+				class Item7
+				{
+					position[]={4008.939,5,2749.8115};
+					special="NONE";
+					id=39;
+					side="WEST";
+					vehicle="B_Soldier_GL_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  this addItemToVest ""SmokeShellBlue"";  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_m4009"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""rhs_mag_m576"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""3Rnd_SmokeBlue_Grenade_shell"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""rhs_mag_M441_HE"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""H_RacingHelmet_1_F"";     this addWeapon ""rhs_weap_M320"";  this addWeapon ""hgun_Rook40_F"";        this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_23""";
+					syncId=39;
+					synchronizations[]={48};
+				};
+			};
+		};
+		class Item5
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={4012.5337,5,4025.7808};
+					azimut=-178.85298;
+					special="NONE";
+					id=40;
+					side="EAST";
+					vehicle="O_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_4"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 2 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""SmokeShellRed"";};  this addHeadgear ""H_RacingHelmet_4_F"";     this addWeapon ""rhs_weap_m4a1_grip"";  this addPrimaryWeaponItem ""rhsusf_acc_compm4"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_17"";";
+					syncId=40;
+					synchronizations[]={49};
+				};
+				class Item1
+				{
+					position[]={4009.3792,5,4025.7959};
+					azimut=-178.85298;
+					special="NONE";
+					id=41;
+					side="EAST";
+					vehicle="O_Soldier_TL_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_4"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 2 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""SmokeShellRed"";};  this addHeadgear ""H_RacingHelmet_1_red_F"";     this addWeapon ""rhs_weap_m4a1_grip"";  this addPrimaryWeaponItem ""rhsusf_acc_compm4"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_18"";";
+					syncId=41;
+					synchronizations[]={49};
+				};
+				class Item2
+				{
+					position[]={4003.6724,5,4025.7598};
+					azimut=-178.85298;
+					special="NONE";
+					id=42;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_red"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_red_F"";     this addWeapon ""rhs_weap_m16a4_grip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_19"";";
+					syncId=42;
+					synchronizations[]={49};
+				};
+				class Item3
+				{
+					position[]={4000.5459,5,4025.749};
+					azimut=-178.85298;
+					special="NONE";
+					id=43;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_C_Driver_1_red"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_red_F"";     this addWeapon ""rhs_weap_m16a4_grip"";  this addWeapon ""hgun_Rook40_F"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_20"";";
+					syncId=43;
+					synchronizations[]={49};
+				};
+				class Item4
+				{
+					position[]={3995.7195,5,4025.8018};
+					azimut=-178.85298;
+					special="NONE";
+					id=44;
+					side="EAST";
+					vehicle="O_soldier_M_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_C_Driver_1_red"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 5 do {this addItemToVest ""20Rnd_762x51_Mag"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_black_F"";    this addWeapon ""rhs_weap_m14ebrri"";  this addPrimaryWeaponItem ""optic_DMS"";  this addWeapon ""hgun_Rook40_F"";    this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_21"";  ";
+					syncId=44;
+					synchronizations[]={49};
+				};
+				class Item5
+				{
+					position[]={3991.2495,5,4025.7241};
+					azimut=-178.85298;
+					special="NONE";
+					id=45;
+					side="EAST";
+					vehicle="O_Soldier_AR_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_C_Driver_1_red"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhsusf_100Rnd_556x45_soft_pouch"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_white_F"";    this addWeapon ""rhs_weap_m249_pip"";  this addWeapon ""hgun_Rook40_F"";    this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_22"";  ";
+					syncId=45;
+					synchronizations[]={49};
+				};
+				class Item6
+				{
+					position[]={3988.0181,5,4025.7983};
+					azimut=-178.853;
+					special="NONE";
+					id=46;
+					side="EAST";
+					vehicle="O_Soldier_GL_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_C_Driver_1_yellow"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_m4009"";};  for ""_i"" from 1 to 4 do {this addItemToVest ""rhs_mag_m576"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""3Rnd_SmokeRed_Grenade_shell"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""rhs_mag_M441_HE"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_yellow_F"";    this addWeapon ""rhs_weap_M320"";  this addWeapon ""hgun_Rook40_F"";    this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_23"";";
+					syncId=46;
+					synchronizations[]={49};
+				};
+				class Item7
+				{
+					position[]={3984.6541,5,4025.7944};
+					azimut=-178.85298;
+					special="NONE";
+					id=47;
+					side="EAST";
+					vehicle="O_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="if (!isServer) exitWith {}; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    this forceAddUniform ""U_C_Driver_1_orange"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""AGM_Bandage"";};  for ""_i"" from 1 to 2 do {this addItemToUniform ""16Rnd_9x21_Mag"";};  this addVest ""V_Chestrig_blk"";  for ""_i"" from 1 to 7 do {this addItemToVest ""AGM_Morphine"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_Epipen"";};  this addItemToVest ""AGM_Bloodbag"";  for ""_i"" from 1 to 3 do {this addItemToVest ""MiniGrenade"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"";};  this addItemToVest ""SmokeShellRed"";  this addHeadgear ""H_RacingHelmet_1_orange_F"";    this addWeapon ""rhs_weap_m4a1"";  this addWeapon ""hgun_Rook40_F"";    this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_fadak_24"";  ";
+					syncId=47;
+					synchronizations[]={49};
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3562.48,5,2875.54};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="5";
+							parentCls="ModuleTimeMultiplier_F";
+							typeName="TimeMultiplier";
+						};
+					};
+					id=48;
+					side="LOGIC";
+					vehicle="ModuleTimeMultiplier_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3993.4756,5,2754.4873};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="1";
+							parentCls="tfar_ModuleTaskForceRadioFrequencies";
+							typeName="Units";
+						};
+						class Item1
+						{
+							value="[""70.2"",""127.1""]";
+							parentCls="tfar_ModuleTaskForceRadioFrequencies";
+							typeName="PrFreq";
+						};
+						class Item2
+						{
+							value="[""54.2"",""73.1""]";
+							parentCls="tfar_ModuleTaskForceRadioFrequencies";
+							typeName="LrFreq";
+						};
+					};
+					id=49;
+					side="LOGIC";
+					vehicle="tfar_ModuleTaskForceRadioFrequencies";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=48;
+					synchronizations[]={0,1,3,2,4,5,7,6,14,15,13,12,10,11,9,8,32,33,35,34,36,37,39,38};
+				};
+			};
+		};
+		class Item8
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3998.8054,5,4019.8379};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="0";
+							parentCls="tfar_ModuleTaskForceRadioFrequencies";
+							typeName="Units";
+						};
+						class Item1
+						{
+							value="[""71.5"",""163.1""]";
+							parentCls="tfar_ModuleTaskForceRadioFrequencies";
+							typeName="PrFreq";
+						};
+						class Item2
+						{
+							value="[""54.2"",""73.1""]";
+							parentCls="tfar_ModuleTaskForceRadioFrequencies";
+							typeName="LrFreq";
+						};
+					};
+					id=50;
+					side="LOGIC";
+					vehicle="tfar_ModuleTaskForceRadioFrequencies";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=49;
+					synchronizations[]={47,46,45,44,43,42,41,40,24,25,26,27,28,29,30,31,23,22,21,20,19,18,17,16};
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=29;
+		class Item0
+		{
+			position[]={3996.4133,5,3405.7354};
+			id=51;
+			side="EMPTY";
+			vehicle="Land_Hotel";
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={4000.02,5,3419.2349};
+			offsetY=15;
+			id=52;
+			side="EMPTY";
+			vehicle="RHS_M2StaticMG_D";
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={4000.0266,5,3382.9517};
+			azimut=-180.42599;
+			offsetY=15;
+			id=53;
+			side="EMPTY";
+			vehicle="RHS_M2StaticMG_D";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={4040.3101,5,3403.9751};
+			id=54;
+			side="EMPTY";
+			vehicle="Ficus_Bush_3";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={4047.2153,5,3378.1416};
+			id=55;
+			side="EMPTY";
+			vehicle="Rubble_Clutter6";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={4036.8074,5,3418.811};
+			id=56;
+			side="EMPTY";
+			vehicle="Str_WeedBrown_Tall";
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={4066.2549,5,3403.1875};
+			id=57;
+			side="EMPTY";
+			vehicle="Thistle_High_Dead";
+			skill=0.60000002;
+		};
+		class Item7
+		{
+			position[]={4058.9128,5,3385.6636};
+			id=58;
+			side="EMPTY";
+			vehicle="Plant_Green_Small";
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={4047.4924,5,3385.9653};
+			id=59;
+			side="EMPTY";
+			vehicle="Olive_1";
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={4082.0549,5,3388.5591};
+			id=60;
+			side="EMPTY";
+			vehicle="Olive_2";
+			skill=0.60000002;
+		};
+		class Item10
+		{
+			position[]={4047.1399,5,3406.752};
+			id=61;
+			side="EMPTY";
+			vehicle="Oak";
+			skill=0.60000002;
+		};
+		class Item11
+		{
+			position[]={4045.8167,5,3390.5269};
+			id=62;
+			side="EMPTY";
+			vehicle="Poplar";
+			skill=0.60000002;
+		};
+		class Item12
+		{
+			position[]={4058.4224,5,3411.6426};
+			id=63;
+			side="EMPTY";
+			vehicle="Poplar_Dead";
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={4065.499,5,3407.02};
+			id=64;
+			side="EMPTY";
+			vehicle="Land_Hlidac_budka";
+			skill=0.60000002;
+		};
+		class Item14
+		{
+			position[]={4053.3569,5,3387.7383};
+			azimut=320;
+			id=65;
+			side="EMPTY";
+			vehicle="WaterBasin_conc_EP1";
+			skill=0.60000002;
+		};
+		class Item15
+		{
+			position[]={4000.3928,5,3598.3643};
+			azimut=118.69358;
+			id=66;
+			side="EMPTY";
+			vehicle="Land_Scrap_MRAP_01_F";
+			skill=0.60000002;
+		};
+		class Item16
+		{
+			position[]={4000.2603,5,3200.9565};
+			azimut=231.08052;
+			id=67;
+			side="EMPTY";
+			vehicle="Land_Scrap_MRAP_01_F";
+			skill=0.60000002;
+		};
+		class Item17
+		{
+			position[]={3959.9534,5,3393.9888};
+			azimut=-175.48366;
+			id=68;
+			side="EMPTY";
+			vehicle="Ficus_Bush_3";
+			skill=0.60000002;
+		};
+		class Item18
+		{
+			position[]={3955.1021,5,3420.2856};
+			azimut=-175.48366;
+			id=69;
+			side="EMPTY";
+			vehicle="Rubble_Clutter6";
+			skill=0.60000002;
+		};
+		class Item19
+		{
+			position[]={3962.2751,5,3378.9226};
+			azimut=-175.48366;
+			id=70;
+			side="EMPTY";
+			vehicle="Str_WeedBrown_Tall";
+			skill=0.60000002;
+		};
+		class Item20
+		{
+			position[]={3934.1506,5,3396.8174};
+			azimut=-175.48366;
+			id=71;
+			side="EMPTY";
+			vehicle="Thistle_High_Dead";
+			skill=0.60000002;
+		};
+		class Item21
+		{
+			position[]={3942.8547,5,3413.7092};
+			azimut=-175.48366;
+			id=72;
+			side="EMPTY";
+			vehicle="Plant_Green_Small";
+			skill=0.60000002;
+		};
+		class Item22
+		{
+			position[]={3954.2109,5,3412.5076};
+			azimut=-175.48366;
+			id=73;
+			side="EMPTY";
+			vehicle="Olive_1";
+			skill=0.60000002;
+		};
+		class Item23
+		{
+			position[]={3919.5503,5,3412.6406};
+			azimut=-175.48366;
+			id=74;
+			side="EMPTY";
+			vehicle="Olive_2";
+			skill=0.60000002;
+		};
+		class Item24
+		{
+			position[]={3952.9277,5,3391.759};
+			azimut=-175.48366;
+			id=75;
+			side="EMPTY";
+			vehicle="Oak";
+			skill=0.60000002;
+		};
+		class Item25
+		{
+			position[]={3955.5212,5,3407.832};
+			azimut=-175.48366;
+			id=76;
+			side="EMPTY";
+			vehicle="Poplar";
+			skill=0.60000002;
+		};
+		class Item26
+		{
+			position[]={3941.293,5,3387.772};
+			azimut=-175.48366;
+			id=77;
+			side="EMPTY";
+			vehicle="Poplar_Dead";
+			skill=0.60000002;
+		};
+		class Item27
+		{
+			position[]={3934.6062,5,3392.9351};
+			azimut=-175.48366;
+			id=78;
+			side="EMPTY";
+			vehicle="Land_Hlidac_budka";
+			skill=0.60000002;
+		};
+		class Item28
+		{
+			position[]={3948.2263,5,3411.2041};
+			azimut=144.51625;
+			id=79;
+			side="EMPTY";
+			vehicle="WaterBasin_conc_EP1";
+			skill=0.60000002;
+		};
+	};
+	class Markers
+	{
+		items=30;
+		class Item0
+		{
+			position[]={4000.7344,5,3850.4346};
+			name="n";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="SolidBorder";
+			a=195;
+			b=150;
+			drawBorder=1;
+		};
+		class Item1
+		{
+			position[]={4000.7515,5,2949.7944};
+			name="s";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorBlue";
+			fillName="SolidBorder";
+			a=195;
+			b=150;
+			drawBorder=1;
+		};
+		class Item2
+		{
+			position[]={3799.5781,5,3399.9736};
+			name="w";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorGreen";
+			a=300;
+			b=100;
+			angle=90;
+		};
+		class Item3
+		{
+			position[]={4199.9302,5,3400.1924};
+			name="e";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorGreen";
+			a=300;
+			b=100;
+			angle=90;
+		};
+		class Item4
+		{
+			position[]={3950.5007,5,3235.3657};
+			name="scw";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=135;
+			b=45;
+			angle=90;
+		};
+		class Item5
+		{
+			position[]={4049.3467,5,3235.3115};
+			name="sce";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=135;
+			b=45;
+			angle=90;
+		};
+		class Item6
+		{
+			position[]={3950.1277,5,3564.9976};
+			name="ncw";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=135;
+			b=45;
+			angle=90;
+		};
+		class Item7
+		{
+			position[]={4050.1282,5,3565.0479};
+			name="nce";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			a=135;
+			b=45;
+			angle=90;
+		};
+		class Item8
+		{
+			position[]={4000.4773,5,3396.4229};
+			name="ao";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorCIV";
+			fillName="Border";
+			a=310;
+			b=700;
+			drawBorder=1;
+		};
+		class Item9
+		{
+			position[]={3999.739,5,3404.0654};
+			name="Hotel";
+			text="Hôtel des Unité";
+			type="mil_flag";
+			colorName="ColorGreen";
+		};
+		class Item10
+		{
+			position[]={3999.3936,5,3849.7651};
+			name="north";
+			text="Northern Sector";
+			type="mil_objective";
+		};
+		class Item11
+		{
+			position[]={3799.1565,5,3398.0591};
+			name="west";
+			text="Western Sector";
+			type="mil_objective";
+		};
+		class Item12
+		{
+			position[]={4198.5386,5,3399.3398};
+			name="East";
+			text="Eastern Sector";
+			type="mil_objective";
+		};
+		class Item13
+		{
+			position[]={3998.2073,5,2937.2344};
+			name="south";
+			text="Southern Sector";
+			type="mil_objective";
+		};
+		class Item14
+		{
+			position[]={3999.9961,5,3584.9678};
+			name="nms";
+			text="North Main St";
+			type="mil_arrow";
+			angle=180;
+		};
+		class Item15
+		{
+			position[]={4000.0437,5,3182.2739};
+			name="sms";
+			text="South Main St";
+			type="mil_arrow";
+		};
+		class Item16
+		{
+			position[]={3902.0256,5,3680.8052};
+			name="PL";
+			text="Gulden Lane";
+			type="mil_arrow";
+			angle=180;
+		};
+		class Item17
+		{
+			position[]={4098.5166,5,3679.5254};
+			name="PL_1";
+			text="Maunder's Walk";
+			type="mil_arrow";
+			angle=180;
+		};
+		class Item18
+		{
+			position[]={3802.2046,5,3099.9912};
+			name="LR";
+			text="Lightfoot Rd";
+			type="mil_arrow";
+			angle=90;
+		};
+		class Item19
+		{
+			position[]={3902.6677,5,3120.9165};
+			name="RD";
+			text="Restrepo Drive";
+			type="mil_arrow";
+		};
+		class Item20
+		{
+			position[]={4096.9243,5,3119.8262};
+			name="HB_1";
+			text="Heol Bryn";
+			type="mil_arrow";
+		};
+		class Item21
+		{
+			position[]={3803.4004,5,3701.042};
+			name="JP";
+			text="Jon Pass";
+			type="mil_arrow";
+			angle=90;
+		};
+		class Item22
+		{
+			position[]={4199.3115,5,3400.0762};
+			name="ealarm";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorGreen";
+			alpha=0;
+			fillName="Cross";
+			a=100;
+			b=300;
+		};
+		class Item23
+		{
+			position[]={3800.8809,5,3399.0874};
+			name="walarm";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorGreen";
+			alpha=0;
+			fillName="Cross";
+			a=100;
+			b=300;
+		};
+		class Item24
+		{
+			position[]={4000.8342,5,2949.9111};
+			name="salarm";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorBlue";
+			alpha=0;
+			fillName="Cross";
+			a=195;
+			b=150;
+		};
+		class Item25
+		{
+			position[]={4000.3992,5,3850.1157};
+			name="nalarm";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			alpha=0;
+			fillName="Cross";
+			a=195;
+			b=150;
+		};
+		class Item26
+		{
+			position[]={3949.5872,5,3565.3042};
+			name="ncwalarm";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			alpha=0;
+			fillName="Cross";
+			a=135;
+			b=45;
+			angle=90;
+		};
+		class Item27
+		{
+			position[]={4050.1282,5,3565.2827};
+			name="ncealarm";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			alpha=0;
+			fillName="Cross";
+			a=135;
+			b=45;
+			angle=90;
+		};
+		class Item28
+		{
+			position[]={4049.3462,5,3234.7705};
+			name="scealarm";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			alpha=0;
+			fillName="Cross";
+			a=135;
+			b=45;
+			angle=90;
+		};
+		class Item29
+		{
+			position[]={3950.5005,5,3234.8247};
+			name="scwalarm";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			alpha=0;
+			fillName="Cross";
+			a=135;
+			b=45;
+			angle=90;
+		};
+	};
+	class Sensors
+	{
+		items=10;
+		class Item0
+		{
+			position[]={3999.9475,5,3397.3765};
+			a=310;
+			b=700;
+			rectangular=1;
+			activationBy="EAST";
+			activationType="NOT PRESENT";
+			repeating=1;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			expActiv="endmission 'end1';";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={3999.9478,5,3397.377};
+			a=310;
+			b=700;
+			rectangular=1;
+			activationBy="WEST";
+			activationType="NOT PRESENT";
+			repeating=1;
+			interruptable=1;
+			type="END2";
+			age="UNKNOWN";
+			expActiv="endmission 'end2';";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={4200.6357,5,3399.9424};
+			a=100;
+			b=300;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="player in thisList";
+			expActiv="""ealarm"" setMarkerAlpha 1;  ";
+			expDesactiv="""ealarm"" setMarkerAlpha 0;  ";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={3799.9338,5,3400.1851};
+			a=100;
+			b=300;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="player in thisList";
+			expActiv="""walarm"" setMarkerAlpha 1;  ";
+			expDesactiv="""walarm"" setMarkerAlpha 0;  ";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={4000.1936,5,2949.7344};
+			a=195;
+			b=150;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="player in thisList";
+			expActiv="""salarm"" setMarkerAlpha 1;  ";
+			expDesactiv="""salarm"" setMarkerAlpha 0;  ";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={4000.5583,5,3850.396};
+			a=195;
+			b=150;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="player in thisList";
+			expActiv="""nalarm"" setMarkerAlpha 1;  ";
+			expDesactiv="""nalarm"" setMarkerAlpha 0;  ";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={4049.2268,5,3234.563};
+			a=45;
+			b=135;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="player in thisList";
+			expActiv="""scealarm"" setMarkerAlpha 1;  ";
+			expDesactiv="""scealarm"" setMarkerAlpha 0;  ";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={3950.9209,5,3235.2148};
+			a=45;
+			b=135;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="player in thisList";
+			expActiv="""scwalarm"" setMarkerAlpha 1;  ";
+			expDesactiv="""scwalarm"" setMarkerAlpha 0;  ";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={3950.064,5,3565.25};
+			a=45;
+			b=135;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="player in thisList";
+			expActiv="""ncwalarm"" setMarkerAlpha 1;  ";
+			expDesactiv="""ncwalarm"" setMarkerAlpha 0;  ";
+			class Effects
+			{
+			};
+		};
+		class Item9
+		{
+			position[]={4050.1392,5,3564.8403};
+			a=45;
+			b=135;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="player in thisList";
+			expActiv="""ncealarm"" setMarkerAlpha 1;  ";
+			expDesactiv="""ncealarm"" setMarkerAlpha 0;  ";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"map_vr"
+	};
+	addOnsAuto[]=
+	{
+		"map_vr"
+	};
+	randomSeed=7445303;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"map_vr"
+	};
+	addOnsAuto[]=
+	{
+		"map_vr"
+	};
+	randomSeed=2863191;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"map_vr"
+	};
+	addOnsAuto[]=
+	{
+		"map_vr"
+	};
+	randomSeed=11967084;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};

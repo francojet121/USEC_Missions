@@ -1,0 +1,27 @@
+_gen = _this select 0
+_caller = _this select 1
+_id = _this select 2
+{_gen removeAction _id} forEach allUnits
+~3
+0 = [0.95] execVM 'lights.sqf'
+~0.05
+0 = [0] execVM 'lights.sqf'
+~0.05
+0 = [0.95] execVM 'lights.sqf'
+~0.05
+0 = [0] execVM 'lights.sqf'
+~0.05
+0 = [0.95] execVM 'lights.sqf'
+~0.05
+0 = [0] execVM 'lights.sqf'
+~0.2
+0 = [0.95] execVM 'lights.sqf'
+~0.05
+0 = [0] execVM 'lights.sqf'
+~0.1
+0 = [0.95] execVM 'lights.sqf'
+~0.2
+0 = [0] execVM 'lights.sqf'
+~0.1
+0 = [0.95] execVM 'lights.sqf'
+powerlight setdamage 1

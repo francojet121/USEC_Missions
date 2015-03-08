@@ -1,0 +1,2455 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"aia_bootcamp_acr_config",
+		"A3_Structures_F_Civ_Constructions",
+		"A3_Structures_F_Civ_Accessories",
+		"A3_Structures_F_Heli_Civ_Constructions",
+		"AGM_Logistics",
+		"aia_misc3_config",
+		"CAMisc_ACR_ScaffoldingSmall",
+		"A3_Static_F_Gamma",
+		"a3_static_f",
+		"A3_Weapons_F_Ammoboxes",
+		"aia_misc_e_config",
+		"A3_Structures_F_Items_Electronics",
+		"A3_Structures_F_Civ_Lamps",
+		"A3_Structures_F_Heli_Ind_Machines",
+		"A3_Structures_F_Heli_Items_Airport",
+		"ascz_missing_content",
+		"A3_Air_F_Gamma_UAV_02",
+		"A3_Characters_F_Gamma",
+		"yoink_opf_ins",
+		"A3_Modules_F_Misc",
+		"A3_Air_F_Heli_Light_02",
+		"A3_Weapons_F",
+		"A3_Characters_F_Civil",
+		"A3_Structures_F_EPA_Civ_Constructions",
+		"A3_Supplies_F_Heli_Bladders",
+		"A3_Soft_F_Truck",
+		"A3_Air_F_Heli_Heli_Transport_04",
+		"A3_Modules_F_Intel"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"yoink_opf_ins",
+		"A3_Modules_F_Misc",
+		"A3_Characters_F_Civil",
+		"A3_Air_F_Heli_Heli_Transport_04",
+		"A3_Modules_F_Intel",
+		"A3_Structures_F_Civ_Constructions",
+		"CAMisc_ACR_ScaffoldingSmall",
+		"AGM_Logistics",
+		"A3_Weapons_F_Ammoboxes",
+		"aia_misc3_config",
+		"aia_misc_e_config",
+		"A3_Structures_F_Civ_Lamps",
+		"A3_Structures_F_Heli_Ind_Machines",
+		"A3_Structures_F_Heli_Items_Airport",
+		"A3_Air_F_Heli_Light_02",
+		"A3_Weapons_F",
+		"A3_Structures_F_EPA_Civ_Constructions",
+		"A3_Supplies_F_Heli_Bladders",
+		"aia_bootcamp_acr_config"
+	};
+	randomSeed=5726676;
+	class Intel
+	{
+		timeOfChanges=28800;
+		startWeather=0;
+		startWind=0;
+		forecastWeather=0;
+		forecastWind=0;
+		forecastWaves=0;
+		wavesForced=1;
+		windForced=1;
+		year=2019;
+		month=1;
+		day=4;
+		hour=23;
+		minute=55;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=15;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={2258.5085,306.99487,2079.8889};
+					azimut=144.076;
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					markers[]=
+					{
+						"bspawn4",
+						"bspawn1",
+						"bspawn2",
+						"bspawn3"
+					};
+					init="this setGroupId [""RedSky""]; if (!isServer) exitWith{};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_B_CombatUniform_wdl"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""agm_bandage"";};  this addItemToUniform ""AGM_IR_Strobe_Item"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""9Rnd_45ACP_Mag"";};  this addVest ""V_Chestrig_rgr"";  this addItemToVest ""AGM_DefusalKit"";  for ""_i"" from 1 to 5 do {this addItemToVest ""AGM_30Rnd_556x45_Stanag_SD"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""B_IR_Grenade"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""SmokeShell"";};  this addHeadgear ""H_HelmetB_light_snakeskin"";  this addGoggles ""G_Balaclava_oli"";     this addWeapon ""arifle_TRG20_F"";  this addPrimaryWeaponItem ""muzzle_snds_M"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""optic_ACO_grn"";  this addWeapon ""hgun_ACPC2_F"";  this addHandgunItem ""muzzle_snds_acp""; this addBackpack ""B_UAV_01_backpack_F"";    this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""B_UavTerminal"";  this linkItem ""AGM_NVG_Gen1"";  this moveincargo BLUINS";
+					description="RedSky - Squad Lead";
+					syncId=0;
+					synchronizations[]={26,27,28};
+				};
+				class Item1
+				{
+					position[]={2261.1929,307.18494,2074.467};
+					azimut=-391.755;
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="B_Soldier_TL_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.5;
+					init="this setGroupId [""RedSky""];  if (!isServer) exitWith{};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_B_CombatUniform_wdl"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""agm_bandage"";};   this addItemToUniform ""AGM_IR_Strobe_Item"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""9Rnd_45ACP_Mag"";};  this addVest ""V_Chestrig_rgr"";  this addItemToVest ""AGM_DefusalKit"";  for ""_i"" from 1 to 5 do {this addItemToVest ""AGM_30Rnd_556x45_Stanag_SD"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""B_IR_Grenade"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""SmokeShell"";};  this addHeadgear ""H_HelmetB_light_snakeskin"";  this addGoggles ""G_Balaclava_oli"";     this addWeapon ""arifle_TRG20_F"";  this addPrimaryWeaponItem ""muzzle_snds_M"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""optic_ACO_grn"";  this addWeapon ""hgun_ACPC2_F"";  this addHandgunItem ""muzzle_snds_acp"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""B_UavTerminal"";  this linkItem ""AGM_NVG_Gen1"";   this moveincargo BLUINS";
+					description="RedSky - Team Lead";
+					syncId=1;
+					synchronizations[]={26,27,28};
+				};
+				class Item2
+				{
+					position[]={2262.344,307.16809,2075.0681};
+					azimut=-31.5895;
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.44999999;
+					init="this setGroupId [""RedSky""]; if (!isServer) exitWith{};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_B_CombatUniform_wdl"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""agm_bandage"";};   this addItemToUniform ""AGM_IR_Strobe_Item"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""9Rnd_45ACP_Mag"";};  this addVest ""V_Chestrig_rgr"";  this addItemToVest ""AGM_DefusalKit"";  for ""_i"" from 1 to 3 do {this addItemToVest ""B_IR_Grenade"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""SmokeShell"";};  this addItemToVest ""200Rnd_65x39_cased_Box"";  this addHeadgear ""H_HelmetB_light_grass"";  this addGoggles ""G_Balaclava_oli"";     this addWeapon ""LMG_Mk200_F"";  this addPrimaryWeaponItem ""muzzle_snds_H_MG"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addWeapon ""hgun_ACPC2_F"";  this addHandgunItem ""muzzle_snds_acp"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_5"";  this linkItem ""ItemGPS"";  this linkItem ""AGM_NVG_Gen1"";   this moveincargo BLUINS";
+					description="RedSky - Machine Gunner ";
+					syncId=2;
+					synchronizations[]={26,27,28};
+				};
+				class Item3
+				{
+					position[]={2259.967,307.20886,2073.9275};
+					azimut=-38.914501;
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="B_soldier_exp_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.40000001;
+					init="this setGroupId [""RedSky""]; if (!isServer) exitWith{};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_B_CombatUniform_wdl"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""agm_bandage"";};  this addItemToUniform ""AGM_IR_Strobe_Item"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""9Rnd_45ACP_Mag"";};  this addVest ""V_Chestrig_rgr"";  this addItemToVest ""AGM_DefusalKit"";  this addItemToVest ""AGM_Clacker"";  this addItemToVest ""MineDetector"";  for ""_i"" from 1 to 5 do {this addItemToVest ""AGM_30Rnd_556x45_Stanag_SD"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""B_IR_Grenade"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""SmokeShell"";};  this addBackpack ""B_AssaultPack_rgr"";  for ""_i"" from 1 to 3 do {this addItemToBackpack ""DemoCharge_Remote_Mag"";};  for ""_i"" from 1 to 3 do {this addItemToBackpack ""SLAMDirectionalMine_Wire_Mag"";};  this addHeadgear ""H_HelmetB_light"";  this addGoggles ""G_Balaclava_oli"";     this addWeapon ""arifle_TRG20_F"";  this addPrimaryWeaponItem ""muzzle_snds_M"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""optic_ACO_grn"";  this addWeapon ""hgun_ACPC2_F"";  this addHandgunItem ""muzzle_snds_acp"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_4"";  this linkItem ""ItemGPS"";  this linkItem ""AGM_NVG_Gen1"";   this moveincargo BLUINS";
+					description="RedSky - Explosives Technician";
+					syncId=3;
+					synchronizations[]={26,27,28};
+				};
+				class Item4
+				{
+					position[]={2263.5068,307.15118,2075.6726};
+					azimut=-32.172199;
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""RedSky""]; if (!isServer) exitWith{};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_B_CombatUniform_wdl"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""agm_bandage"";}; this addItemToUniform ""AGM_IR_Strobe_Item"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""9Rnd_45ACP_Mag"";};  this addVest ""V_Chestrig_rgr"";  this addItemToVest ""AGM_DefusalKit"";  for ""_i"" from 1 to 6 do {this addItemToVest ""AGM_30Rnd_556x45_Stanag_SD"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""B_IR_Grenade"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""SmokeShell"";};  this addHeadgear ""H_HelmetB_light_black"";  this addGoggles ""G_Balaclava_oli"";     this addWeapon ""arifle_TRG20_F"";  this addPrimaryWeaponItem ""muzzle_snds_M"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""optic_ACO_grn"";  this addWeapon ""hgun_ACPC2_F"";  this addHandgunItem ""muzzle_snds_acp"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_6"";  this linkItem ""ItemGPS"";  this linkItem ""AGM_NVG_Gen1"";   this moveincargo BLUINS";
+					description="RedSky - Rifleman";
+					syncId=4;
+					synchronizations[]={26,27,28};
+				};
+				class Item5
+				{
+					position[]={2257.3486,307.28159,2072.5012};
+					azimut=-32.975899;
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="B_soldier_M_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.44999999;
+					init="this setGroupId [""RedSky""]; if (!isServer) exitWith{};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_B_CombatUniform_wdl"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""agm_bandage"";}; this addItemToUniform ""AGM_IR_Strobe_Item"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""9Rnd_45ACP_Mag"";};  this addVest ""V_Chestrig_rgr"";  this addItemToVest ""AGM_DefusalKit"";  for ""_i"" from 1 to 3 do {this addItemToVest ""B_IR_Grenade"";};  for ""_i"" from 1 to 5 do {this addItemToVest ""20Rnd_762x51_Mag"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""SmokeShell"";};  this addGoggles ""G_Balaclava_oli"";     this addWeapon ""srifle_EBR_F"";  this addPrimaryWeaponItem ""muzzle_snds_B"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""optic_MRCO"";  this addWeapon ""hgun_ACPC2_F"";  this addHandgunItem ""muzzle_snds_acp"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";  this linkItem ""AGM_NVG_Gen1"";   this moveincargo BLUINS";
+					description="RedSky - Marksman";
+					syncId=5;
+					synchronizations[]={26,27,28};
+				};
+				class Item6
+				{
+					position[]={2264.5798,307.13315,2076.3159};
+					azimut=-24.558701;
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""RedSky""]; if (!isServer) exitWith{};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_B_CombatUniform_wdl"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""x39_bandage"";};  this addItemToUniform ""x39_medikit"";  this addItemToUniform ""AGM_IR_Strobe_Item"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""9Rnd_45ACP_Mag"";};  this addVest ""V_Chestrig_rgr"";  this addItemToVest ""AGM_DefusalKit"";  for ""_i"" from 1 to 3 do {this addItemToVest ""B_IR_Grenade"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""SmokeShell"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""30Rnd_9x21_Mag"";};  this addBackpack ""B_AssaultPack_rgr"";  for ""_i"" from 1 to 20 do {this addItemToBackpack ""agm_bandage"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""agm_morphine"";};  for ""_i"" from 1 to 6 do {this addItemToBackpack ""agm_epipen"";};  for ""_i"" from 1 to 3 do {this addItemToBackpack ""agm_bloodbag"";};  this addHeadgear ""H_HelmetSpecB_blk"";  this addGoggles ""G_Balaclava_oli"";     this addWeapon ""SMG_02_F"";  this addPrimaryWeaponItem ""muzzle_snds_L"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""optic_Aco_smg"";  this addWeapon ""hgun_ACPC2_F"";  this addHandgunItem ""muzzle_snds_acp"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_8"";  this linkItem ""ItemGPS"";  this linkItem ""AGM_NVG_Gen1"";   this moveincargo BLUINS";
+					description="RedSky - Combat Medic";
+					syncId=6;
+					synchronizations[]={26,27,28};
+				};
+				class Item7
+				{
+					position[]={2258.6692,307.24432,2073.2302};
+					azimut=-389.93399;
+					special="NONE";
+					id=7;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""RedSky""]; if (!isServer) exitWith{};  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;     this forceAddUniform ""U_B_CombatUniform_wdl"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""agm_bandage"";};    this addItemToUniform ""AGM_IR_Strobe_Item"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""9Rnd_45ACP_Mag"";};  this addVest ""V_Chestrig_rgr"";  this addItemToVest ""AGM_DefusalKit"";  for ""_i"" from 1 to 6 do {this addItemToVest ""AGM_30Rnd_556x45_Stanag_SD"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""B_IR_Grenade"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""AGM_M84"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""SmokeShell"";};  this addHeadgear ""H_HelmetB_light_black"";  this addGoggles ""G_Balaclava_oli"";     this addWeapon ""arifle_TRG20_F"";  this addPrimaryWeaponItem ""muzzle_snds_M"";  this addPrimaryWeaponItem ""acc_pointer_IR"";  this addPrimaryWeaponItem ""optic_ACO_grn"";  this addWeapon ""hgun_ACPC2_F"";  this addHandgunItem ""muzzle_snds_acp"";     this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_7"";  this linkItem ""ItemGPS"";  this linkItem ""AGM_NVG_Gen1"";   this moveincargo BLUINS";
+					description="RedSky - Rifleman";
+					syncId=7;
+					synchronizations[]={26,27,28};
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={2358.1135,331.35583,1164.7764};
+					azimut=121.736;
+					special="NONE";
+					id=8;
+					side="EAST";
+					vehicle="y_leader";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="this setGroupId [""Burning Field - Gold Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Gold Team Lead";
+					syncId=8;
+					synchronizations[]={24,25,29,38};
+				};
+				class Item1
+				{
+					position[]={2356.5251,331.35794,1165.7885};
+					azimut=-236.315;
+					special="NONE";
+					id=9;
+					side="EAST";
+					vehicle="y_rifle";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.5;
+					init="this setGroupId [""Burning Field - Gold Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Gold Team Rifleman";
+					syncId=9;
+					synchronizations[]={24,9,25,29,38};
+				};
+				class Item2
+				{
+					position[]={2357.3406,331.35687,1165.2706};
+					azimut=-230.87199;
+					special="NONE";
+					id=10;
+					side="EAST";
+					vehicle="y_mg";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.44999999;
+					init="this setGroupId [""Burning Field - Gold Team""];if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Gold Team Machine Gunner";
+					syncId=10;
+					synchronizations[]={24,25,29,38};
+				};
+				class Item3
+				{
+					position[]={2355.8176,331.35889,1166.2396};
+					azimut=123.367;
+					special="NONE";
+					id=11;
+					side="EAST";
+					vehicle="y_light";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""Burning Field - Gold Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Gold Team CQB Specialist";
+					syncId=11;
+					synchronizations[]={24,25,29,38};
+				};
+				class Item4
+				{
+					position[]={2357.7336,331.35635,1165.017};
+					azimut=127.26;
+					special="NONE";
+					id=12;
+					side="EAST";
+					vehicle="y_heavy";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""Burning Field - Gold Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Gold Team Heavy Rifleman";
+					syncId=12;
+					synchronizations[]={24,25,29,38};
+				};
+				class Item5
+				{
+					position[]={2356.9346,331.35742,1165.496};
+					azimut=-238.41299;
+					special="NONE";
+					id=13;
+					side="EAST";
+					vehicle="y_medic_c";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.44999999;
+					init="this setGroupId [""Burning Field - Gold Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red""; this addVest ""rhs_vydra_3m"";  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_m4009"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_m576"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""rhs_mag_M441_HE"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_M433_HEDP"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_M585_white"";}; this addBackpack ""B_AssaultPack_rgr"";  for ""_i"" from 1 to 20 do {this addItemToBackpack ""agm_bandage"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""agm_morphine"";};  for ""_i"" from 1 to 6 do {this addItemToBackpack ""agm_epipen"";};  for ""_i"" from 1 to 3 do {this addItemToBackpack ""agm_bloodbag"";};   this addWeapon ""rhs_weap_M320""; this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="GBurning Field - Gold Team Medic";
+					syncId=13;
+					synchronizations[]={24,25,29,38};
+				};
+				class Item6
+				{
+					position[]={2356.1804,331.35843,1166.0037};
+					azimut=122.391;
+					special="NONE";
+					id=14;
+					side="EAST";
+					vehicle="y_mm";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""Burning Field - Gold Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools""; this addPrimaryWeaponItem ""optic_NVS""; for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Gold Team Sniper";
+					syncId=14;
+					synchronizations[]={24,25,29,38};
+				};
+				class Item7
+				{
+					position[]={2355.4214,331.35944,1166.4836};
+					azimut=121.663;
+					special="NONE";
+					id=15;
+					side="EAST";
+					vehicle="y_rifle_c";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""Burning Field - Gold Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Gold Team Rifleman";
+					syncId=15;
+					synchronizations[]={24,25,29,38};
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={2356.6047,331.35785,1162.3269};
+					azimut=121.736;
+					special="NONE";
+					id=16;
+					side="EAST";
+					vehicle="y_leader";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="this setGroupId [""Burning Field - Black Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Black Team Lead";
+					syncId=16;
+					synchronizations[]={24,25,29,38};
+				};
+				class Item1
+				{
+					position[]={2355.0164,331.35995,1163.339};
+					azimut=-236.315;
+					special="NONE";
+					id=17;
+					side="EAST";
+					vehicle="y_rifle";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.5;
+					init="this setGroupId [""Burning Field - Black Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Black Team Rifleman";
+					syncId=17;
+					synchronizations[]={24,25,29,38};
+				};
+				class Item2
+				{
+					position[]={2355.8318,331.35889,1162.8212};
+					azimut=-230.87199;
+					special="NONE";
+					id=18;
+					side="EAST";
+					vehicle="y_mg";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.44999999;
+					init="this setGroupId [""Burning Field - Black Team""];if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Black Team Machine Gunner";
+					syncId=18;
+					synchronizations[]={24,25,29,38};
+				};
+				class Item3
+				{
+					position[]={2354.3088,331.36551,1163.7902};
+					azimut=123.367;
+					special="NONE";
+					id=19;
+					side="EAST";
+					vehicle="y_light";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""Burning Field - Black Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Black Team CQB Specialist";
+					syncId=19;
+					synchronizations[]={24,25,29,38};
+				};
+				class Item4
+				{
+					position[]={2356.2249,331.35837,1162.5675};
+					azimut=127.26;
+					special="NONE";
+					id=20;
+					side="EAST";
+					vehicle="y_heavy";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""Burning Field - Black Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Black Team Heavy Rifleman";
+					syncId=20;
+					synchronizations[]={24,25,29,38};
+				};
+				class Item5
+				{
+					position[]={2355.4307,331.35941,1163.0753};
+					azimut=-238.41299;
+					special="NONE";
+					id=21;
+					side="EAST";
+					vehicle="y_medic_c";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.44999999;
+					init="this setGroupId [""Burning Field - Black Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red""; this addVest ""rhs_vydra_3m"";  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_m4009"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_m576"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""rhs_mag_M441_HE"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_M433_HEDP"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_M585_white"";}; this addBackpack ""B_AssaultPack_rgr"";  for ""_i"" from 1 to 20 do {this addItemToBackpack ""agm_bandage"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""agm_morphine"";};  for ""_i"" from 1 to 6 do {this addItemToBackpack ""agm_epipen"";};  for ""_i"" from 1 to 3 do {this addItemToBackpack ""agm_bloodbag"";};   this addWeapon ""rhs_weap_M320""; this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Black Team Medic";
+					syncId=21;
+					synchronizations[]={24,25,29,38};
+				};
+				class Item6
+				{
+					position[]={2354.6716,331.36261,1163.5542};
+					azimut=122.391;
+					special="NONE";
+					id=22;
+					side="EAST";
+					vehicle="y_mm";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""Burning Field - Black Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools""; this addPrimaryWeaponItem ""optic_NVS""; for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Black Team Sniper";
+					syncId=22;
+					synchronizations[]={24,25,29,38};
+				};
+				class Item7
+				{
+					position[]={2353.9126,331.36868,1164.0342};
+					azimut=121.663;
+					special="NONE";
+					id=23;
+					side="EAST";
+					vehicle="y_rifle_c";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""Burning Field - Black Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Black Team Rifleman";
+					syncId=23;
+					synchronizations[]={24,25,29,38};
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2416.2104,331.35001,1135.5754};
+					class args
+					{
+						items=6;
+						class Item0
+						{
+							value="0";
+							parentCls="ModuleZoneRestriction_F";
+							typeName="Units";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ModuleZoneRestriction_F";
+							typeName="Inverse";
+						};
+						class Item2
+						{
+							value="4";
+							parentCls="ModuleZoneRestriction_F";
+							typeName="WarningTime";
+						};
+						class Item3
+						{
+							value="_this hint ""Get back in the base!""";
+							parentCls="ModuleZoneRestriction_F";
+							typeName="CustomEffectWarning";
+						};
+						class Item4
+						{
+							value="_this hint ""You have to defend the base you coward!""";
+							parentCls="ModuleZoneRestriction_F";
+							typeName="CustomEffectPunishment";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ModuleZoneRestriction_F";
+							typeName="AirExcluded";
+						};
+					};
+					id=24;
+					side="LOGIC";
+					vehicle="ModuleZoneRestriction_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=24;
+					synchronizations[]={40,8,12,10,13,9,14,11,15,16,20,18,21,17,22,19,23,37,33,36,31,35,32,34,30};
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2411.8086,331.35001,1128.9498};
+					class args
+					{
+						items=6;
+						class Item0
+						{
+							value="0";
+							parentCls="ModuleZoneRestriction_F";
+							typeName="Units";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ModuleZoneRestriction_F";
+							typeName="Inverse";
+						};
+						class Item2
+						{
+							value="10";
+							parentCls="ModuleZoneRestriction_F";
+							typeName="WarningTime";
+						};
+						class Item3
+						{
+							value="_this hint ""Return to base or you will be executed!""";
+							parentCls="ModuleZoneRestriction_F";
+							typeName="CustomEffectWarning";
+						};
+						class Item4
+						{
+							value="_this setdammage 1";
+							parentCls="ModuleZoneRestriction_F";
+							typeName="CustomEffectPunishment";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ModuleZoneRestriction_F";
+							typeName="AirExcluded";
+						};
+					};
+					id=25;
+					side="LOGIC";
+					vehicle="ModuleZoneRestriction_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=25;
+					synchronizations[]={41,8,12,10,13,9,14,11,15,16,20,18,21,17,22,19,23,37,33,36,31,35,32,34,30};
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={2186.7417,308.75519,2105.157};
+					id=26;
+					side="CIV";
+					vehicle="C_man_pilot_F";
+					skill=0.60000002;
+					init="if (!isserver) exitWith {};  this moveindriver BLUINS; BLUINS engineon true";
+				};
+				class Item1
+				{
+					presence=0;
+					position[]={2174.7446,311.32681,2082.8435};
+					id=27;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2336.3748,331.73764,1168.2183};
+					azimut=-69.4198;
+					offsetY=1;
+					special="FLY";
+					id=28;
+					side="EAST";
+					vehicle="O_Heli_Transport_04_covered_F";
+					leader=1;
+					skill=0.60000002;
+					text="OPINS";
+				};
+			};
+			class Waypoints
+			{
+				items=3;
+				class Item0
+				{
+					position[]={2335.6895,381.7569,1169.5691};
+					type="HOLD";
+					speed="LIMITED";
+					combat="CARELESS";
+					synchronizations[]={42};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					syncId=39;
+				};
+				class Item1
+				{
+					position[]={2260.853,339.5134,990.1319};
+					speed="NORMAL";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={-4483.5254,209.3,4075.322};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2414.0916,331.35001,1131.0309};
+					class args
+					{
+						items=7;
+						class Item0
+						{
+							value="4";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="BLUOBJ";
+							parentCls="ModuleTaskCreate_F";
+							typeName="ID";
+						};
+						class Item2
+						{
+							value="Attack Rival PMC Premises";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Title";
+						};
+						class Item3
+						{
+							value="Kill all Burning Field Mercenaries on site";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Description";
+						};
+						class Item4
+						{
+							value="ATTACK";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Marker";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Destination";
+						};
+						class Item6
+						{
+							value="ASSIGNED";
+							parentCls="ModuleTaskCreate_F";
+							typeName="State";
+						};
+					};
+					id=29;
+					side="LOGIC";
+					vehicle="ModuleTaskCreate_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item8
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2414.0957,331.35001,1131.0356};
+					class args
+					{
+						items=7;
+						class Item0
+						{
+							value="5";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="OPOBJ";
+							parentCls="ModuleTaskCreate_F";
+							typeName="ID";
+						};
+						class Item2
+						{
+							value="Defend Premises from Rivals";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Title";
+						};
+						class Item3
+						{
+							value="Defend the site from RedSky PMC";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Description";
+						};
+						class Item4
+						{
+							value="DEFEND";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Marker";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Destination";
+						};
+						class Item6
+						{
+							value="ASSIGNED";
+							parentCls="ModuleTaskCreate_F";
+							typeName="State";
+						};
+					};
+					id=30;
+					side="LOGIC";
+					vehicle="ModuleTaskCreate_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item9
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2244.8694,306.20883,2094.7046};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="2";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Subject";
+						};
+						class Item2
+						{
+							value="Situation";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="PresetTitle";
+						};
+						class Item3
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Title";
+						};
+						class Item4
+						{
+							value="Burning Field PMC have been a thorn in our side for too long, taking rival contracts and stealing our clients from under our noses. Their recent activities in Takistan have resulted in some of our best men being killed and injured. Now they too will feel our pain.";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Description";
+						};
+					};
+					id=31;
+					side="LOGIC";
+					vehicle="ModuleCreateDiaryRecord_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=26;
+					synchronizations[]={0,5,7,3,1,2,4,6};
+				};
+			};
+		};
+		class Item10
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2240.1519,306.57391,2090.3428};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="2";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Subject";
+						};
+						class Item2
+						{
+							value="Mission";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="PresetTitle";
+						};
+						class Item3
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Title";
+						};
+						class Item4
+						{
+							value="Burning Field have a site near the airfield where they store weapons, uniforms and ammunition. You are to move in and take that site, killing any merc that stands in your way. Air reconnaissance suggests that the site is lit by outward-facing halogen lamps and a seperate, inner circuit of lamps, similar to those on the road outside the compound. This inner circuit is powered by a generator somewhere on site, but recon couldn't get a good enough look to determine it's exact location. There are also reports that a shipment of supplies has recently arrived on site, so expect the site to be fortified by sandbags, barbed wire and the odd HMG. Burning Field like to run things on the cheap to retain their high profit-margin, so you can expect that their mercs are probably not well equipped, that means they will be unarmoured, with flashlights rather than NVGs. However, our rivals have recently started providing their snipers with NVSs, so don't assume you're hidden just because you're in the dark.";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Description";
+						};
+					};
+					id=32;
+					side="LOGIC";
+					vehicle="ModuleCreateDiaryRecord_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=27;
+					synchronizations[]={5,7,3,1,2,4,6,0};
+				};
+			};
+		};
+		class Item11
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2243.8042,306.41208,2091.8643};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="2";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Subject";
+						};
+						class Item2
+						{
+							value="Execution";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="PresetTitle";
+						};
+						class Item3
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Title";
+						};
+						class Item4
+						{
+							value="After inserting via RedSky Helo, you must move towards the Burning Field site at 024026. Specific execution is left to the discretion of the Squad Lead, but the boss suggests a quiet entrance. Once inside, you have the option of disabling the inner lights by sabotaging their generator.";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Description";
+						};
+					};
+					id=33;
+					side="LOGIC";
+					vehicle="ModuleCreateDiaryRecord_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=28;
+					synchronizations[]={0,5,7,3,1,2,4,6};
+				};
+			};
+		};
+		class Item12
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2356.5691,331.35791,1163.9551};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="2";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Subject";
+						};
+						class Item2
+						{
+							value="Situation";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="PresetTitle";
+						};
+						class Item3
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Title";
+						};
+						class Item4
+						{
+							value="Those bastards at RedSky are looking for retribution for our recent activities in Takistan, and we believe they're looking to hit our storage facility here. We need to make sure they don't succeed and if it means more RedSky corpses, then so be it.";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Description";
+						};
+					};
+					id=34;
+					side="LOGIC";
+					vehicle="ModuleCreateDiaryRecord_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=29;
+					synchronizations[]={15,11,23,19,14,9,22,17,13,10,21,18,12,8,20,16,30,34,32,35,31,36,33,37};
+				};
+			};
+		};
+		class Item13
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={2357.2319,331.35703,1163.575};
+					azimut=121.736;
+					special="NONE";
+					id=35;
+					side="EAST";
+					vehicle="y_leader";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="this setGroupId [""Burning Field - Grey Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Grey Team Lead";
+					syncId=30;
+					synchronizations[]={29,38,25,24};
+				};
+				class Item1
+				{
+					position[]={2355.6436,331.35913,1164.587};
+					azimut=-236.315;
+					special="NONE";
+					id=36;
+					side="EAST";
+					vehicle="y_rifle";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.5;
+					init="this setGroupId [""Burning Field - Grey Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Grey Team Rifleman";
+					syncId=31;
+					synchronizations[]={31,29,38,25,24};
+				};
+				class Item2
+				{
+					position[]={2356.459,331.35803,1164.0692};
+					azimut=-230.87199;
+					special="NONE";
+					id=37;
+					side="EAST";
+					vehicle="y_mg";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.44999999;
+					init="this setGroupId [""Burning Field - Grey Team""];if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Grey Team Machine Gunner";
+					syncId=32;
+					synchronizations[]={29,38,25,24};
+				};
+				class Item3
+				{
+					position[]={2354.936,331.3605,1165.0382};
+					azimut=123.367;
+					special="NONE";
+					id=38;
+					side="EAST";
+					vehicle="y_light";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""Burning Field - Grey Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Grey Team CQB Specialist";
+					syncId=33;
+					synchronizations[]={29,38,25,24};
+				};
+				class Item4
+				{
+					position[]={2356.8521,331.35751,1163.8156};
+					azimut=127.26;
+					special="NONE";
+					id=39;
+					side="EAST";
+					vehicle="y_heavy";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""Burning Field - Grey Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Grey Team Heavy Rifleman";
+					syncId=34;
+					synchronizations[]={29,38,25,24};
+				};
+				class Item5
+				{
+					position[]={2356.0579,331.35858,1164.3234};
+					azimut=-238.41299;
+					special="NONE";
+					id=40;
+					side="EAST";
+					vehicle="y_medic_c";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.44999999;
+					init="this setGroupId [""Burning Field - Grey Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red""; this addVest ""rhs_vydra_3m"";  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_m4009"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_m576"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""rhs_mag_M441_HE"";};  for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_M433_HEDP"";};  for ""_i"" from 1 to 6 do {this addItemToVest ""rhs_mag_M585_white"";}; this addBackpack ""B_AssaultPack_rgr"";  for ""_i"" from 1 to 20 do {this addItemToBackpack ""agm_bandage"";};  for ""_i"" from 1 to 10 do {this addItemToBackpack ""agm_morphine"";};  for ""_i"" from 1 to 6 do {this addItemToBackpack ""agm_epipen"";};  for ""_i"" from 1 to 3 do {this addItemToBackpack ""agm_bloodbag"";};   this addWeapon ""rhs_weap_M320""; this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Grey Team Medic";
+					syncId=35;
+					synchronizations[]={29,38,25,24};
+				};
+				class Item6
+				{
+					position[]={2355.2988,331.35959,1164.8022};
+					azimut=122.391;
+					special="NONE";
+					id=41;
+					side="EAST";
+					vehicle="y_mm";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""Burning Field - Grey Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools""; this addPrimaryWeaponItem ""optic_NVS""; for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Grey Team Sniper";
+					syncId=36;
+					synchronizations[]={29,38,25,24};
+				};
+				class Item7
+				{
+					position[]={2354.5398,331.36368,1165.2822};
+					azimut=121.663;
+					special="NONE";
+					id=42;
+					side="EAST";
+					vehicle="y_rifle_c";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="this setGroupId [""Burning Field - Grey Team""]; if (!isServer) exitWith {};  removeUniform this;      this forceAddUniform ""U_BG_Guerrilla_6_1"";  this addItemToUniform ""AGM_MapTools"";  for ""_i"" from 1 to 4 do {this addItemToUniform ""AGM_HandFlare_White"";};  this addItemToUniform ""AGM_HandFlare_Red"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemGPS"";    [this,""GryffinRegiment""] call bis_fnc_setUnitInsignia;  ";
+					description="Burning Field - Grey Team Rifleman";
+					syncId=37;
+					synchronizations[]={29,38,25,24};
+				};
+			};
+		};
+		class Item14
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2355.3342,331.35953,1165.2759};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="2";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Subject";
+						};
+						class Item2
+						{
+							value="Mission";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="PresetTitle";
+						};
+						class Item3
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Title";
+						};
+						class Item4
+						{
+							value="Defend the storage facility from RedSky Mercenaries. You have been provided with 2 HMGs, 12 Sandbag Construction Kits and 2 Razor Wire sets, fortify the site as much as possible before RedSky arrive. In regards to our rival, they are well equipped so expect them to be packing NVGs and Suppressed Weapons. They may also have their hands on a Quadrocopter UAV, as they've been seen using them frequently in their recent operations.";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Description";
+						};
+					};
+					id=43;
+					side="LOGIC";
+					vehicle="ModuleCreateDiaryRecord_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=38;
+					synchronizations[]={8,12,10,13,9,14,11,15,23,19,22,17,21,18,20,16,30,34,32,35,31,36,33,37};
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=96;
+		class Item0
+		{
+			position[]={2411.3501,331.35001,1111.5686};
+			azimut=34.333084;
+			offsetY=3;
+			id=44;
+			side="EMPTY";
+			vehicle="Land_Pallet_F";
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={2419.0154,331.35001,1117.5403};
+			azimut=-56.898899;
+			offsetY=2.6500001;
+			id=45;
+			side="EMPTY";
+			vehicle="FootBridge_0_ACR";
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={2409.8218,331.35001,1124.2113};
+			azimut=-56.898899;
+			offsetY=5.0300002;
+			id=46;
+			side="EMPTY";
+			vehicle="FootBridge_0_ACR";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={2415.467,331.35001,1120.6185};
+			azimut=34.333099;
+			offsetY=5.6999998;
+			id=47;
+			side="EMPTY";
+			vehicle="Land_Pallet_F";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={2402.5742,331.35001,1129.1427};
+			azimut=-236.11501;
+			offsetY=2.55;
+			id=48;
+			side="EMPTY";
+			vehicle="FootBridge_30_ACR";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={2404.2119,331.35001,1138.925};
+			azimut=-146.44;
+			id=49;
+			side="EMPTY";
+			vehicle="FootBridge_30_ACR";
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={2429.9746,331.35001,1113.8389};
+			azimut=-122.062;
+			offsetY=2.54;
+			id=50;
+			side="EMPTY";
+			vehicle="FootBridge_0_ACR";
+			skill=0.60000002;
+		};
+		class Item7
+		{
+			position[]={2428.9192,331.35001,1120.8149};
+			azimut=-56.898899;
+			offsetY=5.0999999;
+			id=51;
+			side="EMPTY";
+			vehicle="FootBridge_0_ACR";
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={2432.8423,331.35001,1116.2133};
+			azimut=34.333099;
+			offsetY=3.0999999;
+			id=52;
+			side="EMPTY";
+			vehicle="Land_Pallet_F";
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={2432.2,331.35001,1118.6448};
+			azimut=34.333099;
+			offsetY=6;
+			id=53;
+			side="EMPTY";
+			vehicle="Land_Pallet_F";
+			skill=0.60000002;
+		};
+		class Item10
+		{
+			position[]={2428.2988,331.35001,1125.6001};
+			azimut=34.0089;
+			offsetY=5.0999999;
+			id=54;
+			side="EMPTY";
+			vehicle="FootBridge_0_ACR";
+			skill=0.60000002;
+		};
+		class Item11
+		{
+			position[]={2423.054,331.35001,1132.8838};
+			azimut=-56.898899;
+			offsetY=5.0700002;
+			id=55;
+			side="EMPTY";
+			vehicle="FootBridge_0_ACR";
+			skill=0.60000002;
+		};
+		class Item12
+		{
+			position[]={2417.7544,331.35001,1137.8575};
+			azimut=34.333099;
+			offsetY=5.9000001;
+			id=56;
+			side="EMPTY";
+			vehicle="Land_Pallet_F";
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={2432.1997,331.35001,1118.6445};
+			azimut=34.333099;
+			offsetY=6.3000002;
+			id=57;
+			side="EMPTY";
+			vehicle="Land_Pallet_F";
+			skill=0.60000002;
+		};
+		class Item14
+		{
+			position[]={2359.2705,331.35431,1152.197};
+			azimut=33.8605;
+			id=58;
+			side="EMPTY";
+			vehicle="AGM_SandbagBarrier_Crate";
+			skill=0.60000002;
+		};
+		class Item15
+		{
+			position[]={2359.7068,331.35373,1152.7838};
+			azimut=33.8605;
+			id=59;
+			side="EMPTY";
+			vehicle="AGM_SandbagBarrier_Crate";
+			skill=0.60000002;
+		};
+		class Item16
+		{
+			position[]={2362.9124,331.35001,1151.7294};
+			azimut=33.8605;
+			id=60;
+			side="EMPTY";
+			vehicle="AGM_SandbagBarrier_Crate";
+			skill=0.60000002;
+		};
+		class Item17
+		{
+			position[]={2360.1021,331.35321,1153.4155};
+			azimut=33.8605;
+			id=61;
+			side="EMPTY";
+			vehicle="AGM_SandbagBarrier_Crate";
+			skill=0.60000002;
+		};
+		class Item18
+		{
+			position[]={2362.0667,331.35059,1150.4406};
+			azimut=33.8605;
+			offsetY=0.60000002;
+			id=62;
+			side="EMPTY";
+			vehicle="AGM_SandbagBarrier_Crate";
+			skill=0.60000002;
+		};
+		class Item19
+		{
+			position[]={2362.4956,331.35001,1151.0509};
+			azimut=33.8605;
+			id=63;
+			side="EMPTY";
+			vehicle="AGM_SandbagBarrier_Crate";
+			skill=0.60000002;
+		};
+		class Item20
+		{
+			position[]={2362.0811,331.35056,1150.4452};
+			azimut=33.8605;
+			id=64;
+			side="EMPTY";
+			vehicle="AGM_SandbagBarrier_Crate";
+			skill=0.60000002;
+		};
+		class Item21
+		{
+			position[]={2362.5044,331.35001,1151.0453};
+			azimut=33.8605;
+			offsetY=0.60000002;
+			id=65;
+			side="EMPTY";
+			vehicle="AGM_SandbagBarrier_Crate";
+			skill=0.60000002;
+		};
+		class Item22
+		{
+			position[]={2362.9072,331.35001,1151.7125};
+			azimut=33.8605;
+			offsetY=0.60000002;
+			id=66;
+			side="EMPTY";
+			vehicle="AGM_SandbagBarrier_Crate";
+			skill=0.60000002;
+		};
+		class Item23
+		{
+			position[]={2360.0999,331.35321,1153.4218};
+			azimut=33.8605;
+			offsetY=0.60000002;
+			id=67;
+			side="EMPTY";
+			vehicle="AGM_SandbagBarrier_Crate";
+			skill=0.60000002;
+		};
+		class Item24
+		{
+			position[]={2359.7034,331.35373,1152.7896};
+			azimut=33.8605;
+			offsetY=0.60000002;
+			id=68;
+			side="EMPTY";
+			vehicle="AGM_SandbagBarrier_Crate";
+			skill=0.60000002;
+		};
+		class Item25
+		{
+			position[]={2359.2656,331.35431,1152.1918};
+			azimut=33.8605;
+			offsetY=0.60000002;
+			id=69;
+			side="EMPTY";
+			vehicle="AGM_SandbagBarrier_Crate";
+			skill=0.60000002;
+		};
+		class Item26
+		{
+			position[]={2366.7415,331.35001,1150.189};
+			azimut=300;
+			id=70;
+			side="EMPTY";
+			vehicle="AGM_RazorWire_Crate";
+			skill=0.60000002;
+		};
+		class Item27
+		{
+			position[]={2365.8372,331.35001,1148.9652};
+			azimut=300;
+			id=71;
+			side="EMPTY";
+			vehicle="AGM_RazorWire_Crate";
+			skill=0.60000002;
+		};
+		class Item28
+		{
+			position[]={2357.3899,331.35681,1154.2147};
+			azimut=-57.1376;
+			special="NONE";
+			id=72;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			skill=0.60000002;
+			text="BAGS";
+			init="if (!isServer) exitWith {}; clearWeaponCargoGlobal this; clearMagazineCargoGlobal    this;   clearItemCargoGlobal this; this addbackpackcargoglobal  [""I_HMG_01_support_high_F"",2];  this addbackpackcargoglobal  [""I_HMG_01_high_weapon_F"",2]; this addItemCargoGlobal [""acc_flashlight"",16]";
+		};
+		class Item29
+		{
+			position[]={2353.7937,331.36963,1168.8987};
+			azimut=-30.12216;
+			id=73;
+			side="EMPTY";
+			vehicle="Land_CncBlock_D";
+			skill=0.60000002;
+		};
+		class Item30
+		{
+			position[]={2346.9688,331.43631,1167.3287};
+			azimut=-104.08187;
+			id=74;
+			side="EMPTY";
+			vehicle="Land_CncBlock_Stripes";
+			skill=0.60000002;
+		};
+		class Item31
+		{
+			position[]={2325.1023,331.84781,1222.5306};
+			azimut=451.27045;
+			id=75;
+			side="EMPTY";
+			vehicle="Land_Ind_IlluminantTower";
+			skill=0.60000002;
+		};
+		class Item32
+		{
+			position[]={2363.1775,331.35001,1164.0839};
+			azimut=-55.637005;
+			id=76;
+			side="EMPTY";
+			vehicle="Land_radar_EP1";
+			skill=0.60000002;
+		};
+		class Item33
+		{
+			position[]={2327.032,332.07779,1178.0032};
+			azimut=-523.47211;
+			id=77;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item34
+		{
+			position[]={2296.7017,333.6723,1195.6084};
+			azimut=-127.42802;
+			id=78;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item35
+		{
+			position[]={2290.7227,335.35703,1168.1959};
+			azimut=-270.60922;
+			id=79;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item36
+		{
+			position[]={2289.6577,331.18579,1226.6702};
+			azimut=-267.59683;
+			id=80;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item37
+		{
+			position[]={2287.1729,328.10852,1256.7666};
+			azimut=-129.06082;
+			id=81;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item38
+		{
+			position[]={2255.9053,328.55203,1274.9293};
+			azimut=-335.05118;
+			id=82;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item39
+		{
+			position[]={2295.8193,336.90756,1119.5194};
+			azimut=-85.739769;
+			id=83;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item40
+		{
+			position[]={2283.595,338.94443,996.35748};
+			azimut=-76.809219;
+			id=84;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item41
+		{
+			position[]={2289.7732,338.26053,1058.5887};
+			azimut=-270.21545;
+			id=85;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item42
+		{
+			position[]={2508.5032,331.35001,1128.1934};
+			azimut=170.15358;
+			id=86;
+			side="EMPTY";
+			vehicle="Land_LampHalogen_F";
+			skill=0.60000002;
+		};
+		class Item43
+		{
+			position[]={2393.3901,331.35001,1141.8981};
+			azimut=-107.325;
+			id=87;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item44
+		{
+			position[]={2404.0457,331.35001,1155.8765};
+			azimut=-159.869;
+			id=88;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item45
+		{
+			position[]={2386.29,331.35001,1125.6782};
+			azimut=-323.035;
+			id=89;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item46
+		{
+			position[]={2452.2742,331.44553,1041.4583};
+			azimut=262.53818;
+			id=90;
+			side="EMPTY";
+			vehicle="Land_LampHalogen_F";
+			skill=0.60000002;
+		};
+		class Item47
+		{
+			position[]={2335.6436,332.49762,1119.3887};
+			azimut=344.29996;
+			id=91;
+			side="EMPTY";
+			vehicle="Land_LampHalogen_F";
+			skill=0.60000002;
+		};
+		class Item48
+		{
+			position[]={2379.5176,331.35001,1185.6626};
+			azimut=437.18045;
+			id=92;
+			side="EMPTY";
+			vehicle="Land_LampHalogen_F";
+			skill=0.60000002;
+		};
+		class Item49
+		{
+			position[]={2412.9705,331.35001,1094.7891};
+			azimut=-325.63199;
+			id=93;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item50
+		{
+			position[]={2412.8628,331.35001,1141.1776};
+			azimut=-182.80099;
+			id=94;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item51
+		{
+			position[]={2393.8523,331.35001,1107.6943};
+			azimut=-270.21399;
+			id=95;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item52
+		{
+			position[]={2437.8953,331.35001,1176.2805};
+			azimut=74.12928;
+			id=96;
+			side="EMPTY";
+			vehicle="Land_LampHalogen_F";
+			skill=0.60000002;
+		};
+		class Item53
+		{
+			position[]={2472.0371,331.35001,1153.7594};
+			azimut=121.63488;
+			id=97;
+			side="EMPTY";
+			vehicle="Land_LampHalogen_F";
+			skill=0.60000002;
+		};
+		class Item54
+		{
+			position[]={2473.5598,331.35001,1073.0531};
+			azimut=214.37401;
+			id=98;
+			side="EMPTY";
+			vehicle="Land_LampHalogen_F";
+			skill=0.60000002;
+		};
+		class Item55
+		{
+			position[]={2492.3037,331.35001,1103.277};
+			azimut=216.77827;
+			id=99;
+			side="EMPTY";
+			vehicle="Land_LampHalogen_F";
+			skill=0.60000002;
+		};
+		class Item56
+		{
+			position[]={2427.5168,331.40536,1057.7152};
+			azimut=304.97095;
+			id=100;
+			side="EMPTY";
+			vehicle="Land_LampHalogen_F";
+			skill=0.60000002;
+		};
+		class Item57
+		{
+			position[]={2378.4683,331.42902,1090.3346};
+			azimut=-52.562424;
+			id=101;
+			side="EMPTY";
+			vehicle="Land_LampHalogen_F";
+			skill=0.60000002;
+		};
+		class Item58
+		{
+			position[]={2394.292,331.35001,1127.804};
+			azimut=213.08501;
+			id=102;
+			side="EMPTY";
+			vehicle="Land_DieselGroundPowerUnit_01_F";
+			skill=0.60000002;
+			text="generator";
+			markers[]=
+			{
+				"pos2",
+				"pos1",
+				"pos3"
+			};
+			init="_genAct = generator addAction [""Sabotage Generator"", ""generatoroff.sqs"",[],1,false,true,"""",""_this distance _target < 2.3""];  ";
+		};
+		class Item59
+		{
+			position[]={2395.2419,331.35001,1129.4733};
+			azimut=121.38;
+			id=103;
+			side="EMPTY";
+			vehicle="PortableHelipadLight_01_red_F";
+			skill=0.60000002;
+			text="powerlight";
+			init="this attachto [generator, [0,0,0.6] ];";
+		};
+		class Item60
+		{
+			position[]={2429.5342,331.35001,1134.2335};
+			azimut=-272.24197;
+			id=104;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item61
+		{
+			position[]={2293.5808,338.77029,879.99188};
+			azimut=-121.61584;
+			id=105;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item62
+		{
+			position[]={2263.9878,339.37021,934.45221};
+			azimut=-269.79886;
+			id=106;
+			side="EMPTY";
+			vehicle="Land_LampShabby_F";
+			skill=0.60000002;
+		};
+		class Item63
+		{
+			position[]={2229.4031,307.74591,2077.9368};
+			azimut=-249.048;
+			offsetY=1;
+			special="FLY";
+			id=107;
+			side="EMPTY";
+			vehicle="O_Heli_Light_02_unarmed_F";
+			skill=0.60000002;
+			fuel=0;
+			ammo=0;
+			text="BLUINS";
+			markers[]=
+			{
+				"blusp4",
+				"blusp1",
+				"blusp2",
+				"blusp3"
+			};
+			init="if (!isServer) exitwith {}; ";
+		};
+		class Item64
+		{
+			position[]={2237.3311,307.20935,2081.7056};
+			azimut=233.03749;
+			special="NONE";
+			id=108;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item65
+		{
+			position[]={2225.5869,307.52576,2084.0808};
+			azimut=-205.82571;
+			special="NONE";
+			id=109;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item66
+		{
+			position[]={2222.6843,308.27087,2074.0085};
+			azimut=433.92422;
+			special="NONE";
+			id=110;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item67
+		{
+			position[]={2235.9673,307.88312,2070.094};
+			azimut=-34.543659;
+			special="NONE";
+			id=111;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item68
+		{
+			position[]={2230.9973,307.69708,2077.7029};
+			azimut=144.076;
+			special="NONE";
+			id=112;
+			side="EMPTY";
+			vehicle="placed_chemlight_green";
+			leader=1;
+			skill=0.5;
+		};
+		class Item69
+		{
+			position[]={1055.6063,334.88528,661.28888};
+			azimut=233.03749;
+			special="NONE";
+			id=113;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item70
+		{
+			position[]={1043.8622,334.72949,663.66412};
+			azimut=-205.82571;
+			special="NONE";
+			id=114;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item71
+		{
+			position[]={1040.9596,334.27881,653.59186};
+			azimut=433.92422;
+			special="NONE";
+			id=115;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item72
+		{
+			position[]={1054.2426,334.46887,649.67731};
+			azimut=-34.543659;
+			special="NONE";
+			id=116;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item73
+		{
+			position[]={1049.2726,334.62845,657.28619};
+			azimut=144.076;
+			special="NONE";
+			id=117;
+			side="EMPTY";
+			vehicle="placed_chemlight_green";
+			leader=1;
+			skill=0.5;
+		};
+		class Item74
+		{
+			position[]={2814.1082,319.15067,170.29022};
+			azimut=233.03749;
+			special="NONE";
+			id=118;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item75
+		{
+			position[]={2802.364,318.89905,172.66547};
+			azimut=-205.82571;
+			special="NONE";
+			id=119;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item76
+		{
+			position[]={2799.4614,318.71295,162.5932};
+			azimut=433.92422;
+			special="NONE";
+			id=120;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item77
+		{
+			position[]={2812.7444,318.97034,158.67865};
+			azimut=-34.543659;
+			special="NONE";
+			id=121;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item78
+		{
+			position[]={2807.7744,318.94662,166.28754};
+			azimut=144.076;
+			special="NONE";
+			id=122;
+			side="EMPTY";
+			vehicle="placed_chemlight_green";
+			leader=1;
+			skill=0.5;
+		};
+		class Item79
+		{
+			position[]={3655.1177,367.39557,1201.7876};
+			azimut=233.03749;
+			special="NONE";
+			id=123;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item80
+		{
+			position[]={3643.3735,366.95401,1204.1628};
+			azimut=-205.82571;
+			special="NONE";
+			id=124;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item81
+		{
+			position[]={3640.4709,366.35107,1194.0906};
+			azimut=433.92422;
+			special="NONE";
+			id=125;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item82
+		{
+			position[]={3653.7539,366.77124,1190.176};
+			azimut=-34.543659;
+			special="NONE";
+			id=126;
+			side="EMPTY";
+			vehicle="placed_chemlight_blue";
+			leader=1;
+			skill=0.5;
+		};
+		class Item83
+		{
+			position[]={3648.7839,366.92731,1197.7849};
+			azimut=144.076;
+			special="NONE";
+			id=127;
+			side="EMPTY";
+			vehicle="placed_chemlight_green";
+			leader=1;
+			skill=0.5;
+		};
+		class Item84
+		{
+			position[]={2266.2368,307.10507,2077.6289};
+			azimut=15;
+			offsetY=0.80000001;
+			id=128;
+			side="EMPTY";
+			vehicle="Land_PortableLight_double_F";
+			skill=0.60000002;
+		};
+		class Item85
+		{
+			position[]={2274.5837,307.35168,2065.5339};
+			azimut=87.447701;
+			offsetY=0.61000001;
+			id=129;
+			side="EMPTY";
+			vehicle="Land_PortableLight_double_F";
+			skill=0.60000002;
+		};
+		class Item86
+		{
+			position[]={2767.6196,318.46692,190.79486};
+			azimut=250;
+			offsetY=0.44999999;
+			id=130;
+			side="EMPTY";
+			vehicle="Land_PortableLight_double_F";
+			skill=0.60000002;
+		};
+		class Item87
+		{
+			position[]={2772.4463,318.6694,202.82205};
+			azimut=317.465;
+			offsetY=0.25;
+			id=131;
+			side="EMPTY";
+			vehicle="Land_PortableLight_double_F";
+			skill=0.60000002;
+		};
+		class Item88
+		{
+			position[]={1090.552,334.61078,646.58722};
+			azimut=10.6304;
+			offsetY=0.47;
+			id=132;
+			side="EMPTY";
+			vehicle="Land_PortableLight_double_F";
+			skill=0.60000002;
+		};
+		class Item89
+		{
+			position[]={1101.2295,334.31708,635.48846};
+			azimut=67.705704;
+			offsetY=0.73000002;
+			id=133;
+			side="EMPTY";
+			vehicle="Land_PortableLight_double_F";
+			skill=0.60000002;
+		};
+		class Item90
+		{
+			position[]={3678.9807,368.42407,1203.2844};
+			azimut=352.44901;
+			offsetY=0.050000001;
+			id=134;
+			side="EMPTY";
+			vehicle="Land_PortableLight_single_F";
+			skill=0.60000002;
+		};
+		class Item91
+		{
+			position[]={3688.3699,368.52832,1197.4576};
+			azimut=76.4123;
+			offsetY=0.039999999;
+			id=135;
+			side="EMPTY";
+			vehicle="Land_PortableLight_single_F";
+			skill=0.60000002;
+		};
+		class Item92
+		{
+			presence=0;
+			position[]={3681.6169,368.22598,1196.6693};
+			azimut=-329.21201;
+			id=136;
+			side="EMPTY";
+			vehicle="ContainmentArea_01_forest_F";
+			skill=0.60000002;
+		};
+		class Item93
+		{
+			position[]={3684.1985,368.00366,1190.0225};
+			azimut=155;
+			offsetY=0.039999999;
+			id=137;
+			side="EMPTY";
+			vehicle="Land_PortableLight_single_F";
+			skill=0.60000002;
+		};
+		class Item94
+		{
+			position[]={3674.3457,367.90213,1195.78};
+			azimut=245;
+			offsetY=0.039999999;
+			id=138;
+			side="EMPTY";
+			vehicle="Land_PortableLight_single_F";
+			skill=0.60000002;
+		};
+		class Item95
+		{
+			presence=0;
+			position[]={3681.8394,368.22269,1196.4214};
+			azimut=76.4123;
+			id=139;
+			side="EMPTY";
+			vehicle="Land_CamoNetB_NATO";
+			skill=0.60000002;
+		};
+	};
+	class Markers
+	{
+		items=9;
+		class Item0
+		{
+			position[]={2406.5051,331.35001,1126.3085};
+			name="lightmarkertest";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={2397.9409,331.35001,1124.8669};
+			name="pos1";
+			type="Empty";
+			angle=30.920099;
+		};
+		class Item2
+		{
+			position[]={2434.8489,331.35001,1118.8772};
+			name="pos2";
+			type="Empty";
+			angle=28.38159;
+		};
+		class Item3
+		{
+			position[]={2394.2236,331.35001,1127.6437};
+			name="pos3";
+			type="Empty";
+			angle=30.920099;
+		};
+		class Item4
+		{
+			position[]={2414.0881,331.35001,1131.0388};
+			name="Base";
+			text="Burning Field PMC Storage Facility";
+			type="mil_objective";
+			colorName="ColorRed";
+		};
+		class Item5
+		{
+			position[]={3649.353,366.92374,1197.174};
+			name="blusp1";
+			type="Empty";
+		};
+		class Item6
+		{
+			position[]={2807.7256,318.94702,166.42664};
+			name="blusp2";
+			type="Empty";
+		};
+		class Item7
+		{
+			position[]={1049.3582,334.63303,657.35895};
+			name="blusp3";
+			type="Empty";
+		};
+		class Item8
+		{
+			position[]={2230.6892,307.70694,2077.7419};
+			name="blusp4";
+			type="Empty";
+		};
+	};
+	class Sensors
+	{
+		items=7;
+		class Item0
+		{
+			position[]={2422.4355,331.35001,1123.959};
+			a=72;
+			b=54;
+			angle=33.4603;
+			rectangular=1;
+			activationBy="EAST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			class Effects
+			{
+			};
+			synchronizations[]={24};
+			syncId=40;
+		};
+		class Item1
+		{
+			position[]={2420.7554,331.35001,1125.0941};
+			a=78;
+			b=57;
+			angle=-146.933;
+			rectangular=1;
+			activationBy="EAST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			class Effects
+			{
+			};
+			synchronizations[]={25};
+			syncId=41;
+		};
+		class Item2
+		{
+			position[]={-4476.1396,209.3,4113.0176};
+			a=500;
+			b=500;
+			activationBy="VEHICLE";
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=28;
+			expActiv=" {deleteVehicle _x} forEach (crew OPINS); deleteVehicle OPINS;  ";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={2343.2053,331.54453,1159.5715};
+			activationBy="EAST";
+			timeoutMin=8;
+			timeoutMid=8;
+			timeoutMax=8;
+			type="SWITCH";
+			age="UNKNOWN";
+			class Effects
+			{
+			};
+			synchronizations[]={39};
+			syncId=42;
+		};
+		class Item4
+		{
+			position[]={2420.7563,331.35001,1121.0541};
+			a=600;
+			b=600;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv=" {deleteVehicle _x} forEach (crew BLUINS); deleteVehicle BLUINS;  ";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={2420.655,331.35001,1121.2826};
+			a=2000;
+			b=2000;
+			activationBy="EAST";
+			activationType="NOT PRESENT";
+			repeating=1;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			expActiv="endmission 'end1';";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={2110.835,338.9559,1382.8627};
+			a=2000;
+			b=2000;
+			activationBy="WEST";
+			activationType="NOT PRESENT";
+			repeating=1;
+			interruptable=1;
+			type="END2";
+			age="UNKNOWN";
+			expActiv="endmission 'end2'";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"aia_bootcamp_acr_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_bootcamp_acr_config"
+	};
+	randomSeed=14070345;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.25;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.25;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"aia_bootcamp_acr_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_bootcamp_acr_config"
+	};
+	randomSeed=10443050;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.25;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.25;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"aia_bootcamp_acr_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_bootcamp_acr_config"
+	};
+	randomSeed=14816559;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.25;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.25;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
