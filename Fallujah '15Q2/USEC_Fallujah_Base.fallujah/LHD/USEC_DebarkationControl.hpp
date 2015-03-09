@@ -241,7 +241,7 @@ class USEC_DebarkationControl {
 			w = 0.990000;
 			h = 0.659000;
 			shown = 0;
-			text = "images\picture_lha_ca_fallu.paa";
+			text = "usec_resources\images\LHD\picture_lha_ca_fallu.paa";
 		};
 		
 		

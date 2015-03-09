@@ -6991,7 +6991,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="lhdProjectorScreen";
-			init="this enableSimulation false; lhdProjectorScreen setObjectTexture [0, ""images\usec_roster.paa""]; ";
+			init="this enableSimulation false; lhdProjectorScreen setObjectTexture [0, ""usec_resources\images\USEC\usec_roster.paa""]; ";
 		};
 		class Item197
 		{
