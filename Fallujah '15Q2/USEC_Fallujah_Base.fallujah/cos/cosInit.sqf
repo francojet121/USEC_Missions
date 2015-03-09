@@ -16,7 +16,7 @@ if (isNil "headlessClient3") then {
   diag_log "You must ADD a object named 'headlessClient3'";
   player sideChat "You must ADD a object named 'headlessClient3'";
 } else {
-if (!isServer && !hasInterface)) then {
+if (!isServer && !hasInterface) then {
 If (!isNil ("COScomplete")) then {diag_log "Check your call. COS was called twice!";}else{
 
 COS_distance=500;//Set spawn distance
