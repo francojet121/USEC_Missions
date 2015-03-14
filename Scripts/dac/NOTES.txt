@@ -1,0 +1,15 @@
+Changed
+--------------------
+* Config_Creator - Names of units changed to the names used in template 070
+* Config_Creator - Notes to what each set of defaults handles
+* AI_Init	 - DAC_Radio_Dist changed. Removed _skillgroup as a modifier.  Increases radio call range
+* AI_Init	 - DAC_Alert_Dist changed. Increased auto-help range to a base of 400m from 100m.
+* AI_Init	 - DAC_Radio_Time changed. Fixed time of 10 seconds per radio call
+* AI_Init	 - DAC_Radio_Count changed. Increased number of squads that can be called for help to  10.
+* Config_Units	 - Removed AA and AT from available units list.  Rifleman AT (light AT) still available.
+* Config_Markers - Set Case 1 variables to maximum detail for development.
+
+To Do
+--------------------
+* Config_Creator - Update names of units to the names used in template 080
+* Update marker settings to 'Dev'.
