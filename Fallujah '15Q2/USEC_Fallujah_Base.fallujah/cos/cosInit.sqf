@@ -19,6 +19,8 @@ if (isNil "headlessClient3") then {
 if (!isServer && !hasInterface) then {
 If (!isNil ("COScomplete")) then {diag_log "Check your call. COS was called twice!";}else{
 
+hint "If you see this, tell JJ and tell him this is number 1!";
+
 COS_distance=500;//Set spawn distance
 _aerielActivation=false;// Set if flying units can activate civilian Zones
 
@@ -81,38 +83,38 @@ if (({_name==_x} count blackListTowns)>0 OR (_name == "")) then {}else{
 
 		
 // Customise population by number of houses
-_randomisation=5;
+_randomisation=2;
 	if (_houses <= 10) 
 		then {
-	_civilians=5+ round(random _randomisation);// Civilians spawned
+	_civilians=2+ round(random _randomisation);// Civilians spawned
 	_vehicles=0;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};		
  	if (_houses <= 30 and _houses > _randomisation) 
 		then {
-	_civilians=10+ round(random _randomisation);// Civilians spawned
-	_vehicles=2;// Moving Vehicles Spawned
-	_parked=2;// Parked Vehicles Spawned
+	_civilians=3+ round(random _randomisation);// Civilians spawned
+	_vehicles=1;// Moving Vehicles Spawned
+	_parked=1;// Parked Vehicles Spawned
 			};
 			
  	if (_houses <= 70 and _houses > 30) 
 		then {
-	_civilians=15+ round(random _randomisation);// Civilians spawned
-	_vehicles=4;// Moving Vehicles Spawned
-	_parked=2;// Parked Vehicles Spawned
+	_civilians=4+ round(random _randomisation);// Civilians spawned
+	_vehicles=1;// Moving Vehicles Spawned
+	_parked=1;// Parked Vehicles Spawned
 			};
 			
  	if (_houses <= 140 and _houses > 70) 
 		then {
-	_civilians=20+ round(random _randomisation);// Civilians spawned
-	_vehicles=5;// Moving Vehicles Spawned
-	_parked=3;// Parked Vehicles Spawned
+	_civilians=6+ round(random _randomisation);// Civilians spawned
+	_vehicles=2;// Moving Vehicles Spawned
+	_parked=2;// Parked Vehicles Spawned
 			};
  	if (_houses > 140) 
 		then {
-	_civilians=25+ round(random _randomisation);// Civilians spawned
-	_vehicles=5;// Moving Vehicles Spawned
-	_parked=3;// Parked Vehicles Spawned
+	_civilians=8+ round(random _randomisation);// Civilians spawned
+	_vehicles=3;// Moving Vehicles Spawned
+	_parked=2;// Parked Vehicles Spawned
 			};
 			
  if (!COSpedestrians) then {_civilians=0;};	// If pedestrians disabled spawn 0
@@ -186,6 +188,7 @@ COScomplete=true;publicvariable "COScomplete";
 
 // LOCAL SCRIPTS
 waituntil {COScomplete};
+hint "if you see this tell JJ and tell him this is is number 2!";
 _mkrs=headlessClient3 getvariable "COSmarkers";// Use this to get all town markers
 null=[] execVM "COS\localScript.sqf";// This shows messages for players during multiplayer
 
