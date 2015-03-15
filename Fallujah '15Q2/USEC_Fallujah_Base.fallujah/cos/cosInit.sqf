@@ -26,7 +26,7 @@ _aerielActivation=false;// Set if flying units can activate civilian Zones
 
 blackListTowns = ["Jolan", "Mualimeen", "Muhandisin", "Al-Fallujah", "Shurta", "Jeghaifi", "Askari", "Industrial Park", "Nazal Old City", "Resafa", "Sinai", "Shuhada"];// Remove towns from COS
 
-whiteListMkrs=["cosSpawn1", "cosSpawn2", "cosSpawn3", "cosSpawn4"];// Add Custom Markers for COS to populate 
+whiteListMkrs=["cosSpawn1", "cosSpawn2", "cosSpawn3"];// Add Custom Markers for COS to populate 
 
 DefaultSide = Civilian;// Set side of units spawned
 

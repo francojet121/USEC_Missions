@@ -22,13 +22,16 @@ if (isDedicated) then
 }
 else
 {
-	waitUntil {!isNull player}; 
-	waitUntil {isTouchingGround player};
+	if (hasInterface) then {
+
+		waitUntil {!isNull player}; 
+		waitUntil {isTouchingGround player};
 	
-	[]spawn compile preprocessFile "CronosUSEC\playerLoadClient.sqf";
-	[]spawn compile preprocessFile "CronosUSEC\playerSaveClient.sqf";
-	[]spawn compile preprocessFile "CronosUSEC\vehicleSaveClient.sqf";
-  []spawn compile preprocessFile "CronosUSEC\chronosClientInit.sqf";
+		[]spawn compile preprocessFile "CronosUSEC\playerLoadClient.sqf";
+		[]spawn compile preprocessFile "CronosUSEC\playerSaveClient.sqf";
+		[]spawn compile preprocessFile "CronosUSEC\vehicleSaveClient.sqf";
+		[]spawn compile preprocessFile "CronosUSEC\chronosClientInit.sqf";
+	};
 };
 
 

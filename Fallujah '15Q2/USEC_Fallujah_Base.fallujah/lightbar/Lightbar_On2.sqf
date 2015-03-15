@@ -1,0 +1,58 @@
+if (isServer) then {
+
+private ["_auto", "_light", "_light2"];
+_auto = _this select 0;
+_light = "#lightpoint" createVehicle getpos _auto;
+_light2 = "#lightpoint" createVehicle getpos _auto;
+while {alive _auto} do {
+_auto animate ["BeaconsStart", 0];
+_auto setObjectTexture [1, "demian2435_police\data\police_offroad.paa"];
+_light setLightBrightness 0;
+_light2 setLightBrightness 0;
+_light lightAttachObject [_auto,[-2,3,-1]]; 
+_light2 lightAttachObject [_auto,[2,-2.5,-0.5]];
+_light setLightcolor[0,0,5];
+_light2 setLightcolor[5,0,0];
+waitUntil {(_auto getvariable ["LUCE", false])};
+_auto animate ["BeaconsStart", 1];
+_light setLightBrightness 0.05;
+_light2 setLightBrightness 0.05;
+_auto setObjectTexture [1, "demian2435_police\sirena\XR_police_offroad.paa"];
+sleep 0.1;
+_light setLightBrightness 1;
+_light2 setLightBrightness 1;
+_light lightAttachObject [_auto,[-3,3,-1]]; 
+_light2 lightAttachObject [_auto,[3,-3,-0.5]];
+sleep 0.01;
+_light setLightBrightness 0.05;
+_light2 setLightBrightness 0.05;
+_light lightAttachObject [_auto,[-2,3,-1]]; 
+_light2 lightAttachObject [_auto,[2,-3,-0.5]];
+sleep 0.1;
+_light lightAttachObject [_auto,[2,3,-1]]; 
+_light2 lightAttachObject [_auto,[-2,-3,-0.5]];
+_light setLightcolor[0,0,5];
+_light2 setLightcolor[0,0,5];
+_light setLightBrightness 0.05;
+_light2 setLightBrightness 0.05;
+_auto setObjectTexture [1, "demian2435_police\sirena\XL_police_offroad.paa"];
+sleep 0.1;
+_light setLightBrightness 1;
+_light2 setLightBrightness 1;
+_light lightAttachObject [_auto,[3,3,-1]];
+_light2 lightAttachObject [_auto,[-3,-3,-0.5]];
+sleep 0.01;
+_light setLightBrightness 0.05;
+_light2 setLightBrightness 0.05;
+_light lightAttachObject [_auto,[2,3,-1]];
+_light2 lightAttachObject [_auto,[-2,-3,-0.5]];
+sleep 0.1;
+_light lightAttachObject [_auto,[0,3,-0.5]];
+_light2 lightAttachObject [_auto,[0,-3,-0.5]];
+_light setLightcolor[2,2,2];
+_light2 setLightcolor[2,2,2];
+_light setLightBrightness 0.025;
+_light2 setLightBrightness 0.025;
+_auto setObjectTexture [1, "demian2435_police\data\police_offroad.paa"];
+sleep 0.15;};
+}
