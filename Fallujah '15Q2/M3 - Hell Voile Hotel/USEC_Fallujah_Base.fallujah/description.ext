@@ -7,12 +7,12 @@
 
 // Basic Mission information, edit per mission
 author = "Unity Security Force";                    // Displays author, replace this with yourself
-briefingName = "USEC Sand Imperium";                 // Mission name in mission select
+briefingName = "USEC Hell Voile Hotel";                 // Mission name in mission select
 overviewPicture = "usec_resources\images\USEC\preview_orbat.paa";             // Picture shown in mission select
-overviewText = "Patrol the city";                // Mission description in mission select
-onLoadName = "USEC Sand Imperium";                   // Mission name on load screen
+overviewText = "Recover the VIP";                // Mission description in mission select
+onLoadName = "USEC Hell Voile Hotel";                   // Mission name on load screen
 loadScreen = "usec_resources\images\USEC\preview_orbat.paa";                // Picture shown on load screen
-onLoadMission = "Patrol the city";               // Mission description on load screen
+onLoadMission = "Recover the VIP";               // Mission description on load screen
 
 respawn = "BASE";                   // BASE (3) Respawn on markers "respawn_west_x". Multiple markers possible. If no marker present, player respawns where he started the mission.
 respawnButton = 1;          // Respawn button enabled
