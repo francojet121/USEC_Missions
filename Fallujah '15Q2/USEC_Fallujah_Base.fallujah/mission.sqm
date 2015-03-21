@@ -1211,6 +1211,7 @@ class Mission
 					id=67;
 					side="WEST";
 					vehicle="B_officer_F";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="COLONEL";
 					skill=0.60000002;
