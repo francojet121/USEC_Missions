@@ -7,10 +7,10 @@
 
 // Basic Mission information, edit per mission
 author = "Unity Security Force";                    // Displays author, replace this with yourself
-briefingName = "USEC Hell Voile Hotel";                 // Mission name in mission select
+briefingName = "USEC Hell Foille Hotel";                 // Mission name in mission select
 overviewPicture = "usec_resources\images\USEC\preview_orbat.paa";             // Picture shown in mission select
 overviewText = "Recover the VIP";                // Mission description in mission select
-onLoadName = "USEC Hell Voile Hotel";                   // Mission name on load screen
+onLoadName = "USEC Hell Foille Hotel";                   // Mission name on load screen
 loadScreen = "usec_resources\images\USEC\preview_orbat.paa";                // Picture shown on load screen
 onLoadMission = "Recover the VIP";               // Mission description on load screen
 
