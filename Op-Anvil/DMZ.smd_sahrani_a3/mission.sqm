@@ -1,0 +1,996 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"aia_hotfix_config",
+		"A3_Modules_F_Sites",
+		"A3_Weapons_F_Explosives",
+		"smd_sahrani_a3"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Modules_F_Sites",
+		"A3_Weapons_F_Explosives",
+		"smd_sahrani_a3"
+	};
+	randomSeed=5576410;
+	class Intel
+	{
+		startWeather=0.239804;
+		startWind=0.23914699;
+		startWindDir=358.327;
+		startLightnings=0.011849299;
+		startWaves=0.099999994;
+		startGust=0.0284483;
+		forecastWeather=0.239804;
+		forecastWind=0.23914699;
+		forecastWaves=0.099999994;
+		rainForced=1;
+		lightningsForced=1;
+		wavesForced=1;
+		windForced=1;
+		year=2007;
+		month=6;
+		day=7;
+		hour=9;
+		minute=25;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+	class Groups
+	{
+		items=9;
+		class Item0
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13211.323,6.4618068,9037.7607};
+					azimut=-228.867;
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="Empty";
+							parentCls="Site_Minefield";
+							typeName="side";
+						};
+						class Item1
+						{
+							value="rectangle";
+							parentCls="Site_Minefield";
+							typeName="shape";
+						};
+						class Item2
+						{
+							value="5";
+							parentCls="Site_Minefield";
+							typeName="axisA";
+						};
+						class Item3
+						{
+							value="40";
+							parentCls="Site_Minefield";
+							typeName="axisB";
+						};
+						class Item4
+						{
+							value="APERSMine";
+							parentCls="Site_Minefield";
+							typeName="minesType";
+						};
+						class Item5
+						{
+							value="50";
+							parentCls="Site_Minefield";
+							typeName="minesCount";
+						};
+						class Item6
+						{
+							value="Friendlies";
+							parentCls="Site_Minefield";
+							typeName="marked";
+						};
+						class Item7
+						{
+							value="TRUE";
+							parentCls="Site_Minefield";
+							typeName="conditionOfPresence";
+						};
+					};
+					id=0;
+					side="LOGIC";
+					vehicle="Site_Minefield";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13314.477,12.474168,8968.1992};
+					azimut=90;
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="Empty";
+							parentCls="Site_Minefield";
+							typeName="side";
+						};
+						class Item1
+						{
+							value="ellipse";
+							parentCls="Site_Minefield";
+							typeName="shape";
+						};
+						class Item2
+						{
+							value="40";
+							parentCls="Site_Minefield";
+							typeName="axisA";
+						};
+						class Item3
+						{
+							value="70";
+							parentCls="Site_Minefield";
+							typeName="axisB";
+						};
+						class Item4
+						{
+							value="APERSMine";
+							parentCls="Site_Minefield";
+							typeName="minesType";
+						};
+						class Item5
+						{
+							value="200";
+							parentCls="Site_Minefield";
+							typeName="minesCount";
+						};
+						class Item6
+						{
+							value="Friendlies";
+							parentCls="Site_Minefield";
+							typeName="marked";
+						};
+						class Item7
+						{
+							value="TRUE";
+							parentCls="Site_Minefield";
+							typeName="conditionOfPresence";
+						};
+					};
+					id=1;
+					side="LOGIC";
+					vehicle="Site_Minefield";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13314.107,12.469224,8968.9385};
+					azimut=90;
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="Empty";
+							parentCls="Site_Minefield";
+							typeName="side";
+						};
+						class Item1
+						{
+							value="ellipse";
+							parentCls="Site_Minefield";
+							typeName="shape";
+						};
+						class Item2
+						{
+							value="40";
+							parentCls="Site_Minefield";
+							typeName="axisA";
+						};
+						class Item3
+						{
+							value="70";
+							parentCls="Site_Minefield";
+							typeName="axisB";
+						};
+						class Item4
+						{
+							value="ATMine";
+							parentCls="Site_Minefield";
+							typeName="minesType";
+						};
+						class Item5
+						{
+							value="100";
+							parentCls="Site_Minefield";
+							typeName="minesCount";
+						};
+						class Item6
+						{
+							value="Friendlies";
+							parentCls="Site_Minefield";
+							typeName="marked";
+						};
+						class Item7
+						{
+							value="TRUE";
+							parentCls="Site_Minefield";
+							typeName="conditionOfPresence";
+						};
+					};
+					id=2;
+					side="LOGIC";
+					vehicle="Site_Minefield";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13358.126,18.877895,8896.6475};
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="Empty";
+							parentCls="Site_Minefield";
+							typeName="side";
+						};
+						class Item1
+						{
+							value="ellipse";
+							parentCls="Site_Minefield";
+							typeName="shape";
+						};
+						class Item2
+						{
+							value="70";
+							parentCls="Site_Minefield";
+							typeName="axisA";
+						};
+						class Item3
+						{
+							value="30";
+							parentCls="Site_Minefield";
+							typeName="axisB";
+						};
+						class Item4
+						{
+							value="APERSMine";
+							parentCls="Site_Minefield";
+							typeName="minesType";
+						};
+						class Item5
+						{
+							value="200";
+							parentCls="Site_Minefield";
+							typeName="minesCount";
+						};
+						class Item6
+						{
+							value="Friendlies";
+							parentCls="Site_Minefield";
+							typeName="marked";
+						};
+						class Item7
+						{
+							value="TRUE";
+							parentCls="Site_Minefield";
+							typeName="conditionOfPresence";
+						};
+					};
+					id=3;
+					side="LOGIC";
+					vehicle="Site_Minefield";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13357.626,18.715738,8896.4805};
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="Empty";
+							parentCls="Site_Minefield";
+							typeName="side";
+						};
+						class Item1
+						{
+							value="ellipse";
+							parentCls="Site_Minefield";
+							typeName="shape";
+						};
+						class Item2
+						{
+							value="70";
+							parentCls="Site_Minefield";
+							typeName="axisA";
+						};
+						class Item3
+						{
+							value="30";
+							parentCls="Site_Minefield";
+							typeName="axisB";
+						};
+						class Item4
+						{
+							value="ATMine";
+							parentCls="Site_Minefield";
+							typeName="minesType";
+						};
+						class Item5
+						{
+							value="50";
+							parentCls="Site_Minefield";
+							typeName="minesCount";
+						};
+						class Item6
+						{
+							value="Friendlies";
+							parentCls="Site_Minefield";
+							typeName="marked";
+						};
+						class Item7
+						{
+							value="TRUE";
+							parentCls="Site_Minefield";
+							typeName="conditionOfPresence";
+						};
+					};
+					id=4;
+					side="LOGIC";
+					vehicle="Site_Minefield";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13378.917,11.97,8799.1299};
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="Empty";
+							parentCls="Site_Minefield";
+							typeName="side";
+						};
+						class Item1
+						{
+							value="ellipse";
+							parentCls="Site_Minefield";
+							typeName="shape";
+						};
+						class Item2
+						{
+							value="70";
+							parentCls="Site_Minefield";
+							typeName="axisA";
+						};
+						class Item3
+						{
+							value="30";
+							parentCls="Site_Minefield";
+							typeName="axisB";
+						};
+						class Item4
+						{
+							value="ATMine";
+							parentCls="Site_Minefield";
+							typeName="minesType";
+						};
+						class Item5
+						{
+							value="50";
+							parentCls="Site_Minefield";
+							typeName="minesCount";
+						};
+						class Item6
+						{
+							value="Friendlies";
+							parentCls="Site_Minefield";
+							typeName="marked";
+						};
+						class Item7
+						{
+							value="TRUE";
+							parentCls="Site_Minefield";
+							typeName="conditionOfPresence";
+						};
+					};
+					id=5;
+					side="LOGIC";
+					vehicle="Site_Minefield";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13379.104,11.97,8799.3203};
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="Empty";
+							parentCls="Site_Minefield";
+							typeName="side";
+						};
+						class Item1
+						{
+							value="ellipse";
+							parentCls="Site_Minefield";
+							typeName="shape";
+						};
+						class Item2
+						{
+							value="70";
+							parentCls="Site_Minefield";
+							typeName="axisA";
+						};
+						class Item3
+						{
+							value="30";
+							parentCls="Site_Minefield";
+							typeName="axisB";
+						};
+						class Item4
+						{
+							value="APERSMine";
+							parentCls="Site_Minefield";
+							typeName="minesType";
+						};
+						class Item5
+						{
+							value="200";
+							parentCls="Site_Minefield";
+							typeName="minesCount";
+						};
+						class Item6
+						{
+							value="Friendlies";
+							parentCls="Site_Minefield";
+							typeName="marked";
+						};
+						class Item7
+						{
+							value="TRUE";
+							parentCls="Site_Minefield";
+							typeName="conditionOfPresence";
+						};
+					};
+					id=6;
+					side="LOGIC";
+					vehicle="Site_Minefield";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13379.068,4.5577502,8709.0156};
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="Empty";
+							parentCls="Site_Minefield";
+							typeName="side";
+						};
+						class Item1
+						{
+							value="ellipse";
+							parentCls="Site_Minefield";
+							typeName="shape";
+						};
+						class Item2
+						{
+							value="70";
+							parentCls="Site_Minefield";
+							typeName="axisA";
+						};
+						class Item3
+						{
+							value="30";
+							parentCls="Site_Minefield";
+							typeName="axisB";
+						};
+						class Item4
+						{
+							value="ATMine";
+							parentCls="Site_Minefield";
+							typeName="minesType";
+						};
+						class Item5
+						{
+							value="50";
+							parentCls="Site_Minefield";
+							typeName="minesCount";
+						};
+						class Item6
+						{
+							value="Friendlies";
+							parentCls="Site_Minefield";
+							typeName="marked";
+						};
+						class Item7
+						{
+							value="TRUE";
+							parentCls="Site_Minefield";
+							typeName="conditionOfPresence";
+						};
+					};
+					id=7;
+					side="LOGIC";
+					vehicle="Site_Minefield";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item8
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13378.835,4.5561447,8709.2422};
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="Empty";
+							parentCls="Site_Minefield";
+							typeName="side";
+						};
+						class Item1
+						{
+							value="ellipse";
+							parentCls="Site_Minefield";
+							typeName="shape";
+						};
+						class Item2
+						{
+							value="70";
+							parentCls="Site_Minefield";
+							typeName="axisA";
+						};
+						class Item3
+						{
+							value="30";
+							parentCls="Site_Minefield";
+							typeName="axisB";
+						};
+						class Item4
+						{
+							value="APERSMine";
+							parentCls="Site_Minefield";
+							typeName="minesType";
+						};
+						class Item5
+						{
+							value="200";
+							parentCls="Site_Minefield";
+							typeName="minesCount";
+						};
+						class Item6
+						{
+							value="Friendlies";
+							parentCls="Site_Minefield";
+							typeName="marked";
+						};
+						class Item7
+						{
+							value="TRUE";
+							parentCls="Site_Minefield";
+							typeName="conditionOfPresence";
+						};
+					};
+					id=8;
+					side="LOGIC";
+					vehicle="Site_Minefield";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=30;
+		class Item0
+		{
+			position[]={13201.965,4.927846,9050.8496};
+			id=9;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={13198.927,5.20755,9044.8926};
+			id=10;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={13205.001,5.368763,9046.5283};
+			id=11;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={13204.533,5.7187519,9041.3896};
+			id=12;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={13209.556,5.8494177,9042.5566};
+			id=13;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={13212.126,6.8277445,9035.7832};
+			id=14;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={13205.584,6.4434648,9036.9492};
+			id=15;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item7
+		{
+			position[]={13219.601,7.1741905,9034.7314};
+			id=16;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={13218.898,6.98664,9035.8984};
+			id=17;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={13223.221,8.0501356,9025.7383};
+			id=18;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item10
+		{
+			position[]={13214.461,8.0791645,9028.6582};
+			id=19;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item11
+		{
+			position[]={13224.855,7.4284444,9029.0088};
+			id=20;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item12
+		{
+			position[]={13232.447,7.6004329,9021.5352};
+			id=21;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={13228.709,8.3582296,9019.0811};
+			id=22;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item14
+		{
+			position[]={13230.813,7.2131672,9025.7383};
+			id=23;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item15
+		{
+			position[]={13236.885,7.7210932,9017.3291};
+			id=24;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item16
+		{
+			position[]={13235.951,8.7569427,9011.1406};
+			id=25;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item17
+		{
+			position[]={13241.207,7.9820447,9013.0078};
+			id=26;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item18
+		{
+			position[]={13243.308,8.8479462,9006.9355};
+			id=27;
+			side="EMPTY";
+			vehicle="ATMine";
+			skill=0.60000002;
+		};
+		class Item19
+		{
+			position[]={13358.011,13.401837,8975.8887};
+			azimut=90;
+			id=28;
+			side="EMPTY";
+			vehicle="APERSTripMine";
+			skill=0.60000002;
+		};
+		class Item20
+		{
+			position[]={13354.604,14.959133,9004.8301};
+			azimut=90;
+			id=29;
+			side="EMPTY";
+			vehicle="APERSBoundingMine";
+			skill=0.60000002;
+		};
+		class Item21
+		{
+			position[]={13391.207,15.214176,8961.2051};
+			azimut=90;
+			id=30;
+			side="EMPTY";
+			vehicle="APERSBoundingMine";
+			skill=0.60000002;
+		};
+		class Item22
+		{
+			position[]={13382.483,13.936951,8946.3086};
+			azimut=90;
+			id=31;
+			side="EMPTY";
+			vehicle="APERSBoundingMine";
+			skill=0.60000002;
+		};
+		class Item23
+		{
+			position[]={13406.317,16.208593,8940.7754};
+			azimut=90;
+			id=32;
+			side="EMPTY";
+			vehicle="APERSBoundingMine";
+			skill=0.60000002;
+		};
+		class Item24
+		{
+			position[]={13438.451,19.488188,8900.1289};
+			azimut=90;
+			id=33;
+			side="EMPTY";
+			vehicle="APERSBoundingMine";
+			skill=0.60000002;
+		};
+		class Item25
+		{
+			position[]={13444.41,19.594158,8878.8477};
+			azimut=90;
+			id=34;
+			side="EMPTY";
+			vehicle="APERSBoundingMine";
+			skill=0.60000002;
+		};
+		class Item26
+		{
+			position[]={13456.753,19.899635,8866.7178};
+			azimut=90;
+			id=35;
+			side="EMPTY";
+			vehicle="APERSBoundingMine";
+			skill=0.60000002;
+		};
+		class Item27
+		{
+			position[]={13437.387,19.485001,8866.0791};
+			azimut=90;
+			id=36;
+			side="EMPTY";
+			vehicle="APERSBoundingMine";
+			skill=0.60000002;
+		};
+		class Item28
+		{
+			position[]={13329.068,12.306614,8929.9209};
+			azimut=90;
+			id=37;
+			side="EMPTY";
+			vehicle="APERSBoundingMine";
+			skill=0.60000002;
+		};
+		class Item29
+		{
+			position[]={13356.31,12.475735,8932.6875};
+			azimut=90;
+			id=38;
+			side="EMPTY";
+			vehicle="APERSBoundingMine";
+			skill=0.60000002;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"aia_hotfix_config",
+		"smd_sahrani_a3"
+	};
+	addOnsAuto[]=
+	{
+		"smd_sahrani_a3"
+	};
+	randomSeed=45823;
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"aia_hotfix_config",
+		"smd_sahrani_a3"
+	};
+	addOnsAuto[]=
+	{
+		"smd_sahrani_a3"
+	};
+	randomSeed=45823;
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"aia_hotfix_config",
+		"smd_sahrani_a3"
+	};
+	addOnsAuto[]=
+	{
+		"smd_sahrani_a3"
+	};
+	randomSeed=45823;
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
