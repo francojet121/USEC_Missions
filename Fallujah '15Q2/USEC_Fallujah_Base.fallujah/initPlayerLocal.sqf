@@ -13,7 +13,7 @@
 [ 
   [ 
     ["Unity Security Force", "<t size = '0.7' underline = '1'>%1</t><br/>"],
-    ["Mission Gothic Serpent"],
+    ["Mission Thunder Fury"],
     ["Fallujah Airbase"],
     ["Fallujah", "<t size = '0.7' font='puristaMedium'>%1</t>", 70]
   ], 1, 0.75, "<t align = 'center' shadow = '1' size = '1.0'>%1</t>"
