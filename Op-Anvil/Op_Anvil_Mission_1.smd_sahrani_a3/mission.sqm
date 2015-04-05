@@ -50,7 +50,8 @@ class Mission
 		"A3_Soft_F_TruckHeavy",
 		"A3_Structures_F_Civ_Camping",
 		"A3_Soft_F_Quadbike",
-		"A3_Modules_F_Curator_Curator"
+		"A3_Modules_F_Curator_Curator",
+		"A3_Misc_F_Helpers"
 	};
 	addOnsAuto[]=
 	{
@@ -79,6 +80,7 @@ class Mission
 		"dar_c2",
 		"A3_Structures_F_Heli_Items_Electronics",
 		"A3_Structures_F_Civ_InfoBoards",
+		"A3_Misc_F_Helpers",
 		"A3_Structures_F_Civ_Accessories",
 		"aia_ca_config",
 		"A3_Structures_F_Mil_BagFence",
@@ -4833,10 +4835,11 @@ class Mission
 		class Item14
 		{
 			position[]={11459.75,0.97234023,3529.6873};
+			offsetY=1.5;
 			special="NONE";
 			id=231;
 			side="EMPTY";
-			vehicle="PortableHelipadLight_01_white_F";
+			vehicle="Sign_Arrow_Cyan_F";
 			leader=1;
 			skill=0.60000002;
 			text="bay9";
