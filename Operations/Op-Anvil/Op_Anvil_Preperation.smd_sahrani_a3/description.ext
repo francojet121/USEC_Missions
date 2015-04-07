@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------------
+  Author: Unity Security Force
+
+  description.ext
+  Server configuration scripting
+--------------------------------------------------------------------*/
+
+// Basic Mission information, edit per mission
+author = "2LT Stark";                    // Displays author, replace this with yourself
+briefingName = "Operation Anvil Preparations";                 // Mission name in mission select
+overviewPicture = "usec_resources\images\USEC\preview_orbat.paa";             // Picture shown in mission select
+overviewText = "Prepare the inventory for arrival in Sahrani.";               // Mission description in mission select
+onLoadName = "Operation Anvil Preparations";                   // Mission name on load screen
+loadScreen = "usec_resources\images\USEC\preview_orbat.paa";                // Picture shown on load screen
+onLoadMission = "usec_resources\images\USEC\preview_orbat.paa";                // Mission description on load screen
+
+// ADD TEMPLATE CONTENT HERE
