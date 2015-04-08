@@ -1,0 +1,240 @@
+/*%FSM<COMPILE "F:\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, Mission 6 - Direct Action">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"init",0,250,-25.000000,-125.000000,75.000000,-75.000000,0.000000,"init"};
+item1[] = {"isServer",4,218,-25.000000,-50.000000,75.000000,0.000000,0.000000,"isServer"};
+item2[] = {"setup",2,4346,-25.000000,25.000000,75.000000,75.000000,0.000000,"setup"};
+item3[] = {"publish",8,218,-25.000000,100.000000,75.000000,150.000000,0.000000,"publish"};
+item4[] = {"wait",2,250,-25.000000,175.000000,75.000000,225.000000,0.000000,"wait"};
+item5[] = {"dead",4,218,-100.000000,250.000000,0.000000,300.000000,0.000000,"dead"};
+item6[] = {"time_up",4,218,50.000000,250.000000,150.000000,300.000000,0.000000,"time up"};
+item7[] = {"end",1,250,-25.000000,475.000000,75.000000,525.000000,0.000000,"end"};
+item8[] = {"wait_1",2,250,-25.000000,325.000000,75.000000,375.000000,0.000000,"wait"};
+item9[] = {"ready",4,218,-25.000000,400.000000,75.000000,450.000000,0.000000,"ready"};
+item10[] = {"detected",4,218,-150.000000,175.000000,-50.000000,225.000000,0.000000,"detected"};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {3,4};
+link4[] = {4,5};
+link5[] = {4,6};
+link6[] = {4,10};
+link7[] = {5,8};
+link8[] = {6,8};
+link9[] = {8,9};
+link10[] = {9,7};
+link11[] = {10,4};
+globals[] = {25.000000,1,0,0,0,640,480,1,13,6316128,1,-457.625153,380.998840,541.473999,-104.493118,962,741,1};
+window[] = {2,-1,-1,-1,-1,802,50,1490,50,3,980};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "Mission 6 - Direct Action";
+  class States
+  {
+    /*%FSM<STATE "init">*/
+    class init
+    {
+      name = "init";
+      init = /*%FSM<STATEINIT""">*/"_maxMinutes = 60;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "isServer">*/
+        class isServer
+        {
+          priority = 0.000000;
+          to="setup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"isServer"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "setup">*/
+    class setup
+    {
+      name = "setup";
+      init = /*%FSM<STATEINIT""">*/"MissionNumber = MissionNumber + 1;" \n
+       "_objects = [];" \n
+       "_cleanupGroups = [];" \n
+       "_index = floor(random (count USEC_MissionTargetPeople));" \n
+       "_targetClass = USEC_MissionTargetPeople select _index;" \n
+       "_objects = [];" \n
+       "" \n
+       "//Setup Building" \n
+       "_array = [] call usec_mission_selectBuilding;" \n
+       "_result = _array call usec_mission_createDirectAction;" \n
+       "_town = _array select 0;" \n
+       "_building = _array select 1;" \n
+       "" \n
+       "//Order Result" \n
+       "{" \n
+       "	_objects set [count _objects,_x];" \n
+       "} forEach _result;" \n
+       "" \n
+       "//Get target position" \n
+       "_index = floor(random (count USEC_DirectAction_Objectives));" \n
+       "_objectiveOptions = USEC_DirectAction_Objectives select _index;" \n
+       "_index = floor(random (count _objectiveOptions));" \n
+       "_result =  (_objectiveOptions select _index);" \n
+       "_objRelPos =_result select 0;" \n
+       "_objPos = _building modelToWorld _objRelPos;" \n
+       "_objDir = (_result select 1) + (direction _building);" \n
+       "" \n
+       "//Create Target" \n
+       "_gpTarget = createGroup east;" \n
+       "_cleanupGroups set [count _cleanupGroups,_gpTarget];" \n
+       "_target = _gpTarget createUnit [_targetClass, _objPos, [], 0, ""NONE""];" \n
+       "_target setPosATL _objPos;" \n
+       "_target setDir _objDir;" \n
+       "missionTarget = _target;" \n
+       "_objects set [count _objects, _target];" \n
+       "player setposATL _objPos;" \n
+       "" \n
+       "//Place some guards" \n
+       "_guardNumber = (playersNumber west  * 2);" \n
+       "if (_guardNumber < 5) then {_guardNumber = 5};" \n
+       "if (_guardNumber > 30) then {_guardNumber = 30};" \n
+       "_units = [_town,_guardNumber] call usec_mission_placeBuildingGuards;" \n
+       "" \n
+       "//Place Proper Patrol" \n
+       "	_new = [];" \n
+       "	_new = [(position _building),ceil(_guardNumber / 3)] call usec_mission_spawnGroup;" \n
+       "	_group = group (_new select 0);" \n
+       "	[_group, (position _building), 1000] call bis_fnc_taskPatrol;" \n
+       "	_units = _units + _new;" \n
+       "	" \n
+       "//Place Proper Patrol 2" \n
+       "	_new = [];" \n
+       "	_new = [(position _building),ceil(_guardNumber / 3)] call usec_mission_spawnGroup;" \n
+       "	_group = group (_new select 0);" \n
+       "	[_group, (position _building), 400] call bis_fnc_taskPatrol;" \n
+       "	_units = _units + _new;" \n
+       "" \n
+       "//Place Detection" \n
+       "	_trg = createTrigger[""EmptyDetector"",(getPos _building)];" \n
+       "	_trg setTriggerArea[800,800,0,false];" \n
+       "	_trg setTriggerActivation[""WEST"",""EAST D"",false];" \n
+       "	_trg setTriggerStatements[""this"", ""hint 'detected';"", """"];" \n
+       "	_trg setTriggerTimeout [3, 3, 3, true];" \n
+       "" \n
+       "// Build Cleanup" \n
+       "{" \n
+       "	_grp=group _x;" \n
+       "	if (!isNull _grp) then {" \n
+       "		if !(_grp in _cleanupGroups) then {" \n
+       "			_cleanupGroups set [count _cleanupGroups,_grp];" \n
+       "		};" \n
+       "	};" \n
+       "} forEach _objects+_units;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "publish">*/
+        class publish
+        {
+          priority = 0.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"//PUBLISH MISSION" \n
+           "USEC_MissionPublisher = [7,MissionNumber,_town,_target,_maxMinutes];" \n
+           "publicVariable ""USEC_MissionPublisher"";" \n
+           "" \n
+           "_timeStart = time;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "wait">*/
+    class wait
+    {
+      name = "wait";
+      init = /*%FSM<STATEINIT""">*/"_timeout = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "time_up">*/
+        class time_up
+        {
+          priority = 0.000000;
+          to="wait_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _timeStart ) > (_maxMinutes * 60);"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "detected">*/
+        class detected
+        {
+          priority = 0.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(triggeractivated _trg) and ((time - _timeout ) > (5 * 60))"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_new = [];" \n
+           "_new = [_town,ceil((playersNumber west) + 1)] call usec_mission_spawnInternalGroup;" \n
+           "_units = _units + _new;" \n
+           "_groupNew = group (_new select 0);" \n
+           "_cleanupGroups set [count _cleanupGroups,_groupNew];" \n
+           "[_groupNew,(position_building)] call BIS_fnc_taskAttack;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "dead">*/
+        class dead
+        {
+          priority = 0.000000;
+          to="wait_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _target)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "end">*/
+    class end
+    {
+      name = "end";
+      init = /*%FSM<STATEINIT""">*/"{deleteVehicle _x} forEach _objects;" \n
+       "{deleteVehicle _x} forEach _units;" \n
+       "{deleteGroup _x} forEach _cleanupGroups;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "wait_1">*/
+    class wait_1
+    {
+      name = "wait_1";
+      init = /*%FSM<STATEINIT""">*/"_timeStart = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "ready">*/
+        class ready
+        {
+          priority = 0.000000;
+          to="end";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _timeStart ) > (10 * 60);"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="init";
+  finalStates[] =
+  {
+    "end",
+  };
+};
+/*%FSM</COMPILE>*/
