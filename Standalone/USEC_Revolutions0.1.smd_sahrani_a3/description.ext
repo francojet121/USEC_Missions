@@ -32,11 +32,5 @@ class Header {
 //  Classes and Configs
 // ----------------------------------------
 
-#include "VAS\menu.hpp" // Virtual Ammobox System (VAS)
-#include "CronosUSEC\loadingscreen.h" // Chronos loading screen
 
-class CfgFunctions {
-  #include "VAS\cfgfunctions.hpp" // Virtual Ammobox System (VAS)
-  #include "JNS\InvSys\functions.h" // JNS Inventory System
-};
 

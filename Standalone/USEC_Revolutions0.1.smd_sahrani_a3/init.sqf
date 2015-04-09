@@ -9,16 +9,7 @@
   Execution on all clients and server
   Put client and server code in this part
 **********************************************/
-// Chronos - Comment for local testing!
-//#include "CronosUSEC\chronosInit.sqf"
 
-setViewDistance 3000;
-
-// Friendly Fire safe limit. Raises user rating high enough to prevent AI turning on you, unless you're really bad.
-player addRating 90000;
-
-// SQF functions cannot continue running after loading a saved game, do not delete this line
-enableSaving [false, false];
 
 /*********************************************
   All clients stop executing here
