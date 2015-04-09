@@ -1,19 +1,19 @@
 //Island Variables
-	USEC_MapY = 15360; // Utes = 5120 // Chenarus = 15360
-	USEC_RegionID = 3;	//RegionID
-	USEC_DebarkDialog="USEC_TakistanDebarkation";
-	USEC_DebarkDisplay=60001;
-	USEC_ActivityType = "Operational";
-	USEC_LocID = 'OXLM';
-	USEC_LocType = 'P';
-	LHA_TrainingTargetMarkers = [[2446.1873,4590.564],[2244.7249,3816.0708],[4374.0254,2430.033]];	//Used for assigning targets (for aircraft ground/land)
-	SYSTEM_MedicalOn = true;
-	SYSTEM_PhysicalLHA = false;
+//	USEC_MapY = 15360; // Utes = 5120 // Chenarus = 15360
+//	USEC_RegionID = 3;	//RegionID
+//	USEC_DebarkDialog="USEC_TakistanDebarkation";
+//	USEC_DebarkDisplay=60001;
+//	USEC_ActivityType = "Operational";
+//	USEC_LocID = 'OXLM';
+//	USEC_LocType = 'P';
+//	LHA_TrainingTargetMarkers = [[2446.1873,4590.564],[2244.7249,3816.0708],[4374.0254,2430.033]];	//Used for assigning targets (for aircraft ground/land)
+//	SYSTEM_MedicalOn = true;
+//	SYSTEM_PhysicalLHA = false;
 	missionStarter = 0;
 	
 //LHA Variables
 	//LHA Bay Status [InUse]
-	LHA_ID = 'OXRM';
+/*	LHA_ID = 'OXRM';
 	LHA_NumID = 22306;
 	LHA_Type = "P";
 	LHAAlive = true;
@@ -47,26 +47,11 @@
 	_vh_land = ["ATV_US_EP1","USEC_TowingTractor","HMMWV_DES_EP1","HMMWV_M1035_DES_EP1","HMMWV_Avenger_DES_EP1","SUV_TK_CIV_EP1","HMMWV_Terminal_EP1","HMMWV_Ambulance_DES_EP1"];
 	_vh_crates = ["USEC_CargoContainer1","USEC_CargoContainer2","USEC_Container_TowTractor","USEC_Container_ATV","USEC_Container_HMMWV_DES_EP1","USEC_Container_Hilux","USEC_Container_HMMWV_M1151_M2_DES_EP1"];
 	LHA_SpawnableVehicles = _vh_air + _vh_land + _vh_crates;
-
-//Red lamps
-
-	USEC_AlertLights = [
-		[[5986.8213,11544.072,8.7557735],0.035],
-		[[5786.57,11309.94,10.794543],0.09],
-		[[5858.625,11490.421,3.3558311],0.02]
-	];
-	_i=0;
-	{
-		call compile format ["USEC_Light%1 = '#lightpoint' createVehicleLocal %2",_i,(_x select 0)];
-		call compile format ["USEC_Light%1 setLightBrightness 0",_i];
-		call compile format ["USEC_Light%1 setLightAmbient [1.0,0,0]",_i];
-		call compile format ["USEC_Light%1 setLightColor [1.0,0,0]",_i];
-		_i=_i+1;
-	} foreach USEC_AlertLights;
+*/
 	
 //Mission Settings	
 	USEC_IslandConvoyPts = [
-		[[637.69855,2878.5173,0],[10654.483,6288.9082,0]],
+		[[637.69855,2878.5173,0],[10654.483,6288.9082,0]], //These still seem to be valid for Takistan
 		[[4785.1787,765.78156,0],[9755.126,11540.4,0]],
 		[[11546.246,2502.2639,0],[1928.2728,11776.119,0]],
 		[[7300.7417,369.80685,0],[6847.9331,12206.261,0]],
@@ -77,54 +62,53 @@
 		[[11483.072,8270.0176,0],[1922.6492,11779.581,0]]
 	];
 
-	USEC_MissionTargetPeople = 
+	USEC_MissionTargetPeople = //These have been updated to A3
 	[
-		"TK_Aziz_EP1",
-		"TK_CIV_Takistani04_EP1",
-		"Functionary2_EP1",
-		"RU_Commander",
-		"INS_Lopotev",
-		"INS_Bardak"
+		"C_Orestes",
+		"C_Nikos_aged",
+		"rhs_msv_crew_commander",
+		"C_scientist_F",
+		"C_journalist_F"
 	];
 	
-	USEC_MissionPilots =
+	USEC_MissionPilots = //These have been updated to A3
 	[
-		"US_Soldier_Pilot_EP1"
+		"B_helicrew_F"
 	];
 	
-	USEC_MissionHostages = [
-		"US_Pilot_Light_EP1"
+	USEC_MissionHostages = [ //These have been updated to A3
+		"b_survivor_F"
 	];
 	
-	USEC_MissionSoldiers = [
-		"TK_INS_Soldier_TL_EP1",
-		"TK_INS_Soldier_2_EP1",
-		"TK_INS_Soldier_3_EP1",
-		"TK_INS_Soldier_4_EP1",
-		"TK_INS_Soldier_AR_EP1",
-		"TK_INS_Soldier_AT_EP1",
-		"TK_INS_Soldier_EP1",
-		"TK_INS_Soldier_MG_EP1",
-		"TK_INS_Soldier_Sniper_EP1"
+	USEC_MissionSoldiers = [ //These have been updated to A3
+		"rhs_msv_junior_sergeant",
+		"rhs_msv_rifleman",
+		"rhs_msv_rifleman",
+		"rhs_msv_rifleman",
+		"rhs_msv_machinegunner",
+		"rhs_msv_at",
+		"rhs_msv_rifleman",
+		"rhs_msv_machinegunner",
+		"rhs_msv_marksman"
 	];
 	
-	USEC_MissionCivilians = [
-		"TK_CIV_Takistani01_EP1",
-		"TK_CIV_Takistani02_EP1",
-		"TK_CIV_Takistani03_EP1",
-		"TK_CIV_Takistani04_EP1",
-		"TK_CIV_Takistani05_EP1",
-		"TK_CIV_Takistani06_EP1",
-		"TK_CIV_Woman01_EP1",
-		"TK_CIV_Woman02_EP1",
-		"TK_CIV_Woman03_EP1"
+	USEC_MissionCivilians = [ //These have been updated to A3
+		"C_Nikos",
+		"C_man_polo_1_F_afro",
+		"C_man_p_fugitive_F_euro",
+		"C_man_w_worker_F",
+		"C_man_1",
+		"C_man_polo_4_F_asia",
+		"C_man_p_beggar_F_euro",
+		"C_Marshal_F",
+		"C_man_shorts_4_F_euro"
 	];
 	
-	USEC_MissionTargetDestroy = 
+	USEC_MissionTargetDestroy =  //These have been updated to A3
 	[
-		"GuerillaCacheBox_EP1",
-		"GunrackTK_EP1",
-		"USLaunchers_EP1"
+		"Box_FIA_Wps_F",		//FIA Weapons cache with 
+		"Gunrack1",				//Gunrack with M4's on
+		"Box_NATO_WpsLaunch_F"  //NATO Launchers
 	];
 	
 	USEC_MissionDefendHill =
@@ -147,14 +131,14 @@
 		"EvMoscow"
 	];
 	
-	USEC_MissionCars = [
-		"SUV_TK_CIV_EP1",
-		"LandRover_CZ_EP1",
-		"LandRover_TK_CIV_EP1",
-		"LandRover_MG_TK_EP1",
-		"LandRover_Special_CZ_EP1",
-		"Offroad_DSHKM_TK_GUE_EP1",
-		"UH1H_TK_EP1"
+	USEC_MissionCars = [ //These have been updated to A3
+		"C_SUV_01_F",
+		"C_Offroad_01_F",
+		"C_Offroad_01_F",
+		"O_G_Offroad_01_armed_F",
+		"C_Offroad_01_F",
+		"O_G_Offroad_01_armed_F",
+		"B_Heli_Transport_01_camo_F"
 	];
 	
 	USEC_CrashHeloPos = [
@@ -166,7 +150,7 @@
 	];
 
 
-	USEC_DirectAction_GroundObjects = ["Fort_RazorWire","Hedgehog","Fence_corrugated_plate","Fort_Barricade_EP1"];
+/*	USEC_DirectAction_GroundObjects = ["Fort_RazorWire","Hedgehog","Fence_corrugated_plate","Fort_Barricade_EP1"];
 
 	USEC_DirectAction_Buildings = [
 		"Land_House_C_9_EP1",
@@ -227,7 +211,7 @@
 			[[0.936035,1.31543,-3.4595],90],[[2.09033,-1.2666,-0.327103],-145],[[-1.15918,0.511719,-0.325775],-62],[[3.15479,2.26465,-0.325424],68]
 		]
 	];
-
+*/
 	USEC_MissionBuildingTypes = [
 		"Land_House_L_4_EP1",
 		"Land_House_L_1_EP1",
@@ -302,120 +286,4 @@
 		[[[-2.69238,-0.975586,-1.42384],298],[[6.14648,1.58545,-1.509],265],[[5.64063,0.504395,1.281],189]],
 		[[[0.0947266,-1.22998,-2.42227],197],[[-2.85059,1.40967,-2.38356],259]],
 		[[[1.3418,2.67578,-1.97947],322],[[-4.08057,2.55176,-1.97947],173]]
-	];
-
-//Enemy Editor
-	USEC_EnemyTypes = [
-		//Cars
-		"Pickup_PK_INS",
-		"LandRover_MG_TK_EP1",
-		"UAZ_AGS30_TK_EP1",
-		"Offroad_DSHKM_INS",
-	
-		//Trucks
-		"UralRepair_TK_EP1",
-		"UralSupply_TK_EP1",
-		"UralReammo_TK_EP1",
-		"UralRefuel_TK_EP1",
-		"Ural_ZU23_TK_EP1",
-
-		//LAV
-		"BTR60_TK_EP1",
-		"BMP2_TK_EP1",
-
-		//Heavy		
-		"ZSU_TK_EP1",
-		"T34_TK_EP1",
-		"T55_TK_EP1",
-		"MAZ_543_SCUD_TK_EP1",
-		
-		//Air
-		"Mi17_rockets_RU",
-		"Mi24_D_TK_EP1",
-		"Su25_TK_EP1",
-		"L39_TK_EP1",
-		"UH1H_TK_EP1",
-
-		//Static
-		"Igla_AA_pod_East",
-		"SPG9_Ins",
-		"ZU23_Ins",
-		"UAZ_AGS30_RU",
-		"UAZ_MG_INS",
-		"WarfareBMGNest_PK_TK_EP1",
-		"Metis",
-		"DSHKM_RU",
-		"D30_RU",
-
-		//Men
-		"TK_INS_Soldier_Warlord_EP1",
-		"TK_INS_Soldier_TL_EP1",
-		"TK_INS_Soldier_Sniper_EP1",
-		"TK_INS_Soldier_MG_EP1",
-		"TK_INS_Soldier_EP1",
-		"TK_INS_Soldier_AR_EP1",
-		"TK_INS_Soldier_AA_EP1",
-		"TK_INS_Soldier_AT_EP1",
-		"TK_INS_Soldier_1_EP1",
-		"TK_INS_Soldier_2_EP1",
-		"TK_INS_Soldier_3_EP1",
-		"TK_INS_Soldier_4_EP1",
-		"TK_Aziz_EP1",
-		"TK_Special_Forces_EP1",
-		"TK_Special_Forces_TL_EP1",
-		"TK_Special_Forces_MG_EP1",
-
-		//Objects
-		"Land_fort_bagfence_long",
-		"Land_fort_bagfence_corner",
-		"Land_fort_bagfence_round",
-		"Hedgehog",
-		"Land_HBarrier1",
-		"Land_HBarrier3",
-		"Land_HBarrier5",
-		"Land_HBarrier_large",
-		"Fence_Ind_long",
-		"Fence_Ind",
-		"Fence_corrugated_plate",
-		"Fort_RazorWire",
-		"Land_Fort_Watchtower_EP1",
-		"Hhedgehog_concrete",
-		"Land_fortified_nest_small_EP1",
-		"Land_fortified_nest_big_EP1",
-		"Land_fort_artillery_nest_EP1",
-		"Land_vez",
-		"Land_Barrack2_EP1",
-		"Land_GuardShed",
-		"Land_CamoNetB_EAST_EP1",
-		"Land_CamoNetVar_EAST_EP1",
-		"Land_CamoNet_EAST_EP1",
-		"Land_Campfire_burning",
-		"Land_ladder",
-		"Land_ladder_half",
-		"Land_Ind_Garage01",
-		"Land_Ind_IlluminantTower",
-		"TK_WarfareBBarracks_EP1",
-		"TK_WarfareBAntiAirRadar_EP1",
-		"Land_tent_east",
-		"Misc_Cargo1Bo_military",
-		"Land_CncBlock",
-		"Land_Hlidac_budka",
-		"Land_Ind_Oil_Pump_EP1",
-		"Land_Ind_Oil_Tower_EP1",
-		"SpecialWeaponsBox",
-		"USLaunchersBox"
-	];
-	
-	USEC_special_types = [
-		"ARTY_Sh_122_HE",
-		"ARTY_Sh_105_HE",
-		"ARTY_Sh_81_WP",
-		"ARTY_Sh_81_ILLUM",
-		"IED"
-	];
-	
-	USEC_special_allow = [
-		2331,
-		2268,
-		2357
 	];
