@@ -36,7 +36,7 @@
 
 		switch (_mission) do {
 			case 1: {
-				_TextTitle ctrlSetText "Dear Sir\n\n   Enclosed is a request for a capture of a local rebel leader. The target is going to be travelling along in a convoy of three vehicles with his own guards. He will be very difficult to take down, you will need to disable his vehicles and take out his guards and scare him to the point that he surrenders.\n\n   Care will need to be taken to not kill the target as he is extremely important to our efforts. Please advise local forces once he is aprehended.";
+				_TextTitle ctrlSetText "Dear Sir\n\n   Enclosed is a request for a capture of a local rebel leader. The target is going to be travelling along in a convoy of three vehicles with his own guards. He will be very difficult to take down, you will need to disable his vehicles and take out his guards and scare him to the point that he surrenders.\n\n   Care will need to be taken to not kill the target as he is extremely important to our efforts. Please advise local forces once he is apprehended.";
 				_TextPicture ctrlSetText format["\usec_lha\ui\targets\%1_CA.paa",(TypeOf _tracker)];
 				
 				_task = player createSimpleTask[_missName];

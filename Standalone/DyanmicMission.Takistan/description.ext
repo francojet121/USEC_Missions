@@ -1,36 +1,48 @@
-/*--------------------------------------------------------------------
-  Author: Unity Security Force
+respawn = "INSTANT";
+respawndelay = 3;
+onLoadMission="USEC Revolution";
+OnLoadIntro = "Version 4.0 Loading";
+OnLoadIntroTime = False;
+OnLoadMissionTime = False;
+disabledAI = true;
 
-  description.ext
-  Server configuration scripting for USEC Training Mission
---------------------------------------------------------------------*/
-
-// Basic Mission information, edit per mission
-author = "Unity Security Force";                    // Displays author, replace this with yourself
-briefingName = "USEC Training 0.9.0 (SMD Sahrani A3)";                 // Mission name in mission select
-overviewPicture = "usec_resources\images\USEC\preview_orbat.paa";             // Picture shown in mission select
-overviewText = "Excellence in Training";                // Mission description in mission select
-onLoadName = "USEC Training 0.9.0 (SMD Sahrani A3)";                   // Mission name on load screen
-loadScreen = "usec_resources\images\USEC\preview_orbat.paa";                // Picture shown on load screen
-onLoadMission = "Excellence in Training";               // Mission description on load screen
-
-respawn = "BASE";                   // BASE (3) Respawn on markers "respawn_west_x". Multiple markers possible. If no marker present, player respawns where he started the mission.
-respawnButton = 1;          // Respawn button enabled
-respawnDelay = 10;                  // Delay in seconds before playable unit respawns.
-respawnDialog = 0;                  // 0/1 to disable the scoreboard from showing automatically
-
-disabledAI = 1;           // Disables AI for Playable Units
-enableDebugConsole = 1;       // Enables Debug Console in Pause menu (1 = Hosts and Admins)
-
-class Header {
-  gameType = Coop;  // Game Type
-  maxPlayers = 80;  // Maximum number of players the mission supports (number of playable units on the map, including Zeus Curators)
-  minPlayers = 1;   // Minimum number of players the mission supports (required for a game to start)
+class Header
+{
+ gameType = COOP;            //DM, Team, Coop, ...
+ minPlayers = 1;             //min # of players the mission supports
+ maxPlayers = 64;            //Max # of players the mission supports
 };
 
-// ----------------------------------------
-//  Classes and Configs
-// ----------------------------------------
+#include "dialog.hpp"
 
+class CfgRadio
+{
+	sounds[] = {};
 
+//	class homer_word_base
+//	{
+//		name = "";
+//		sound[] = {"word_base.wav", db-100, 1.0};
+//		title = "";
+//	};
 
+};
+
+class CfgSounds {
+//	class radio_static2
+//	{
+//		name = "";
+//		sound[] = {"\effects\radio_static", 1, 1.0};
+//		titles[] = {};
+//	};
+};
+
+class CfgMusic
+{
+	tracks[]={};
+//	class music_drumline_1
+//	{
+//		name = "music_drumline_1";
+//		sound[] = {"music_drumline_1.ogg", db+0, 1.0};
+//	};
+};
