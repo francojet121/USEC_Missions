@@ -18,7 +18,7 @@ class Mission
 	randomSeed=16502473;
 	class Intel
 	{
-		briefingName="USEC Revolution (Takistan)";
+		briefingName="USEC Mission Generator";
 		startWeather=0.40000001;
 		startWind=0.1;
 		forecastWeather=0.40000001;
