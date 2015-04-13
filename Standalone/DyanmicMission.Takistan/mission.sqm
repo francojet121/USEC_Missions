@@ -6,10 +6,12 @@ class Mission
 		"rhs_c_troops",
 		"aia_takistan_config",
 		"CAMisc",
-		"aia_misc_config"
+		"aia_misc_config",
+		"rhsusf_c_troops"
 	};
 	addOnsAuto[]=
 	{
+		"rhsusf_c_troops",
 		"rhs_c_troops",
 		"CAMisc",
 		"aia_misc_config",
@@ -33,7 +35,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=33;
+		items=4;
 		class Item0
 		{
 			side="WEST";
@@ -42,72 +44,11 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5818.7017,83.040001,11450.991};
-					azimut=62.338795;
+					position[]={5799.1328,83.040001,11459.609};
+					azimut=28.767599;
 					id=0;
 					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 1";
-				};
-			};
-		};
-		class Item1
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5809.7427,83.040001,11455.609};
-					azimut=28.767612;
-					id=1;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 2";
-				};
-			};
-		};
-		class Item2
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5814.2886,83.040001,11453.379};
-					azimut=18.161011;
-					special="NONE";
-					id=2;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 3";
-				};
-			};
-		};
-		class Item3
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5805.7056,83.040001,11458.116};
-					azimut=28.767599;
-					id=3;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
+					vehicle="rhsusf_socom_marsoc_cso_cqb";
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
@@ -115,528 +56,7 @@ class Mission
 				};
 			};
 		};
-		class Item4
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5823.0688,83.040001,11448.833};
-					azimut=28.767612;
-					id=4;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 5";
-				};
-			};
-		};
-		class Item5
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5803.2661,83.040001,11452.641};
-					azimut=28.767612;
-					id=5;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 6";
-				};
-			};
-		};
-		class Item6
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5807.022,83.040001,11450.22};
-					azimut=28.767612;
-					id=6;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 7";
-				};
-			};
-		};
-		class Item7
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5811.2368,83.040001,11448.36};
-					azimut=28.767612;
-					id=7;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 8";
-				};
-			};
-		};
-		class Item8
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5815.8618,83.040001,11445.507};
-					azimut=28.767612;
-					id=8;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 9";
-				};
-			};
-		};
-		class Item9
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5820.104,83.040001,11443.788};
-					azimut=28.767612;
-					id=9;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 10";
-				};
-			};
-		};
-		class Item10
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5800.4438,83.040001,11448.157};
-					azimut=28.767612;
-					id=10;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 11";
-				};
-			};
-		};
-		class Item11
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5804.481,83.040001,11445.458};
-					azimut=28.767612;
-					id=11;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 12";
-				};
-			};
-		};
-		class Item12
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5808.7505,83.040001,11443.392};
-					azimut=28.767612;
-					id=12;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 13";
-				};
-			};
-		};
-		class Item13
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5813.6255,83.040001,11440.906};
-					azimut=28.767612;
-					id=13;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 14";
-				};
-			};
-		};
-		class Item14
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5817.6079,83.040001,11438.568};
-					azimut=28.767612;
-					id=14;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 15";
-				};
-			};
-		};
-		class Item15
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5797.6157,83.040001,11443.933};
-					azimut=28.767612;
-					id=15;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 16";
-				};
-			};
-		};
-		class Item16
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5801.8325,83.040001,11441.28};
-					azimut=28.767612;
-					id=16;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 17";
-				};
-			};
-		};
-		class Item17
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5806.3149,83.040001,11439.117};
-					azimut=28.767612;
-					id=17;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					ammo=0.10392307;
-					description="Slot 18";
-				};
-			};
-		};
-		class Item18
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5810.6567,83.040001,11436.556};
-					azimut=28.767612;
-					id=18;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 19";
-				};
-			};
-		};
-		class Item19
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5814.7466,83.040001,11433.994};
-					azimut=28.767612;
-					id=19;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 20";
-				};
-			};
-		};
-		class Item20
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5794.9673,83.040001,11439.351};
-					azimut=28.767612;
-					id=20;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 21";
-				};
-			};
-		};
-		class Item21
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5799.4634,83.040001,11436.513};
-					azimut=28.767612;
-					id=21;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 22";
-				};
-			};
-		};
-		class Item22
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5803.6118,83.040001,11434.374};
-					azimut=28.767612;
-					id=22;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 23";
-				};
-			};
-		};
-		class Item23
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5807.8247,83.040001,11431.696};
-					azimut=28.767612;
-					id=23;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 24";
-				};
-			};
-		};
-		class Item24
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5812.0552,83.040001,11429.261};
-					azimut=28.767612;
-					id=24;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 25";
-				};
-			};
-		};
-		class Item25
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5791.606,83.040001,11433.517};
-					azimut=28.767612;
-					id=25;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 26";
-				};
-			};
-		};
-		class Item26
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5796.1011,83.040001,11430.679};
-					azimut=28.767612;
-					id=26;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 27";
-				};
-			};
-		};
-		class Item27
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5800.2505,83.040001,11428.54};
-					azimut=28.767612;
-					id=27;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 28";
-				};
-			};
-		};
-		class Item28
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5804.4653,83.040001,11425.862};
-					azimut=28.767612;
-					id=28;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 29";
-				};
-			};
-		};
-		class Item29
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5808.9165,83.040001,11423.454};
-					azimut=28.767612;
-					id=29;
-					side="WEST";
-					vehicle="rhs_msv_rifleman";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					description="Slot 30";
-				};
-			};
-		};
-		class Item30
+		class Item1
 		{
 			side="EAST";
 			class Vehicles
@@ -645,7 +65,7 @@ class Mission
 				class Item0
 				{
 					position[]={2036.8802,364.90665,378.94897};
-					id=30;
+					id=1;
 					side="EAST";
 					vehicle="rhs_msv_rifleman";
 					leader=1;
@@ -654,7 +74,7 @@ class Mission
 				};
 			};
 		};
-		class Item31
+		class Item2
 		{
 			side="CIV";
 			class Vehicles
@@ -663,7 +83,7 @@ class Mission
 				class Item0
 				{
 					position[]={2048.9258,364.41495,371.95511};
-					id=31;
+					id=2;
 					side="CIV";
 					vehicle="rhs_msv_rifleman";
 					leader=1;
@@ -672,7 +92,7 @@ class Mission
 				};
 			};
 		};
-		class Item32
+		class Item3
 		{
 			side="GUER";
 			class Vehicles
@@ -681,7 +101,7 @@ class Mission
 				class Item0
 				{
 					position[]={2020.1721,365.48282,385.5545};
-					id=32;
+					id=3;
 					side="GUER";
 					vehicle="rhs_msv_rifleman";
 					leader=1;
@@ -697,7 +117,7 @@ class Mission
 		class Item0
 		{
 			position[]={5807.689,83.040001,11463.173};
-			id=33;
+			id=4;
 			side="EMPTY";
 			vehicle="FlagCarrierWest";
 			skill=0.60000002;

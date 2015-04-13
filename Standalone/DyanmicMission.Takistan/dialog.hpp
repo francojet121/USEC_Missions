@@ -671,26 +671,7 @@ class USEC_LHAPlayerMenu : RscStandardDisplay
 		//	h = 0.04125 * safezoneH;
 		//	onButtonClick = "[[0,0,0],0] call fnc_USEC_PERS_ReportIn;";
 		// };
-		class RscButton_1612: RscButton
-		{
-			idc = 1612;
-			text = "Heal Self";
-			x = 0.428385 * safezoneW + safezoneX; // + 0.055 + 0.080
-			y = 0.40375 * safezoneH + safezoneY;
-			w = 0.128906 * safezoneW;
-			h = 0.04125 * safezoneH;
-			onButtonClick = "[] spawn fnc_tower_heal;";
-		}
-		class RscButton_1602: RscButton
-		{
-			idc = 1602;
-			text = "Inventory";
-			x = 0.428385 * safezoneW + safezoneX;
-			y = (0.40375 + 0.055) * safezoneH + safezoneY; // + 0.055
-			w = 0.128906 * safezoneW;
-			h = 0.04125 * safezoneH;
-			onButtonClick = "null = [0,0,0,[0]] execVM '\usec_code\scripts\ui_LogisticsHQ.sqf';";
-		};
+		
 		class RscButton_1603: RscButton
 		{
 			idc = 1603;
@@ -701,16 +682,17 @@ class USEC_LHAPlayerMenu : RscStandardDisplay
 			h = 0.04125 * safezoneH;
 			onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 2;createDialog 'USEC_TimeChange';";
 		};
-		class RscButton_1604: RscButton
-		{
-			idc = 1604;
-			text = "Disable Grass";
-			x = 0.428385 * safezoneW + safezoneX;
-			y = (0.40375 + 0.055 + 0.055 + 0.055) * safezoneH + safezoneY; // + 0.055
-			w = 0.128906 * safezoneW;
-			h = 0.04125 * safezoneH;
-			onButtonClick = "setTerrainGrid 50;";
-		};
+
+//		class RscButton_1604: RscButton
+//		{
+//			idc = 1604;
+//			text = "Disable Grass";
+//			x = 0.428385 * safezoneW + safezoneX;
+//			y = (0.40375 + 0.055 + 0.055 + 0.055) * safezoneH //+ safezoneY; // + 0.055
+//			w = 0.128906 * safezoneW;
+//			h = 0.04125 * safezoneH;
+//			onButtonClick = "setTerrainGrid 50;";
+//		};
 		class RscButton_1605: RscButton
 		{
 			idc = 1605;
