@@ -36,7 +36,7 @@
 
 		switch (_mission) do {
 			case 1: {
-				_TextTitle ctrlSetText "Dear Sir\n\n   Enclosed is a request for the capture of a local rebel leader. The target will be travelling in a convoy of three vehicles with his own guards. He will be very difficult to take down, you will need to disable his vehicles, take out his guards and scare him to the point that he surrenders.\n\n   You must take care not kill the target as he is vitally important to our efforts. Please advise local forces once he is apprehended.";
+				_TextTitle ctrlSetText "Dear Sir\n\n   Enclosed is a request for a capture of a local rebel leader. The target is going to be travelling along in a convoy of three vehicles with his own guards. He will be very difficult to take down, you will need to disable his vehicles and take out his guards and scare him to the point that he surrenders.\n\n   Care will need to be taken to not kill the target as he is extremely important to our efforts. Please advise local forces once he is apprehended.";
 				_TextPicture ctrlSetText format["\usec_lha\ui\targets\%1_CA.paa",(TypeOf _tracker)];
 				
 				_task = player createSimpleTask[_missName];
@@ -84,7 +84,7 @@
 								["MIS003",0,"Rebel leader was Captured"] call fnc_usec_recordEventClient;
 								[_task] call mk_fTaskHint;					
 								_strTime = call fnc_usec_getTimeStr;
-								_first = ["Rebel Leader Has Surrendered",_strTime] spawn BIS_fnc_infoText;
+								_first = ["Rebal Leader Has Surrendered",_strTime] spawn BIS_fnc_infoText;
 								_doMission = false;
 							};
 							default {};
@@ -109,7 +109,7 @@
 				{player removeSimpleTask _x} forEach [_task,_task2];
 			};
 			case 2: {
-				_TextTitle ctrlSetText "Dear Sir\n\n   Enclosed is a request for the disposal of a local rebel leader. The target will be travelling in a convoy of three vehicles with his own guards. He may be travelling by air or by ground vehicles.\n\nFind the rebel leader and dispose of him.\n\nWe have limited intel, and only know the location from which he is leaving, so you will need to search from that location to find him as quick as you can.";
+				_TextTitle ctrlSetText "Dear Sir\n\n   Enclosed is a request for the disposal of a local rebel leader. The target is going to be travelling along in a convoy of three vehicles with his own guards. He may be travelling by air or by ground vehicles.\n\nFind the rebel leader and dispose of him\n\nWe only know the location he is leaving from, so you will need to search from that location to find him as quick as you can.";
 				_TextPicture ctrlSetText format["\usec_lha\ui\targets\%1_CA.paa",(TypeOf _tracker)];
 				
 				_task = player createSimpleTask["Kill Rebel Leader"];
@@ -160,10 +160,10 @@
 				_type = typeOf (_caches select 0);
 				_name = getText (configfile >> "CfgVehicles" >> _type >> "displayName");
 				
-				_TextTitle ctrlSetStructuredText parseText format["Dear Sir<br/><br/>   Recent events have seen a disturbing increase in the operations of local insurgents. We have strong intelligence from our local sources that insurgents are operating a base in your area, centered in <t underline='true'>%1</t>.<br/><br/>We are requesting your assistance in dealing with this matter, and ask if you could spare some forces to destroy all the <t underline='true'>%2s</t> that are located within the town.<br/><br/>Warm Regards,",(text _town),_name];
+				_TextTitle ctrlSetStructuredText parseText format["Dear Sir<br/><br/>   Recent events have seen a disturbing increase in the operations of local insurgents. We have strong intelligence from our local sources that insurgents are operating a base in your area, centered in <t underline='true'>%1</t>.<br/><br/>We are requested your assistance in dealing with this matter, and ask if you could spare some forces to destroy all the <t underline='true'>%2s</t> that are located within the town.<br/><br/>Warm Regards,",(text _town),_name];
 				_TextPicture2 ctrlSetText format["\usec_lha\ui\targets\%1_CA.paa",_type];
 				_taskSml = format["Clear %1 of %2s",(text _town),_name];
-				_taskDesc = format["Insurgents have been reported as operating within the local town of %1. Proceed to %1 and clear it of of %2. You will need to destroy all %2s within the next hour.",(text _town),_name];
+				_taskDesc = format["Insurgents have been reported as operating with the local town of %1. Proceed to %1 and clear it of of %2. You will need to destroy the %2s within the next hour.",(text _town),_name];
 				_taskTiny = format["Clear %1",(text _town)];
 				_task = player createSimpleTask[_taskSml];
 				_task setSimpleTaskDescription[_taskDesc, _taskSml, _taskTiny];
@@ -196,7 +196,7 @@
 						_missionGo = false;
 						//Failed: Time
 						_task settaskstate "FAILED";
-						_taskSml = format["Failed to clear %1 of %2s in time",(text _town),_name];
+						_taskSml = format["Failed to clear %1 of %2s within time",(text _town),_name];
 						["MIS002",0,_taskSml] call fnc_usec_recordEventClient;
 						[_task] call mk_fTaskHint;
 						_strTime = call fnc_usec_getTimeStr;
@@ -219,7 +219,7 @@
 				_TextPicture ctrlSetText"\usec_lha\ui\targets\downedpilot_CA.paa";
 				_taskSml = format["Rescue Crew in %1",(text _town)];
 				//_video = ["\usec_lha\ui\videos\video_helocrash.ogv",[(0.1 * safezoneW + safezoneX), (0.1 * safezoneH + safezoneY), (0.275 * safezoneW), (0.275 * safezoneH)]] spawn bis_fnc_playVideo;
-				_taskDesc = format["A helicopter has been shot down in %1. Proceed there and rescue the crew that are still alive before they are moved. Be careful of civilians.",(text _town),_name];
+				_taskDesc = format["A helicopter has been shot down in %1. Proceed there and rescue those crew that are still alive before are moved. Be careful of civilians.",(text _town),_name];
 				_taskTiny ="Rescue Crew";
 				_task = player createSimpleTask[_taskSml];
 				_task setSimpleTaskDescription[_taskDesc, _taskSml, _taskTiny];
@@ -244,7 +244,7 @@
 					if (!_stillAlive) then {
 						//Failed: Killed
 						_task settaskstate "FAILED";
-						_taskSml = "Failed - the pilot was killed";
+						_taskSml = "Failed as the Pilot was killed";
 						["MIS002",0,_taskSml] call fnc_usec_recordEventClient;
 						[_task] call mk_fTaskHint;
 						_strTime = call fnc_usec_getTimeStr;
@@ -355,7 +355,7 @@
 					if ((_ctime > 60) and !(_status > 1)) then {
 						//Failed: Time
 						_task settaskstate "FAILED";
-						_taskSml = format["Failed to clear %1 of %2s within the time limit",(text _town),_name];
+						_taskSml = format["Failed to clear %1 of %2s within time",(text _town),_name];
 						["MIS002",0,_taskSml] call fnc_usec_recordEventClient;
 						[_task] call mk_fTaskHint;
 						_strTime = call fnc_usec_getTimeStr;
@@ -379,7 +379,7 @@
 				_name = getText (configfile >> "CfgVehicles" >> _type >> "displayName");
 				_totalTime = 20;
 				
-				_TextTitle ctrlSetStructuredText parseText format["Dear Sir<br/><br/>   The 2nd Armoured Division is conducting an attack in your area and we request your assistance in protecting a <t underline='true'>%1</t> that is in direct support of this operation.<br/><br/>   Head immediately to the location and defend the area from all hostile elements. We have reports that local insurgents will try and rush the position, it is vital that the position is protected for the 20 minutes required for the operation.<br/><br/>Warm Regards,",_name];
+				_TextTitle ctrlSetStructuredText parseText format["Dear Sir<br/><br/>   The 2nd Armoured Division is conducting an attack in your area and we request your assistance in protecting a <t underline='true'>%1</t> that is in direct support of this operation.<br/><br/>   Head immediately to the location and defend the area from all enemies. We have reports that local insurgents will try and rush the position, it is vital that the position is protected for the 20 minutes required for the operation.<br/><br/>Warm Regards,",_name];
 				_TextPicture2 ctrlSetText format["\usec_lha\ui\targets\%1_CA.paa",_type];
 				_taskSml = format["Defend %1",_name];
 				_taskDesc = format["Defend a %1 that is support of an allied attack",_name];
@@ -450,11 +450,11 @@
 				_town = _tracker;
 				_object = _this select 3;
 				_totalTime = _this select 4;
-				_TextTitle ctrlSetStructuredText  parseText format["Dear Sir\n\n   Our headquarters has received information regarding the local of a local rebel leader. He is currently located his headquarters in <t underline='true'>%1</t> and we believe it is heavily fortified.<br/><br/>   You should expect a difficult entry and multiple lines of defence, including patrols.<br/><br/>    We have received reports he will be leaving the complex in <t underline='true'>%2 minutes time</t>.",(text _town),_totalTime];
+				_TextTitle ctrlSetStructuredText  parseText format["Dear Sir\n\n   Our office has received information regarding the local of a local rebel leader. He is currently located his headquarters in <t underline='true'>%1</t> and we believe it is heavily fortified.<br/><br/>   You should expect a difficult entry and multiple lines of defence, including patrols.<br/><br/>    We have received reports he will be leaving the complex in <t underline='true'>%2 minutes time</t>.",(text _town),_totalTime];
 				_TextPicture ctrlSetText format["\usec_lha\ui\targets\%1_CA.paa",(TypeOf _object)];
 				
 				_task = player createSimpleTask[_missName];
-				_task setSimpleTaskDescription[format["A Rebel leader has established an HQ in your area. You must assault his complex and eliminate him. Expect his complex to be heavily guarded. You must eliminate him within %1 minutes.",_totalTime], "Kill Rebel Leader", "Kill"];
+				_task setSimpleTaskDescription[format["A Rebel leader has established an HQ in your area. You must assault his complex and eleminate him. Expect his complex to be heavily guarded. You must eliminate him within %1 minutes",_totalTime], "Kill Rebel Leader", "Kill"];
 				_task setSimpleTaskDestination (position _tracker);
 				
 				["MIS001",0,_missName] call fnc_usec_recordEventClient;

@@ -18,7 +18,7 @@ class Mission
 	randomSeed=16502473;
 	class Intel
 	{
-		briefingName="USEC Mission Generator";
+		briefingName="USEC Revolution (Takistan)";
 		startWeather=0.40000001;
 		startWind=0.1;
 		forecastWeather=0.40000001;
@@ -701,7 +701,7 @@ class Mission
 			side="EMPTY";
 			vehicle="FlagCarrierWest";
 			skill=0.60000002;
-			init="this addAction [""Access Player Menu"", ""scripts/ui_lhaPlayermenu.sqf"", [], 7, true, false]; player addAction [""A Useless Action"", ""test""];";
+			init="this addAction [""Access Player Menu"", ""\usec_code\scripts\ui_lhaPlayermenu.sqf"", [], 7, true, false];";
 		};
 	};
 	class Markers
