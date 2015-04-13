@@ -671,45 +671,50 @@ class USEC_LHAPlayerMenu : RscStandardDisplay
 		//	h = 0.04125 * safezoneH;
 		//	onButtonClick = "[[0,0,0],0] call fnc_USEC_PERS_ReportIn;";
 		// };
-		class RscButton_1612: RscButton
-		{
-			idc = 1612;
-			text = "Heal Self";
-			x = 0.428385 * safezoneW + safezoneX; // + 0.055 + 0.080
-			y = 0.40375 * safezoneH + safezoneY;
-			w = 0.128906 * safezoneW;
-			h = 0.04125 * safezoneH;
-			onButtonClick = "[] spawn fnc_tower_heal;";
-		}
-		class RscButton_1602: RscButton
-		{
-			idc = 1602;
-			text = "Inventory";
-			x = 0.428385 * safezoneW + safezoneX;
-			y = (0.40375 + 0.055) * safezoneH + safezoneY; // + 0.055
-			w = 0.128906 * safezoneW;
-			h = 0.04125 * safezoneH;
-			onButtonClick = "null = [0,0,0,[0]] execVM '\usec_code\scripts\ui_LogisticsHQ.sqf';";
-		};
 		class RscButton_1603: RscButton
 		{
 			idc = 1603;
 			text = "Set Time";
-			x = 0.428385 * safezoneW + safezoneX;
-			y = (0.40375 + 0.055 + 0.055) * safezoneH + safezoneY; // + 0.055
+			x = 0.428385 * safezoneW + safezoneX; // + 0.055 + 0.080
+			y = 0.40375 * safezoneH + safezoneY;
 			w = 0.128906 * safezoneW;
 			h = 0.04125 * safezoneH;
 			onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 2;createDialog 'USEC_TimeChange';";
 		};
-		class RscButton_1604: RscButton
+
+		//REMOVE IF NOT DESIRED MATT
+/*		class RscButton_1604: RscButton
 		{
 			idc = 1604;
 			text = "Disable Grass";
 			x = 0.428385 * safezoneW + safezoneX;
-			y = (0.40375 + 0.055 + 0.055 + 0.055) * safezoneH + safezoneY; // + 0.055
+			y = (0.40375 + 0.055) * safezoneH + safezoneY; // + 0.055
 			w = 0.128906 * safezoneW;
 			h = 0.04125 * safezoneH;
 			onButtonClick = "setTerrainGrid 50;";
+		};
+*/
+		
+		class RscButton_1606: RscButton
+		{
+			idc = 1606;
+			text = "Kill Target";
+			x = 0.428385 * safezoneW + safezoneX;
+			y = (0.40375 + 0.055 + 0.055) * safezoneH + safezoneY; // + 0.055
+			w = 0.128906 * safezoneW;
+			h = 0.04125 * safezoneH;
+			onButtonClick = "missionStarter = 'mis_killInConvoy.sqf';publicVariable 'missionStarter';(ctrlParent (_this select 0)) closeDisplay 2;";
+		};		
+		
+		class RscButton_1611: RscButton
+		{
+			idc = 1611;
+			text = "Direct Action";
+			x = 0.428385 * safezoneW + safezoneX;
+			y = (0.40375 + 0.055 + 0.055 + 0.055) * safezoneH + safezoneY; // + 0.055
+			w = 0.128906 * safezoneW;
+			h = 0.04125 * safezoneH;
+			onButtonClick = "missionStarter = 'mis_directAction.fsm';publicVariable 'missionStarter';(ctrlParent (_this select 0)) closeDisplay 2;";
 		};
 		class RscButton_1605: RscButton
 		{
@@ -721,7 +726,8 @@ class USEC_LHAPlayerMenu : RscStandardDisplay
 			h = 0.04125 * safezoneH;
 			onButtonClick = "missionStarter = 'mis_captureInConvoy.sqf';publicVariable 'missionStarter';(ctrlParent (_this select 0)) closeDisplay 2;";
 		};
-		class RscButton_1606: RscButton
+		
+/*		class RscButton_1606: RscButton
 		{
 			idc = 1606;
 			text = "Kill Target";
@@ -731,6 +737,8 @@ class USEC_LHAPlayerMenu : RscStandardDisplay
 			h = 0.04125 * safezoneH;
 			onButtonClick = "missionStarter = 'mis_killInConvoy.sqf';publicVariable 'missionStarter';(ctrlParent (_this select 0)) closeDisplay 2;";
 		};
+*/
+
 		class RscButton_1607: RscButton
 		{
 			idc = 1607;
@@ -741,7 +749,8 @@ class USEC_LHAPlayerMenu : RscStandardDisplay
 			h = 0.04125 * safezoneH;
 			onButtonClick = "missionStarter = 'mis_destroyCache.sqf';publicVariable 'missionStarter';(ctrlParent (_this select 0)) closeDisplay 2;";
 		};
-		class RscButton_1611: RscButton
+
+/*		class RscButton_1611: RscButton
 		{
 			idc = 1611;
 			text = "Direct Action";
@@ -751,6 +760,8 @@ class USEC_LHAPlayerMenu : RscStandardDisplay
 			h = 0.04125 * safezoneH;
 			onButtonClick = "missionStarter = 'mis_directAction.fsm';publicVariable 'missionStarter';(ctrlParent (_this select 0)) closeDisplay 2;";
 		};
+*/
+
 		class RscButton_1608: RscButton
 		{
 			idc = 1608;

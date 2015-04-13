@@ -6,6 +6,7 @@
 	- Gets out of car when disabled
 	- Runs away and gives up when all his guards are shot
 */
+	hint "CC Debug 1";
 if (isServer) then {
 /*
 	MISSION FUNCTIONS
@@ -21,7 +22,7 @@ _index = floor(random (count USEC_IslandConvoyPts));
 _array = USEC_IslandConvoyPts select _index;
 _locSpawn = _array select 0;
 _locDest = _array select 1;
-_crewClass = "TK_Special_Forces_EP1";
+_crewClass = "rhs_msv_rifleman";
 _index = floor(random (count USEC_MissionCars));
 _vehicleClass = USEC_MissionCars select _index;
 _spec = "NONE";
@@ -124,10 +125,10 @@ _targetClass = USEC_MissionTargetPeople select _index;
 	USEC_MissionCleanup = USEC_MissionCleanup + [_target];
 	
 	if (count (weapons _target) == 0) then {
-		_target addMagazine "15Rnd_9x19_M9";
-		_target addMagazine "15Rnd_9x19_M9";
-		_target addMagazine "15Rnd_9x19_M9";
-		_target addWeapon "M9";
+		_target addMagazine "16Rnd_9x21_Mag";
+		_target addMagazine "16Rnd_9x21_Mag";
+		_target addMagazine "16Rnd_9x21_Mag";
+		_target addWeapon "hgun_P07_F";
 	};
 
 	//Drivers
