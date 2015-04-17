@@ -24,7 +24,7 @@ hint "If you see this something is wrong, tell JJ!! (number 1)";
 COS_distance=500;//Set spawn distance
 _aerielActivation=false;// Set if flying units can activate civilian Zones
 
-blackListTowns = [];// Remove towns from COS
+blackListTowns = ["Rahmadi", "Arcadia", "Cayo", "Tiberia", "Iguana", "Parato", "Dolores", "Geraldo", "Gulan", "Somato", "Yoro", "Pesto", "Bonanza", "Corinto", "Paraiso", "Estrella", "Cedras", "Ambergris", "Chantico", "Balmopan", "Rashidah", "Corazol", "Gaula", "Modesta", "Valor", "Everon", "Obregan", "Mercalillo"];// Remove towns from COS
 
 whiteListMkrs=[];// Add Custom Markers for COS to populate 
 
@@ -83,7 +83,7 @@ if (({_name==_x} count blackListTowns)>0 OR (_name == "")) then {}else{
 
 		
 // Customise population by number of houses
-_randomisation=5;
+_randomisation=3;
 	if (_houses <= 10) 
 		then {
 	_civilians=2+ round(random _randomisation);// Civilians spawned
@@ -92,27 +92,27 @@ _randomisation=5;
 			};		
  	if (_houses <= 30 and _houses > _randomisation) 
 		then {
-	_civilians=5+ round(random _randomisation);// Civilians spawned
+	_civilians=3+ round(random _randomisation);// Civilians spawned
 	_vehicles=1;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};
 			
  	if (_houses <= 70 and _houses > 30) 
 		then {
-	_civilians=10+ round(random _randomisation);// Civilians spawned
+	_civilians=5+ round(random _randomisation);// Civilians spawned
 	_vehicles=2;// Moving Vehicles Spawned
 	_parked=2;// Parked Vehicles Spawned
 			};
 			
  	if (_houses <= 140 and _houses > 70) 
 		then {
-	_civilians=20+ round(random _randomisation);// Civilians spawned
+	_civilians=10+ round(random _randomisation);// Civilians spawned
 	_vehicles=3;// Moving Vehicles Spawned
 	_parked=2;// Parked Vehicles Spawned
 			};
  	if (_houses > 140) 
 		then {
-	_civilians=40+ round(random _randomisation);// Civilians spawned
+	_civilians=20+ round(random _randomisation);// Civilians spawned
 	_vehicles=5;// Moving Vehicles Spawned
 	_parked=2;// Parked Vehicles Spawned
 			};
