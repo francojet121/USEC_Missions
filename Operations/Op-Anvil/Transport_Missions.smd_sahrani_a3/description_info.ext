@@ -6,16 +6,16 @@
 --------------------------------------------------------------------*/
 
 // Author
-author = "Unity Security Force";
+author = "2LT Stark";
 
 // Mission name
-briefingName = "USEC Template 0.9.1"; // in mission select menu
-onLoadName = "USEC Template 0.9.1"; // on load screen
+briefingName = "Op Anvil Transport Missions"; // in mission select menu
+onLoadName = "Op Anvil Transport Missions"; // on load screen
 
 // Picture shown
 overviewPicture = "usec_resources\images\USEC\preview_orbat.paa"; // in mission select menu
 loadScreen = "usec_resources\images\USEC\preview_orbat.paa"; // on load screen
 
 // Mission description
-overviewText = "Template Mission for quick and easy mission making."; // in mission select menu
-onLoadMission = "Template Mission for quick and easy mission making."; // on load screen
+overviewText = "Transport supplies from the LHD to the FOBs."; // in mission select menu
+onLoadMission = "Transport supplies from the LHD to the FOBs."; // on load screen
