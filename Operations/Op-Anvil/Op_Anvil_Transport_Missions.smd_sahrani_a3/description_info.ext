@@ -9,8 +9,8 @@
 author = "2LT Stark";
 
 // Mission name
-briefingName = "Op Anvil Transport Missions"; // in mission select menu
-onLoadName = "Op Anvil Transport Missions"; // on load screen
+briefingName = "Op Anvil Transport"; // in mission select menu
+onLoadName = "Op Anvil Transport"; // on load screen
 
 // Picture shown
 overviewPicture = "usec_resources\images\USEC\preview_orbat.paa"; // in mission select menu
