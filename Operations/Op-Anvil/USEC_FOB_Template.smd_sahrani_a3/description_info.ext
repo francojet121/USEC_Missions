@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------------
+  Author: Unity Security Force
+
+  description_info.hpp
+  Part of description.ext - Mission description and information
+--------------------------------------------------------------------*/
+
+// Author
+author = "Unity Security Force";
+
+// Mission name
+briefingName = "USEC Template 0.9.1"; // in mission select menu
+onLoadName = "USEC Template 0.9.1"; // on load screen
+
+// Picture shown
+overviewPicture = "usec_resources\images\USEC\preview_orbat.paa"; // in mission select menu
+loadScreen = "usec_resources\images\USEC\preview_orbat.paa"; // on load screen
+
+// Mission description
+overviewText = "Template Mission for quick and easy mission making."; // in mission select menu
+onLoadMission = "Template Mission for quick and easy mission making."; // on load screen
