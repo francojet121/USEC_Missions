@@ -21,6 +21,3 @@
 
 // =======================================
 
-// Set respawn height to LHD Hangar Deck
-_mrk_respawn_west = "respawn_west";
-_mrk_respawn_west setMarkerPosLocal [markerPos _mrk_respawn_west select 0, markerPos _mrk_respawn_west select 1, 11];
