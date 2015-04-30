@@ -29,8 +29,7 @@ class Mission
 		"A3_Modules_F_Sites",
 		"A3_Weapons_F_Explosives",
 		"A3_Structures_F_Civ_Lamps",
-		"rhs_c_btr",
-		"yoink_opf_ins"
+		"rhs_c_btr"
 	};
 	addOnsAuto[]=
 	{
@@ -58,7 +57,6 @@ class Mission
 		"A3_Structures_F_Mil_Shelters",
 		"A3_Weapons_F_Explosives",
 		"A3_Structures_F_Civ_Lamps",
-		"yoink_opf_ins",
 		"smd_sahrani_a3"
 	};
 	randomSeed=71362;
@@ -5885,7 +5883,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=680;
+		items=679;
 		class Item0
 		{
 			position[]={13731.5,0.0066738101,10606.3};
@@ -12582,18 +12580,10 @@ class Mission
 			leader=1;
 			skill=0.5;
 		};
-		class Item679
-		{
-			position[]={11385.95,0.57592177,10483.118};
-			id=996;
-			side="EMPTY";
-			vehicle="y_boat_a";
-			skill=0.60000002;
-		};
 	};
 	class Markers
 	{
-		items=13;
+		items=8;
 		class Item0
 		{
 			position[]={14213.524,9.9723988,10556.834};
@@ -12687,41 +12677,6 @@ class Mission
 			fillName="DiagGrid";
 			a=6;
 			b=100;
-		};
-		class Item8
-		{
-			position[]={12744.68,25.134487,8662.332};
-			name="1";
-			text="L1";
-			type="hd_start";
-		};
-		class Item9
-		{
-			position[]={11242.441,-3.0927153,10540.42};
-			name="rhib";
-			text="RHIB's";
-			type="mil_flag";
-		};
-		class Item10
-		{
-			position[]={11058.375,17.152941,10524.08};
-			name="2";
-			text="L2";
-			type="mil_start";
-		};
-		class Item11
-		{
-			position[]={12340.77,26.770168,9646.9688};
-			name="HAMMER";
-			text="HAMMER";
-			type="mil_dot";
-		};
-		class Item12
-		{
-			position[]={13229.69,1.4836085,10514.528};
-			name="BAY";
-			text="BAY";
-			type="hd_flag";
 		};
 	};
 	class Sensors
