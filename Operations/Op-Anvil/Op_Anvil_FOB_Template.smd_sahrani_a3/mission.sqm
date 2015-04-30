@@ -4374,12 +4374,13 @@ class Mission
 		class Item221
 		{
 			position[]={9692.0498,37.335529,6119.8521};
-			azimut=179.20715;
+			azimut=179.207;
 			offsetY=-0.00128937;
 			id=326;
 			side="EMPTY";
 			vehicle="Land_MapBoard_F";
 			skill=0.60000002;
+			init="null = [this, this] execVM ""Whiteboards\UCOMBRIEFING.sqf"";";
 		};
 		class Item222
 		{
@@ -5047,6 +5048,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_MapBoard_F";
 			skill=0.60000002;
+			init="null = [this, this] execVM ""Whiteboards\LBRIEFING.sqf"";";
 		};
 		class Item287
 		{
