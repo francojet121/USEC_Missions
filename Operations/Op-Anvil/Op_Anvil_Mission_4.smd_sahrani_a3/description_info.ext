@@ -6,7 +6,7 @@
 --------------------------------------------------------------------*/
 
 // Author
-author = "2LT Stark";
+author = "2LT J.Stark";
 
 // Mission name
 briefingName = "Operation Anvil Phase 4"; // in mission select menu
@@ -17,5 +17,5 @@ overviewPicture = "usec_resources\images\USEC\preview_orbat.paa"; // in mission 
 loadScreen = "usec_resources\images\USEC\preview_orbat.paa"; // on load screen
 
 // Mission description
-overviewText = "Arrive in Sahrani and defend Dolores from the DPRS."; // in mission select menu
-onLoadMission = "Arrive in Sahrani and defend Dolores from the DPRS."; // on load screen
+overviewText = "Locate and destroy arms shipment."; // in mission select menu
+onLoadMission = "Locate and destroy arms shipment."; // on load screen

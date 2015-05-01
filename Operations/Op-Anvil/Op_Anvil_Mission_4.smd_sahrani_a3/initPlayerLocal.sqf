@@ -12,15 +12,12 @@
 [ 
   [ 
     ["Unity Security Force", "<t size = '0.7' underline = '1'>%1</t><br/>"],
-    ["Mission 4 - Locate and destroy arms shipment"],
-    ["USS Okinawa"],
+    ["Mission 4 - Arms shipment"],
     ["FOB Tartarus"],
-    ["October 7th, 2030", "<t size = '0.7' font='puristaMedium'>%1</t>", 70]
+    ["Sahrani"],
+    ["October 07, 2030", "<t size = '0.7' font='puristaMedium'>%1</t>", 70]
   ], 1, 0.75, "<t align = 'center' shadow = '1' size = '1.0'>%1</t>"
 ] spawn BIS_fnc_typeText;
 
 // =======================================
 
-// Set respawn height to LHD Hangar Deck
-_mrk_respawn_west = "respawn_west";
-_mrk_respawn_west setMarkerPosLocal [markerPos _mrk_respawn_west select 0, markerPos _mrk_respawn_west select 1, 11];
