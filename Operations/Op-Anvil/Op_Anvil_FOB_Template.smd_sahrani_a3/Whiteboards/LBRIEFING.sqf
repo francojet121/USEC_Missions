@@ -16,6 +16,7 @@ _defaultTexture = "Images\default.paa";
 _actions = [
   ["Clear Board", "Images\default.paa"], 
   ["Objectives", "Images\objectives.paa"],
+  ["Target photos", "Images\vehicles.paa"],
   ["L1", "Images\L1_1.paa"],  
   ["L2 step 1", "Images\L2_1.paa"], 
   ["L2 step 2", "Images\L2_2.paa"],
