@@ -12584,21 +12584,8 @@ class Mission
 	};
 	class Markers
 	{
-		items=13;
+		items=12;
 		class Item0
-		{
-			position[]={14213.524,9.9723988,10556.834};
-			name="mibe_2_1";
-			text="mines";
-			markerType="ELLIPSE";
-			type="Empty";
-			colorName="ColorRed";
-			fillName="DiagGrid";
-			a=60;
-			b=40;
-			angle=25;
-		};
-		class Item1
 		{
 			position[]={13208.763,5.8308649,9042.2529};
 			name="dmz1";
@@ -12610,7 +12597,7 @@ class Mission
 			b=50;
 			angle=130.04712;
 		};
-		class Item2
+		class Item1
 		{
 			position[]={13264.273,12.100875,8941.207};
 			name="dmz1_1";
@@ -12622,7 +12609,7 @@ class Mission
 			b=30;
 			angle=121.63929;
 		};
-		class Item3
+		class Item2
 		{
 			position[]={13304.1,11.387188,9008.4141};
 			name="dmz1_2";
@@ -12634,7 +12621,7 @@ class Mission
 			b=60;
 			angle=90;
 		};
-		class Item4
+		class Item3
 		{
 			position[]={13410.483,16.604511,8943.04};
 			name="dmz1_3";
@@ -12646,7 +12633,7 @@ class Mission
 			b=85;
 			angle=142.901;
 		};
-		class Item5
+		class Item4
 		{
 			position[]={13242.399,12.649923,8981.1865};
 			name="dmz1_4";
@@ -12657,7 +12644,7 @@ class Mission
 			a=6;
 			b=30;
 		};
-		class Item6
+		class Item5
 		{
 			position[]={13289.641,11.955956,8781.5205};
 			name="dmz2";
@@ -12668,7 +12655,7 @@ class Mission
 			a=6;
 			b=150;
 		};
-		class Item7
+		class Item6
 		{
 			position[]={13461.462,12.011525,8780.21};
 			name="dmz2_1";
@@ -12679,35 +12666,35 @@ class Mission
 			a=6;
 			b=100;
 		};
-		class Item8
+		class Item7
 		{
 			position[]={12744.68,25.134487,8662.332};
 			name="1";
 			text="L1";
 			type="hd_start";
 		};
-		class Item9
+		class Item8
 		{
 			position[]={11242.441,-3.0927153,10540.42};
 			name="rhib";
 			text="RHIB's";
 			type="mil_flag";
 		};
-		class Item10
+		class Item9
 		{
 			position[]={11058.375,17.152941,10524.08};
 			name="2";
 			text="L2";
 			type="mil_start";
 		};
-		class Item11
+		class Item10
 		{
 			position[]={12340.77,26.770168,9646.9688};
 			name="HAMMER";
 			text="HAMMER";
 			type="mil_dot";
 		};
-		class Item12
+		class Item11
 		{
 			position[]={13229.69,1.4836085,10514.528};
 			name="BAY";
