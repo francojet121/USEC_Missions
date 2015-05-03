@@ -2639,7 +2639,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_OfficeChair_01_F";
 			skill=0.60000002;
-			init="this call USEC_Misc_fnc_chair;";
+			init="this call USEC_Misc_fnc_chair; this enableSimulation false;";
 		};
 		class Item51
 		{
@@ -2650,7 +2650,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_OfficeChair_01_F";
 			skill=0.60000002;
-			init="this call USEC_Misc_fnc_chair;";
+			init="this call USEC_Misc_fnc_chair; this enableSimulation false;";
 		};
 		class Item52
 		{
@@ -2661,7 +2661,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_OfficeChair_01_F";
 			skill=0.60000002;
-			init="this call USEC_Misc_fnc_chair;";
+			init="this call USEC_Misc_fnc_chair; this enableSimulation false;";
 		};
 		class Item53
 		{
@@ -4380,7 +4380,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_MapBoard_F";
 			skill=0.60000002;
-			init="null = [this, this] execVM ""Whiteboards\UCOMBRIEFING.sqf"";";
+			text="whiteboard_equipmentUCOM";
 		};
 		class Item222
 		{
@@ -5048,7 +5048,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_MapBoard_F";
 			skill=0.60000002;
-			init="null = [this, this] execVM ""Whiteboards\LBRIEFING.sqf"";";
+			text="whiteboard_equipmentUX501";
 		};
 		class Item287
 		{

@@ -28,4 +28,4 @@ _actions = [
 
 
 // DO NOT EDIT!
-[_this select 0, _this select 1, _defaultTexture, _actions] call USEC_Misc_fnc_whiteboardController;
+[whiteboard_equipmentUX501, whiteboard_equipmentUX501, _defaultTexture, _actions] call USEC_Misc_fnc_whiteboardController;
