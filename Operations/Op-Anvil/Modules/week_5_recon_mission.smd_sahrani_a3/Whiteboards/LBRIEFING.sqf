@@ -16,10 +16,12 @@ _defaultTexture = "Images\default.paa";
 _actions = [
   ["Clear Board", "Images\default.paa"], 
   ["Objectives", "Images\objectives.paa"],
-  ["L1", "Images\L1_1.paa"],  
-  ["L2 step 1", "Images\L2_1.paa"], 
-  ["L2 step 2", "Images\L2_2.paa"],
-  ["Waldo", "Images\waldo.paa"]   
+  ["Annotated AO", "Images\KnAO.paa"],  
+  ["Annotated Objective", "Images\ObjAnno.paa"], 
+  ["Callsigns", "Images\Callsigns.paa"],
+  ["Radio Channels", "Images\comms.paa"],
+  ["Codewords 1", "Images\CWp1.paa"],
+  ["Codewords 2", "Images\CWp2.paa"]   
   // Last action has to be without a comma, all others must have it
 ];
 
@@ -27,4 +29,4 @@ _actions = [
 
 
 // DO NOT EDIT!
-[_this select 0, _this select 1, _defaultTexture, _actions] call USEC_Misc_fnc_whiteboardController;
+[whiteboard_equipmentUX501, whiteboard_equipmentUX501, _defaultTexture, _actions] call USEC_Misc_fnc_whiteboardController;
