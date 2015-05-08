@@ -1483,7 +1483,6 @@ class Mission
 					id=83;
 					side="WEST";
 					vehicle="B_officer_F";
-					player="PLAYER COMMANDER";
 					leader=1;
 					rank="COLONEL";
 					skill=0.60000002;
@@ -1532,7 +1531,7 @@ class Mission
 				class Item0
 				{
 					position[]={9643.9072,37.948006,6091.3032};
-					azimut=2.3321152;
+					azimut=2.3321199;
 					special="NONE";
 					id=86;
 					side="WEST";
@@ -2105,7 +2104,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=509;
+		items=510;
 		class Item0
 		{
 			position[]={2370.4099,17.058773,2703.53};
@@ -7251,6 +7250,16 @@ class Mission
 			skill=0.60000002;
 			text="whiteboard_equipmentUX411";
 			init="this setObjectTexture [0, ""usec_resources\images\Whiteboard\equipmentUX411.paa""];";
+		};
+		class Item509
+		{
+			position[]={9639.5029,38.014919,6088.6533};
+			azimut=179.34781;
+			id=614;
+			side="EMPTY";
+			vehicle="Land_MapBoard_F";
+			skill=0.60000002;
+			init="this setObjectTexture [0, ""images\Whiteboard\loadouts.paa""];";
 		};
 	};
 	class Markers
