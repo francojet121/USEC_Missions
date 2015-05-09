@@ -1478,11 +1478,12 @@ class Mission
 				class Item0
 				{
 					position[]={9691.374,38.197922,6138.9702};
-					azimut=-4.9700732;
+					azimut=-4.9700699;
 					special="NONE";
 					id=83;
 					side="WEST";
 					vehicle="B_officer_F";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="COLONEL";
 					skill=0.60000002;
@@ -2422,7 +2423,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_MapBoard_F";
 			skill=0.60000002;
-			text="whiteboard_equipmentUX152";
+			text="whiteboard_interactiveUX152_landFOB";
 			init="this enableSimulation false;";
 		};
 		class Item31
@@ -4380,7 +4381,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_MapBoard_F";
 			skill=0.60000002;
-			text="whiteboard_equipmentUCOM";
+			text="whiteboard_interactiveUCOM_landFOB";
 		};
 		class Item222
 		{
@@ -5048,7 +5049,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_MapBoard_F";
 			skill=0.60000002;
-			text="whiteboard_equipmentUX501";
+			text="whiteboard_interactiveUX501_landFOB";
 		};
 		class Item287
 		{
@@ -7248,7 +7249,6 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_MapBoard_F";
 			skill=0.60000002;
-			text="whiteboard_equipmentUX411";
 			init="this setObjectTexture [0, ""usec_resources\images\Whiteboard\equipmentUX411.paa""];";
 		};
 		class Item509

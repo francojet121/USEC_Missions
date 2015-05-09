@@ -21,3 +21,5 @@
 
 // =======================================
 
+execVM "Whiteboards\LBRIEFING.sqf";
+execVM "Whiteboards\UCOMBRIEFING.sqf";

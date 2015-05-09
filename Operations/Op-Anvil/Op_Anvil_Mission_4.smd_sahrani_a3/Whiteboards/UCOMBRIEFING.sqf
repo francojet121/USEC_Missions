@@ -28,4 +28,4 @@ _actions = [
 
 
 // DO NOT EDIT!
-[whiteboard_equipmentUCOM, whiteboard_equipmentUCOM, _defaultTexture, _actions] call USEC_Misc_fnc_whiteboardController;
+[whiteboard_interactiveUCOM_landFOB, whiteboard_interactiveUCOM_landFOB, _defaultTexture, _actions] call USEC_Misc_fnc_whiteboardController;
