@@ -1891,7 +1891,7 @@ class Mission
 						};
 						class Item14
 						{
-							value="1";
+							value="0";
 							parentCls="AGM_ModuleMedical";
 							typeName="AutomaticWakeup";
 						};
