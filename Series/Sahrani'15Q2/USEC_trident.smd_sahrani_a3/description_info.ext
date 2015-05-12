@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------------
+  Author: Unity Security Force
+
+  description_info.hpp
+  Part of description.ext - Mission description and information
+--------------------------------------------------------------------*/
+
+// Author
+author = "John Romano";
+
+// Mission name
+briefingName = "Trident"; // in mission select menu
+onLoadName = "Trident"; // on load screen
+
+// Picture shown
+overviewPicture = "usec_resources\images\USEC\preview_orbat.paa"; // in mission select menu
+loadScreen = "usec_resources\images\USEC\preview_orbat.paa"; // on load screen
+
+// Mission description
+overviewText = "USEC forces must assault three Russian held objectives."; // in mission select menu
+onLoadMission = "USEC forces must assault three Russian held objectives."; // on load screen
