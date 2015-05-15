@@ -3,26 +3,37 @@ class Mission
 {
 	addOns[]=
 	{
+		"a3_characters_f_beta",
+		"a3_uav_f_characters_f_gamma",
+		"A3_Modules_F_HC",
+		"task_force_radio_items",
+		"A3_Characters_F_Kart",
+		"A3_Characters_F_Civil",
+		"A3_Structures_F_EPA_Civ_Camping",
+		"A3_Missions_F_Curator",
+		"agm_respawn",
+		"A3_Boat_F_SDV_01",
 		"smd_sahrani_a3",
-		"A3_Structures_F_Mil_BagFence",
+		"A3_Structures_F_Civ_Camping",
 		"aia_misc3_config",
+		"A3_Structures_F_Mil_Cargo",
+		"A3_Structures_F_Mil_BagBunker",
 		"aia_misc_e_config",
+		"a3_structures_f_mil_fortification",
 		"rhs_c_troops",
 		"rhs_c_heavyweapons",
-		"A3_Structures_F_Mil_Cargo",
-		"A3_Structures_F_Civ_Camping",
-		"rhs_c_cars",
-		"A3_Structures_F_Mil_BagBunker",
+		"rhs_c_btr",
 		"rhs_c_a2port_armor",
+		"A3_Structures_F_Mil_BagFence",
+		"rhs_c_cars",
 		"rhs_c_radars",
 		"rhs_c_2s3",
-		"A3_Structures_F_Mil_Fortification",
 		"A3_Structures_F_Ind_Transmitter_Tower",
 		"rhs_c_trucks",
-		"rhs_c_btr",
 		"rhs_c_a2port_car",
 		"rhs_c_weapons",
-		"A3_Structures_F_Civ_Lamps"
+		"A3_Structures_F_Civ_Lamps",
+		"A3_Boat_F_Boat_Transport_01"
 	};
 	addOnsAuto[]=
 	{
@@ -47,21 +58,21 @@ class Mission
 		"A3_Structures_F_Civ_Lamps",
 		"smd_sahrani_a3"
 	};
-	randomSeed=591373;
+	randomSeed=12093201;
 	class Intel
 	{
-		startWeather=0.34999999;
-		startFog=0.12;
+		startWeather=0.29999998;
 		startWind=0.099999994;
 		startWaves=0.099999994;
 		forecastWeather=0.29999998;
 		forecastWind=0.099999994;
 		forecastWaves=0.099999994;
 		forecastLightnings=0.099999994;
-		year=2007;
-		month=7;
-		day=7;
-		hour=3;
+		year=2030;
+		month=10;
+		day=12;
+		hour=8;
+		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
@@ -2495,7 +2506,7 @@ class Mission
 		};
 		class Item30
 		{
-			position[]={10570.396,122.3228,13917.488};
+			position[]={10570.396,122.32279,13917.488};
 			azimut=-142.66115;
 			id=124;
 			side="EMPTY";
@@ -2569,7 +2580,7 @@ class Mission
 		};
 		class Item37
 		{
-			position[]={11834.814,226.16985,14427.604};
+			position[]={11834.814,226.16995,14427.604};
 			id=131;
 			side="EMPTY";
 			vehicle="Land_tent_east";
@@ -2694,7 +2705,7 @@ class Mission
 		};
 		class Item50
 		{
-			position[]={10559.771,213.18349,14114.14};
+			position[]={10559.771,213.18385,14114.14};
 			azimut=220.15819;
 			offsetY=3;
 			id=144;
@@ -2707,7 +2718,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=8;
+		items=15;
 		class Item0
 		{
 			position[]={10382.303,212.98579,15093.125};
@@ -2783,10 +2794,66 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={2543.78,13.891523,2841.3074};
-			name="152_fob";
-			text="FOB Icarus";
-			type="b_air";
+			position[]={9621.3887,0.91049248,11189.976};
+			name="Boats";
+			text="Boats";
+			type="mil_marker";
+			colorName="ColorWEST";
+		};
+		class Item8
+		{
+			position[]={9713.8506,1.0055792,13362.725};
+			name="Beach landing";
+			text="Beach Landing";
+			type="mil_arrow2";
+			colorName="ColorWEST";
+			angle=40.119373;
+		};
+		class Item9
+		{
+			position[]={10099.169,185.23181,13939.8};
+			name="OP Keyhole";
+			text="OP Keyhole";
+			type="mil_flag";
+			colorName="ColorWEST";
+		};
+		class Item10
+		{
+			position[]={12460.448,227.46576,13719.342};
+			name="Dropoff";
+			text="Dropoff";
+			type="mil_end";
+			colorName="ColorWEST";
+		};
+		class Item11
+		{
+			position[]={10155.691,317.36203,14781.923};
+			name="Overwatch";
+			text="Hammer Overwatch Pos";
+			type="mil_ambush";
+			colorName="ColorWEST";
+			angle=145.33995;
+		};
+		class Item12
+		{
+			position[]={10899.193,24.962967,12608.104};
+			name="Russian AA Base";
+			text="AA Base";
+			type="rhs_flag_Russia";
+		};
+		class Item13
+		{
+			position[]={11858.305,225.08179,14432.135};
+			name="Barracks";
+			text="Barracks";
+			type="rhs_flag_Russia";
+		};
+		class Item14
+		{
+			position[]={9778.6729,46.118702,14355.449};
+			name="Command post";
+			text="Command post";
+			type="rhs_flag_Russia";
 		};
 	};
 };
@@ -2794,27 +2861,29 @@ class Intro
 {
 	addOns[]=
 	{
+		"a3_map_altis",
 		"smd_sahrani_a3"
 	};
 	addOnsAuto[]=
 	{
 		"smd_sahrani_a3"
 	};
-	randomSeed=16568728;
+	randomSeed=14029894;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
-		startWeather=0.1;
+		startWeather=0.30000001;
 		startWind=0.1;
 		startWaves=0.1;
 		forecastWeather=0.30000001;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2007;
-		month=7;
-		day=7;
-		hour=15;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
@@ -2823,27 +2892,29 @@ class OutroWin
 {
 	addOns[]=
 	{
+		"a3_map_altis",
 		"smd_sahrani_a3"
 	};
 	addOnsAuto[]=
 	{
 		"smd_sahrani_a3"
 	};
-	randomSeed=7346551;
+	randomSeed=1962417;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
-		startWeather=0.1;
+		startWeather=0.30000001;
 		startWind=0.1;
 		startWaves=0.1;
 		forecastWeather=0.30000001;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2007;
-		month=7;
-		day=7;
-		hour=15;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
@@ -2852,27 +2923,29 @@ class OutroLoose
 {
 	addOns[]=
 	{
+		"a3_map_altis",
 		"smd_sahrani_a3"
 	};
 	addOnsAuto[]=
 	{
 		"smd_sahrani_a3"
 	};
-	randomSeed=12506270;
+	randomSeed=117569;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
-		startWeather=0.1;
+		startWeather=0.30000001;
 		startWind=0.1;
 		startWaves=0.1;
 		forecastWeather=0.30000001;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2007;
-		month=7;
-		day=7;
-		hour=15;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
