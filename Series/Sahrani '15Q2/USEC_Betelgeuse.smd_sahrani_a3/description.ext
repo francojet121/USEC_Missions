@@ -1,0 +1,31 @@
+author = "K.Krause";
+onLoadName = "USEC - Betelgeuse";
+onLoadMission = "USEC forces mount a rescue.";
+OnLoadMissionTime = FALSE;
+loadScreen = "";
+
+class Header
+{
+gameType = Coop;
+minPlayers = 1;
+maxPlayers = 100;
+};
+
+respawn = 1;
+disabledAI = 1;
+joinUnassigned = 0;
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// NUKE RELATED STUFF
+/////////////////////////////////////////////////////////////////////////////////////////
+class CfgMusic
+{
+	tracks[]={};
+
+	class nuke
+	{
+		name = "";
+		sound[] = {"nuke\nuke.ogg", db+0, 1.0};
+	};	
+};
+/////////////////////////////////////////////////////////////////////////////////////////
