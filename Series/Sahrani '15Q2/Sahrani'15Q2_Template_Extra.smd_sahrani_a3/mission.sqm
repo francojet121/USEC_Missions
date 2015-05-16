@@ -7636,10 +7636,10 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={11246.329,1.0049971,3590.561};
-			name="respawn_west_1";
-			text="Respawn Base";
-			type="Empty";
+			position[]={11245.157,0.98635769,3589.1521};
+			name="mrkLHD";
+			text="USS Okinawa";
+			type="b_naval";
 		};
 	};
 	class Sensors
