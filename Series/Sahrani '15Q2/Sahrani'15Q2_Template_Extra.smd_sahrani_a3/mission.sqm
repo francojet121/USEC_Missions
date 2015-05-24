@@ -1822,7 +1822,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="450";
+							value="750";
 							parentCls="AGM_ModuleMedical";
 							typeName="MaxUnconsciousnessTime";
 						};
