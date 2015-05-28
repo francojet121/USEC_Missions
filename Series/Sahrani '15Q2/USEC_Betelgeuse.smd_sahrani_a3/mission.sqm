@@ -66,8 +66,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={17587.861,17.981939,9550.4756};
-					azimut=278.854;
+					position[]={17589.594,17.981939,9561.7002};
+					azimut=190.98863;
 					id=0;
 					side="CIV";
 					vehicle="C_scientist_F";
@@ -2498,7 +2498,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=13;
+		items=16;
 		class Item0
 		{
 			position[]={10651.984,153.08984,9327.793};
@@ -2521,7 +2521,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={17151.941,21.765766,9689.3213};
+			position[]={17121.137,31.107801,9694.2813};
 			name="OpforAO1";
 			text="ENEMY ARTILLERY ZONE";
 			type="mil_marker";
@@ -2530,7 +2530,7 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={17186.029,16.331028,9509.9063};
+			position[]={17142.17,31.327093,9470.9131};
 			name="OpforAO1_1";
 			text="ENEMY ARTILLERY ZONE";
 			type="mil_marker";
@@ -2539,7 +2539,7 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={17514.594,14.221976,9511.8623};
+			position[]={17486.734,17.037241,9536.2422};
 			name="OpforAO1_2";
 			text="ENEMY ARTILLERY ZONE";
 			type="mil_marker";
@@ -2548,7 +2548,7 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={17534.479,24.943352,9790.7871};
+			position[]={17526.775,27.419237,9695.9785};
 			name="OpforAO1_3";
 			text="ENEMY ARTILLERY ZONE";
 			type="mil_marker";
@@ -2574,7 +2574,7 @@ class Mission
 			name="CivilUnrestText";
 			text="Civil Unrest!";
 			type="mil_flag";
-			colorName="ColorEAST";
+			colorName="ColorRed";
 		};
 		class Item8
 		{
@@ -2625,6 +2625,30 @@ class Mission
 			a=250;
 			b=250;
 			drawBorder=1;
+		};
+		class Item13
+		{
+			position[]={17622.232,17.981939,9558.4102};
+			name="ScientistLocation1";
+			text="Suspected Scientist Location";
+			type="hd_objective";
+			colorName="ColorUNKNOWN";
+		};
+		class Item14
+		{
+			position[]={14382.169,39.752113,10555.874};
+			name="CivilUnrestText_1";
+			text="Civil Unrest!";
+			type="mil_flag";
+			colorName="ColorRed";
+		};
+		class Item15
+		{
+			position[]={14261.561,55.130363,12208.237};
+			name="CivilUnrestText_2";
+			text="Civil Unrest!";
+			type="mil_flag";
+			colorName="ColorRed";
 		};
 	};
 	class Sensors
