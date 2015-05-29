@@ -6,7 +6,9 @@ class Mission
 		"xcam_source",
 		"smd_sahrani_a3",
 		"xCam_EU",
-		"MU_mercs"
+		"MU_mercs",
+		"A3_Characters_F_EPC",
+		"a3_characters_f"
 	};
 	addOnsAuto[]=
 	{
@@ -623,7 +625,7 @@ class Mission
 			side="EMPTY";
 			vehicle="xcam_nastenkaX";
 			skill=0.60000002;
-			init="this enableSimulation true;this setdir -580;this setposATL [8155.305664,7363.173828,0.0912699];this setVectorUp [0,0,1]";
+			init="this enableSimulation true;this setdir -580;this setposATL [8155.305664,7363.173828,0.0912699];this setVectorUp [0,0,1]; this addAction [""Check Map"", {hintSilent ""You find markers over a zone marked, 'Artillery Zone', as well as a place marked 'Spotters'.""}]";
 		};
 		class Item46
 		{
@@ -744,7 +746,7 @@ class Mission
 			side="EMPTY";
 			vehicle="xcam_Bags_EP1";
 			skill=0.60000002;
-			init="this enableSimulation true;this setdir 315;this setposATL [8148.276855,7344.133789,0.0116119];this setVectorUp [0,0,1]";
+			init="this enableSimulation true;this setdir 315;this setposATL [8148.276855,7344.133789,0.0116119];this setVectorUp [0,0,1];this addAction [""Check bags"", {hintSilent ""You find a teddy bear, with a label saying, 'Property of Angelika Betelgeuse'. It's written in crayon.""}]";
 		};
 		class Item57
 		{
@@ -1160,7 +1162,7 @@ class Mission
 			side="EMPTY";
 			vehicle="xcam_PC";
 			skill=0.60000002;
-			init="this enableSimulation true;this setdir 0.595245;this setposATL [8155.273926,7360.933105,0.826455];this setVectorUp [0,0,1]";
+			init="this enableSimulation true;this setdir 0.595245;this setposATL [8155.273926,7360.933105,0.826455];this setVectorUp [0,0,1];this addAction [""Use PC"", {hintSilent ""You find a text file, detailing the escapades of Carmen Sandiego.""}]";
 		};
 		class Item97
 		{
@@ -1182,7 +1184,7 @@ class Mission
 			side="EMPTY";
 			vehicle="xcam_SmallObj_moscow_docs";
 			skill=0.60000002;
-			init="this enableSimulation true;this setdir -39.4048;this setposATL [8151.644043,7365.568848,0.789308];this setVectorUp [0,0,1];this addAction [""A picture of a man in a white jumpsuit, marked 'Me!'"",""""]";
+			init="this enableSimulation true;this setdir -39.4048;this setposATL [8151.644043,7365.568848,0.789308];this setVectorUp [0,0,1];this addAction [""Open Documents"", {hintSilent ""You find a picture of a man in a white jumpsuit, marked 'Me!'.""}]";
 		};
 		class Item99
 		{
@@ -1193,7 +1195,7 @@ class Mission
 			side="EMPTY";
 			vehicle="xcam_SmallObj_spukayev_docs";
 			skill=0.60000002;
-			init="this enableSimulation true;this setdir -139.405;this setposATL [8151.630859,7366.17041,0.789308];this setVectorUp [0,0,1]";
+			init="this enableSimulation true;this setdir -139.405;this setposATL [8151.630859,7366.17041,0.789308];this setVectorUp [0,0,1];this addAction [""Open Documents"", {hintSilent ""You find pictures of both men and women in revealing nordic armour.""}]";
 		};
 		class Item100
 		{
@@ -1204,7 +1206,7 @@ class Mission
 			side="EMPTY";
 			vehicle="xcam_SmallObj_file_map";
 			skill=0.60000002;
-			init="this enableSimulation true;this setdir -94.4048;this setposATL [8151.34082,7365.581543,0.789308];this setVectorUp [0,0,1];this addAction [""There are markings on the map, denoting artillery zones and the location of spotters."",""""]";
+			init="this enableSimulation true;this setdir -94.4048;this setposATL [8151.34082,7365.581543,0.789308];this setVectorUp [0,0,1];this addAction [""Open Map"", {hintSilent ""You find a markings of approaches around Everon Base.""}]";
 		};
 		class Item101
 		{
@@ -1215,7 +1217,7 @@ class Mission
 			side="EMPTY";
 			vehicle="xcam_SmallObj_dog_tags";
 			skill=0.60000002;
-			init="this enableSimulation true;this setdir 95.5952;this setposATL [8151.44873,7366.338867,0.789308];this setVectorUp [0,0,1]";
+			init="this enableSimulation true;this setdir 95.5952;this setposATL [8151.44873,7366.338867,0.789308];this setVectorUp [0,0,1];this addAction [""Check Dogtags"", {hintSilent ""The dogtags are those of USEC members lost in the field during Operation Anvil.""}]";
 		};
 		class Item102
 		{
@@ -1226,7 +1228,7 @@ class Mission
 			side="EMPTY";
 			vehicle="xcam_SmallObj_money";
 			skill=0.60000002;
-			init="this enableSimulation true;this setdir 95.5952;this setposATL [8151.425293,7365.893555,0.789308];this setVectorUp [0,0,1]";
+			init="this enableSimulation true;this setdir 95.5952;this setposATL [8151.425293,7365.893555,0.789308];this setVectorUp [0,0,1];this addAction [""Take Money"", {hintSilent ""You take some money to fuel your Bonyo addiction.""}]";
 		};
 		class Item103
 		{
@@ -1402,7 +1404,7 @@ class Mission
 			side="EMPTY";
 			vehicle="xcam_wall_board_02";
 			skill=0.60000002;
-			init="this enableSimulation true;this setdir 0.298005;this setposATL [8153.842773,7362.790527,0.16684];this setVectorUp [0,0,1]";
+			init="this enableSimulation true;this setdir 0.298005;this setposATL [8153.842773,7362.790527,0.16684];this setVectorUp [0,0,1];this addAction [""Check Board"", {hintSilent ""You see a leaflet, detailing the components to the Chernobyl Nuclear Reactors.""}]";
 		};
 		class Item119
 		{
@@ -1413,7 +1415,7 @@ class Mission
 			side="EMPTY";
 			vehicle="xcam_Laptop_unfolded_F";
 			skill=0.60000002;
-			init="this enableSimulation true;this setdir -409.702;this setposATL [8155.220703,7364.687012,0.798435];this setVectorUp [0,0,1]";
+			init="this enableSimulation true;this setdir -409.702;this setposATL [8155.220703,7364.687012,0.798435];this setVectorUp [0,0,1]; this addAction [""Use Laptop"", {hintSilent ""You find an internet history, including facepunch.com, the-bat-cave.com and pornhub.com.""}]";
 		};
 		class Item120
 		{
@@ -1436,7 +1438,7 @@ class Mission
 			vehicle="xcam_Notepad_F";
 			skill=0.60000002;
 			text="notepad";
-			init="this enableSimulation true;this setdir -714.702;this setposATL [8155.132324,7365.308594,0.805238];this setVectorUp [0,0,1];this addAction [""Radio Freq = 152.4"",""""]";
+			init="this enableSimulation true;this setdir -714.702;this setposATL [8155.132324,7365.308594,0.805238];this setVectorUp [0,0,1];this addAction [""Open Notepad"", {hintSilent ""Radio Freq = 152.4. Will take radio with me!""}]";
 		};
 		class Item122
 		{
@@ -1452,12 +1454,12 @@ class Mission
 	};
 	class Markers
 	{
-		items=18;
+		items=16;
 		class Item0
 		{
 			position[]={8150.0088,176.64063,7362.6074};
 			name="SciVilla1";
-			text="Scientist's Villa";
+			text="Villa";
 			type="hd_objective";
 		};
 		class Item1
@@ -1498,31 +1500,7 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={8182.6079,176.25044,7358.9458};
-			name="SciVilla1_1_3";
-			text="ROCKS";
-			markerType="RECTANGLE";
-			type="hd_objective";
-			fillName="SolidFull";
-			a=18;
-			b=2;
-			angle=88.697601;
-		};
-		class Item5
-		{
-			position[]={8186.1895,176.2222,7360.7739};
-			name="SciVilla1_1_3_1";
-			text="ROCKS";
-			markerType="RECTANGLE";
-			type="hd_objective";
-			fillName="SolidFull";
-			a=12;
-			b=2;
-			angle=88.697601;
-		};
-		class Item6
-		{
-			position[]={8188.9736,176.22083,7363.0015};
+			position[]={8189.4229,176.21344,7362.9111};
 			name="SciVilla1_1_3_1_1";
 			text="ROCKS";
 			markerType="RECTANGLE";
@@ -1532,9 +1510,9 @@ class Mission
 			b=2;
 			angle=88.697601;
 		};
-		class Item7
+		class Item5
 		{
-			position[]={8191.3633,176.21133,7365.2334};
+			position[]={8192.4404,176.18745,7365.4131};
 			name="SciVilla1_1_3_1_1_1";
 			text="ROCKS";
 			markerType="RECTANGLE";
@@ -1544,7 +1522,7 @@ class Mission
 			b=2;
 			angle=88.697601;
 		};
-		class Item8
+		class Item6
 		{
 			position[]={8113.0889,175.99118,7347.522};
 			name="SciVilla1_1_2_1";
@@ -1556,7 +1534,7 @@ class Mission
 			b=2;
 			angle=62.750366;
 		};
-		class Item9
+		class Item7
 		{
 			position[]={8157.8623,176.53065,7308.6621};
 			name="SciVilla1_1_2_1_1";
@@ -1567,7 +1545,7 @@ class Mission
 			b=2;
 			angle=62.750401;
 		};
-		class Item10
+		class Item8
 		{
 			position[]={8069.1421,174.14339,7343.8403};
 			name="SciVilla1_1_2_1_1_1";
@@ -1578,7 +1556,7 @@ class Mission
 			b=2;
 			angle=62.750401;
 		};
-		class Item11
+		class Item9
 		{
 			position[]={8194.4922,176.14665,7335.2964};
 			name="SciVilla1_1_2_1_1_2";
@@ -1589,7 +1567,7 @@ class Mission
 			b=2;
 			angle=62.750401;
 		};
-		class Item12
+		class Item10
 		{
 			position[]={8200.2314,176.01144,7370.9585};
 			name="SciVilla1_1_2_1_1_3";
@@ -1600,7 +1578,7 @@ class Mission
 			b=2;
 			angle=62.750401;
 		};
-		class Item13
+		class Item11
 		{
 			position[]={8177.5703,176.90332,7384.1602};
 			name="SciVilla1_1_2_1_1_4";
@@ -1611,7 +1589,7 @@ class Mission
 			b=2;
 			angle=62.750401;
 		};
-		class Item14
+		class Item12
 		{
 			position[]={8123.123,176.6039,7382.7246};
 			name="SciVilla1_1_2_1_1_6";
@@ -1622,7 +1600,7 @@ class Mission
 			b=2;
 			angle=62.750401;
 		};
-		class Item15
+		class Item13
 		{
 			position[]={8108.748,177.08524,7418.1289};
 			name="SciVilla1_1_2_1_1_7";
@@ -1633,7 +1611,7 @@ class Mission
 			b=2;
 			angle=62.750401;
 		};
-		class Item16
+		class Item14
 		{
 			position[]={8130.1318,176.63899,7376.2095};
 			name="SciVilla1_1_2_1_1_8";
@@ -1644,7 +1622,7 @@ class Mission
 			b=2;
 			angle=62.750401;
 		};
-		class Item17
+		class Item15
 		{
 			position[]={8161.4556,176.5257,7337.4585};
 			name="SciVilla1_1_2_1_1_5";

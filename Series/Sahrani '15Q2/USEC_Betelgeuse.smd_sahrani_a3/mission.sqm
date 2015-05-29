@@ -2225,8 +2225,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={17539.102,17.981939,9540.8027};
-					azimut=362.35034;
+					position[]={17539.008,17.981939,9543.9404};
 					id=195;
 					side="EAST";
 					vehicle="rhs_btr80_vdv";
@@ -2244,8 +2243,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={17552.273,17.981939,9541.1631};
-					azimut=360.20859;
+					position[]={17552.332,17.981939,9543.8438};
 					id=196;
 					side="EAST";
 					vehicle="rhs_btr80_vdv";
