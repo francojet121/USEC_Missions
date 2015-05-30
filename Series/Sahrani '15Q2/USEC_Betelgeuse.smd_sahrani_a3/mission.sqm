@@ -67,7 +67,7 @@ class Mission
 				class Item0
 				{
 					position[]={17589.594,17.981939,9561.7002};
-					azimut=190.98863;
+					azimut=190.989;
 					id=0;
 					side="CIV";
 					vehicle="C_scientist_F";
@@ -75,6 +75,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="ZEUS";
+					init="this addItem ""tf_anprc152"";";
 					description="Dr. Betelgeuse";
 				};
 			};
@@ -2496,7 +2497,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=16;
+		items=22;
 		class Item0
 		{
 			position[]={10651.984,153.08984,9327.793};
@@ -2626,11 +2627,11 @@ class Mission
 		};
 		class Item13
 		{
-			position[]={17622.232,17.981939,9558.4102};
+			position[]={17555.703,19.71879,9595.6895};
 			name="ScientistLocation1";
 			text="Suspected Scientist Location";
 			type="hd_objective";
-			colorName="ColorUNKNOWN";
+			colorName="ColorGreen";
 		};
 		class Item14
 		{
@@ -2647,6 +2648,59 @@ class Mission
 			text="Civil Unrest!";
 			type="mil_flag";
 			colorName="ColorRed";
+		};
+		class Item16
+		{
+			position[]={17640.004,57.930103,9743.7402};
+			name="ArtySpot";
+			text="ARTILLERY SPOTTERS";
+			type="mil_warning";
+			colorName="ColorRed";
+		};
+		class Item17
+		{
+			position[]={17669.307,18.037317,9575.2891};
+			name="Approach";
+			text="APPROACH NOT COVERED";
+			type="hd_arrow";
+			colorName="ColorRed";
+			angle=-104.45049;
+		};
+		class Item18
+		{
+			position[]={17558.205,16.575825,9504.2949};
+			name="Approach_1";
+			text="APPROACH NOT COVERED";
+			type="hd_arrow";
+			colorName="ColorRed";
+			angle=9.8454475;
+		};
+		class Item19
+		{
+			position[]={17459.564,14.524066,9855.8779};
+			name="Approach_2";
+			text="APPROACH NOT COVERED";
+			type="hd_arrow";
+			colorName="ColorRed";
+			angle=-181.94547;
+		};
+		class Item20
+		{
+			position[]={17175.186,17.245443,9859.7637};
+			name="Approach_3";
+			text="APPROACH NOT COVERED";
+			type="hd_arrow";
+			colorName="ColorRed";
+			angle=-203.63159;
+		};
+		class Item21
+		{
+			position[]={17751.635,121.06901,9930.2539};
+			name="Approach_4";
+			text="APPROACH NOT COVERED";
+			type="hd_arrow";
+			colorName="ColorRed";
+			angle=205.2697;
 		};
 	};
 	class Sensors
