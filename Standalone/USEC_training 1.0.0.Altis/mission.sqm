@@ -970,7 +970,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="0";
+							value="1";
 							parentCls="ACE_moduleAdvancedMedicalSettings";
 							typeName="consumeItem_PAK";
 						};
@@ -1443,7 +1443,7 @@ class Mission
 		};
 		class Item28
 		{
-			position[]={15177.6,-0.0315037,17317.301};
+			position[]={15177.502,17.873678,17317.254};
 			azimut=138.619;
 			offsetY=-0.00218773;
 			id=75;
@@ -1504,13 +1504,21 @@ class Mission
 	};
 	class Markers
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			position[]={15157.2,0,17333.699};
 			name="respawn_west";
 			text="Respawn Area";
 			type="Empty";
+		};
+		class Item1
+		{
+			position[]={15184.253,17.886286,17338.531};
+			name="fob";
+			text="Base";
+			type="b_unknown";
+			colorName="ColorWEST";
 		};
 	};
 	class Sensors

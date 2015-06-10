@@ -7,11 +7,13 @@ removeUniform _unit;
 removeAllWeapons _unit:
 removeAllAssignedItems _unit;
 
+
 //Give the unit his basic clothes
 _unit forceAddUniform _uniform;
 _unit addVest _vest;
 _unit addHeadgear _helmet;
 _unit addBackpack _bag;
+
 
 //Give the units his items
 _unit addItem _watch;
@@ -29,6 +31,7 @@ _unit assignItem _radioSR;
 _unit addItem _nvgR;
 _unit assignItem _nvgR;
 
+
 //Give the unit his medical stuff
 {
 	_unit addItem _bandagePacking;
@@ -37,7 +40,7 @@ _unit assignItem _nvgR;
 } forEach [1,2,3,4,5];
 
 _unit addItem _cat;
-_unit addItem _morphine;
+
 
 //Give unit grenades
 {

@@ -12,6 +12,7 @@ respawn = "BASE";                   // BASE (3) Respawn on markers "respawn_west
 respawnButton = 1;          		// Respawn button enabled
 respawnDelay = 10;                  // Delay in seconds before playable unit respawns.
 respawnDialog = 0;                  // 0/1 to disable the scoreboard from showing automatically
+respawnOnStart = 0;					//Run respawn script when player first joins
 
 disabledAI = 1;           		// Disables AI for Playable Units
 enableDebugConsole = 1;       	// Enables Debug Console in Pause menu (1 = Hosts and Admins)
@@ -30,13 +31,19 @@ class CfgFunctions
 {
 	class USEC
 	{
-		class trainingFunctions
+		class gear
 		{
-			class giveLoadout
-			{
-				preInit = 1; // (formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
-				file = "scripts\precompileScripts.sqf"; //The location of the script
-			};
+			class giveLoadout {file = "scripts\gear\giveLoadout.sqf";};
+		};
+		
+		class misc
+		{
+			class syncRank {file = "scripts\syncRank.sqf";};
+		};
+		
+		class jip
+		{
+			class syncRole {file = "scripts\JIP\syncRole.sqf";};
 		};
 	};
 };

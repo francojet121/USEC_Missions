@@ -24,11 +24,8 @@ _unit addPrimaryWeaponItem _opticShort;
 {
 	_unit addItem _plasma;
 	_unit addItem _epipen;
-} forEach [1,2,3,4,5];
-
-{
 	_unit addItem _morphine;
-} forEach [1,2,3,4];
+} forEach [1,2,3,4,5];
 
 {
 	_unit addItem _atropine;
