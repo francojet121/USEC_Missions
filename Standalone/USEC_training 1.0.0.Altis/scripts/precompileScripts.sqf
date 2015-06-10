@@ -1,0 +1,1 @@
+USEC_fnc_giveLoadout = compile preprocessFileLineNumbers "scripts\gear\giveLoadout.sqf";
