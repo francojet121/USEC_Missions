@@ -92,3 +92,17 @@ _blood = "ACE_bloodIV_500";
 
 _cat = "ACE_tourniquet";
 _quickclot = "ACE_quikclot";
+
+
+//Special Snowflake stuff
+private ["_pilotUniform","_pilotVest","_parachute","_pilotSMG","_pilotSMGAmmo","_pilotHelmetFixed","_pilotHelmetRotor"];
+
+_pilotUniform = "U_B_HeliPilotCoveralls";
+_parachute = "ACE_NonSteerableParachute";
+_pilotVest = "V_Chestrig_blk";
+
+_pilotSMG = "SMG_02_F";
+_pilotSMGAmmo = "30Rnd_9x21_Mag";
+
+_pilotHelmetFixed = "H_PilotHelmetFighter_B";
+_pilotHelmetRotor = "H_PilotHelmetHeli_B";

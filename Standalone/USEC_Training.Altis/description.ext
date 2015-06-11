@@ -27,24 +27,5 @@ class Header {
 //  Classes and Configs
 // ----------------------------------------
 
-class CfgFunctions
-{
-	class USEC
-	{
-		class gear
-		{
-			class giveLoadout {file = "scripts\gear\giveLoadout.sqf";};
-		};
-		
-		class misc
-		{
-			class syncRank {file = "scripts\syncRank.sqf";};
-		};
-		
-		class jip
-		{
-			class syncRole {file = "scripts\JIP\syncRole.sqf";};
-		};
-	};
-};
+#include "description_functions.hpp"
 

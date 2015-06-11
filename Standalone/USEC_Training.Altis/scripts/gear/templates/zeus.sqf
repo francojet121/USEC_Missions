@@ -1,8 +1,3 @@
-removeUniform _unit;
-removeHeadgear _unit;
-removeVest _unit;
-removeBackpack _unit;
-
 _unit forceAddUniform "U_Rangemaster";
 _unit addHeadgear "H_Cap_headphones";
 

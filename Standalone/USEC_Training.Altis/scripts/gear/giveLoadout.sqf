@@ -15,16 +15,22 @@ if (isNil "_role") then {
 	_unit setVariable ["USEC_var_role",_role];
 };
 
+//Take all the units stuff
+removeHeadgear _unit:
+removeGoggles _unit;
+removeVest _unit;
+removeBackpack _unit;
+removeUniform _unit;
+removeAllWeapons _unit:
+removeAllAssignedItems _unit;
+
 //Define all standard gear in a file so it can be changed later if needed
 #include "standardGear.sqf"
-
-//Give the unit all basic gear
-#include "templates\basic.sqf"
 
 //Give the unit role specific gear
 switch (_role) do {
 	case "basic": {
-		//Do nothing if we should just have basic
+		#include "templates\basic_uniform.sqf";
 	};
 	
 	case "zeus": {
@@ -32,35 +38,67 @@ switch (_role) do {
 	};
 	
 	case "rifleman": {
+		#include "templates\basic_uniform.sqf";
+		#include "templates\basic_medical.sqf";
+		#include "templates\basic_grenade.sqf";
 		#include "templates\rifleman.sqf"
 	};
 	
 	case "squadleader": {
+		#include "templates\basic_uniform.sqf";
+		#include "templates\basic_medical.sqf";
+		#include "templates\basic_grenade.sqf";
 		#include "templates\squadleader.sqf"
 	};
 	
+	case "fixedpilot": {
+		#include "templates\fixed_pilot.sqf";
+		#include "templates\basic_medical.sqf";
+	};
+	
+	case "aircrew": {
+		#include "templates\aircrew.sqf";
+		#include "templates\basic_medical.sqf";
+	};
+	
 	case "marksman": {
+		#include "templates\basic_uniform.sqf";
+		#include "templates\basic_medical.sqf";
+		#include "templates\basic_grenade.sqf";
 		#include "templates\marksman.sqf"
 	};
 	
 	case "teamleader": {
+		#include "templates\basic_uniform.sqf";
+		#include "templates\basic_medical.sqf";
+		#include "templates\basic_grenade.sqf";
 		#include "templates\teamleader.sqf"
 	};
 	
 	case "mg": {
+		#include "templates\basic_uniform.sqf";
+		#include "templates\basic_medical.sqf";
+		#include "templates\basic_grenade.sqf";
 		#include "templates\mg.sqf"
 	};
 	
 	case "riflemanat": {
+		#include "templates\basic_uniform.sqf";
+		#include "templates\basic_medical.sqf";
+		#include "templates\basic_grenade.sqf";
 		#include "templates\riflemanat.sqf"
 	};
 	
 	case "medic": {
+		#include "templates\basic_uniform.sqf";
+		#include "templates\basic_medical.sqf";
+		#include "templates\basic_grenade.sqf";
 		#include "templates\medic.sqf"
 	};
 	
-	//If we get an undefined role then make sure they know
+	//If we get an undefined role then make sure they know and just give them basic
 	default {
+		#include "templates\basic_uniform.sqf";
 		systemChat format ["Missing Loadout: %1",_role];
 		diag_log format ["Missing Loadout: %1",_role];
 	};
