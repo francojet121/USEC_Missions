@@ -1503,7 +1503,7 @@ class Mission
 			vehicle="Flag_White_F";
 			skill=0.60000002;
 			text="flagpole";
-			init="this setFlagTexture ""USEC_images\USEC\usec_flag.paa"";";
+			init="this setFlagTexture ""USEC_images\USEC\usec_flag.paa"";this allowDamage false;";
 		};
 		class Item22
 		{
@@ -1562,7 +1562,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Box_NATO_Wps_F";
 			skill=0.60000002;
-			init="[this,true] call USEC_fnc_setupVAS";
+			init="[this,true] call USEC_fnc_setupVAS;this allowDamage false;";
 		};
 		class Item27
 		{
