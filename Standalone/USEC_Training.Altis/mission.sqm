@@ -115,12 +115,12 @@ class Mission
 					special="NONE";
 					id=0;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_officer_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					init="(group this) setGroupId [""Command""];[this,""rifleman""] call USEC_fnc_giveLoadout;";
-					description="FULLCOM Security";
+					init="(group this) setGroupId [""Command""];[this,""squadleader""] call USEC_fnc_giveLoadout;";
+					description="FULLCOM";
 				};
 				class Item1
 				{
@@ -133,7 +133,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					init="(group this) setGroupId [""Command""];[this,""squadleader""] call USEC_fnc_giveLoadout;";
-					description="FULLCOM";
+					description="FULLCOM Minor";
 				};
 				class Item2
 				{
@@ -142,11 +142,11 @@ class Mission
 					special="NONE";
 					id=2;
 					side="WEST";
-					vehicle="B_officer_F";
+					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="(group this) setGroupId [""Command""];[this,""squadleader""] call USEC_fnc_giveLoadout;";
-					description="FULLCOM Minor";
+					init="(group this) setGroupId [""Command""];[this,""rifleman""] call USEC_fnc_giveLoadout;";
+					description="FULLCOM Security";
 				};
 			};
 		};
