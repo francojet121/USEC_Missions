@@ -27,5 +27,3 @@ class Header {
 //  Classes and Configs
 // ----------------------------------------
 
-#include "description_functions.hpp"
-

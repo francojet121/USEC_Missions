@@ -10,3 +10,5 @@ if (!(_oldUnit isEqualTo objNull)) then {
 
 //Sync the players rank with his name
 _newUnit call USEC_fnc_syncRank;
+
+//Non USEC-Standard code below here ------------------------------------------
