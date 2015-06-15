@@ -13,8 +13,8 @@ briefingName = "zBonyo: Lighthouse"; // in mission select menu
 onLoadName = "zBonyo: Lighthouse"; // on load screen
 
 // Picture shown
-overviewPicture = "usec_images\USEC\preview_orbat.paa"; // in mission select menu
-loadScreen = "usec_images\USEC\preview_orbat.paa"; // on load screen
+overviewPicture = "Images\orbat.paa"; // in mission select menu
+loadScreen = "Images\orbat.paa"; // on load screen
 
 // Mission description
 overviewText = "Protect the Bonyo base at all costs"; // in mission select menu

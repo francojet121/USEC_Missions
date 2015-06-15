@@ -20,15 +20,25 @@ class CfgFunctions
 			class withdraw {};
 			class deposit {};
 			class giveMoney {};
+			class purchase {};
+			class checkBalance {};
 		};
 		
 		class specialObjects
 		{
-			class prepareSpecialObjects {postInit = 1;};
+			class prepareSpecialObjects {};
 			class setupATM {};
-			class checkBalance {};
 			class setupLocker {};
 			class setupSellArea {};
+			class setupStarter {};
+			class setupBuy {};
+		};
+		
+		class ai
+		{
+			class spawnInfGroup {};
+			class spawnWave {};
+			class setWave {};
 		};
 	};
 };
