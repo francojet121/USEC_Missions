@@ -837,7 +837,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			position[]={28326.189,14.597859,25774.732};
@@ -888,69 +888,11 @@ class Mission
 			name="enemyspawn_vic_1";
 			type="Empty";
 		};
-	};
-	class Sensors
-	{
-		items=6;
-		class Item0
+		class Item8
 		{
-			position[]={0,-0.043950632,0};
-			type="ERROR";
-			age="UNKNOWN";
-			expCond="call cba_common_fnc_monitorFrameRender";
-			class Effects
-			{
-			};
-		};
-		class Item1
-		{
-			position[]={0,-0.043950632,0};
-			type="ERROR";
-			age="UNKNOWN";
-			expCond="if ((cba_events_keypressed + 10) < time) then { call cba_events_fnc_attach_handler }";
-			class Effects
-			{
-			};
-		};
-		class Item2
-		{
-			position[]={0,-0.043950632,0};
-			type="ERROR";
-			age="UNKNOWN";
-			expCond="call cba_common_fnc_monitorFrameRender";
-			class Effects
-			{
-			};
-		};
-		class Item3
-		{
-			position[]={0,-0.043950632,0};
-			type="ERROR";
-			age="UNKNOWN";
-			expCond="call cba_common_fnc_monitorFrameRender";
-			class Effects
-			{
-			};
-		};
-		class Item4
-		{
-			position[]={0,-0.043950632,0};
-			type="ERROR";
-			age="UNKNOWN";
-			expCond="if ((cba_events_keypressed + 10) < time) then { call cba_events_fnc_attach_handler }";
-			class Effects
-			{
-			};
-		};
-		class Item5
-		{
-			position[]={0,-0.043950632,0};
-			type="ERROR";
-			age="UNKNOWN";
-			expCond="if ((cba_events_keypressed + 10) < time) then { call cba_events_fnc_attach_handler }";
-			class Effects
-			{
-			};
+			position[]={28282.816,16.374447,25738.529};
+			name="vehicleDeliveryArea";
+			type="Empty";
 		};
 	};
 };

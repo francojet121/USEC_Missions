@@ -12,6 +12,8 @@ class CfgFunctions
 		class misc
 		{
 			class print {};
+			class save {};
+			class load {};
 		};
 		
 		class money
@@ -22,6 +24,7 @@ class CfgFunctions
 			class giveMoney {};
 			class purchase {};
 			class checkBalance {};
+			class setMoney {};
 		};
 		
 		class specialObjects
@@ -39,6 +42,11 @@ class CfgFunctions
 			class spawnInfGroup {};
 			class spawnWave {};
 			class setWave {};
+		};
+		
+		class objects
+		{
+			class buyVehicle {};
 		};
 	};
 };
