@@ -40,13 +40,10 @@ if ([player, _cost] call BONYO_fnc_purchase) then {
 
 		_vehicle = _class createVehicle getMarkerPos "vehicleDeliveryArea";
 		
-		//Add the vehicle to the object list
-		BONYO_var_objectList = BONYO_var_objectList + [_vehicle];
-		
-		//vehicle invincibility script
+		//Vehicle invincibility script
 		_vehicle spawn {
 			while {!isNil "_this" && alive _this} do {
-				if (getPos _this distance getMarkerPos "respawn_west" <= 100) then {
+				if (getPos _this distance getMarkerPos "respawn_west" <= 250) then {
 					_this allowDamage false;
 				} else {
 					_this allowDamage true;

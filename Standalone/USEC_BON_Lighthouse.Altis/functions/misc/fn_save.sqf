@@ -31,7 +31,7 @@ _fullList = [];
 			getDir _x
 		]];
 	};
-} forEach BONYO_var_objectList;
+} forEach (BONYO_var_objectList + (getMarkerPos "respawn_west" nearObjects ["LandVehicle",250]) + (getMarkerPos "respawn_west" nearObjects ["Air",250]));
 
 profileNamespace setVariable [BONYO_info_saveVar, _fullList];
 saveProfileNamespace;

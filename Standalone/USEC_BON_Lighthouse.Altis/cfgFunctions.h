@@ -14,6 +14,7 @@ class CfgFunctions
 			class print {};
 			class save {};
 			class load {};
+			class collision {};
 		};
 		
 		class money
@@ -47,6 +48,8 @@ class CfgFunctions
 		class objects
 		{
 			class buyVehicle {};
+			class buyFort {};
+			class makeMoveable {};
 		};
 	};
 };
