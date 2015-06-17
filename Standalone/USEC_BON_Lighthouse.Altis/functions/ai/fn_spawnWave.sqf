@@ -23,8 +23,18 @@ if (!isServer) then {
 //Cleanup the last round
 [0, {
 	{
-		deleteVehicle _x;
-	} forEach BONYO_var_enemyList;
+		//If it's dead delete it
+		if (!alive _x) then {
+			deleteVehicle _x;
+		} else {
+			//If it's a weapon pile that isn't in the donation area, delete it
+			if (_x isKindof "WeaponHolderSimulated" || _x isKindof "WeaponHolder") then {
+				if (!(_x getVariable ["bonyo_donationAction",false])) then {
+					deleteVehicle _x;
+				};
+			};
+		};
+	} forEach (getMarkerPos "respawn_west" nearObjects 2000);
 }] call CBA_fnc_globalExecute;
 
 private ["_wave","_playerCount","_maxGroups","_groupCount"];
@@ -46,13 +56,15 @@ _groupCount = (_wave min _maxGroups);
 //Since we can only spawn enemies on the server, use global execute to do it
 [0, {
 	private ["_i"];
-
+	
+	//Spawn the number of groups we need
 	for [{_i=1}, {_i<=_this}, {_i=_i+1}] do {
 		[] call BONYO_fnc_spawnInfGroup;
 	};
 	
 	//Start the round tracker
 	[] spawn {
+		//As long as there is an enemy alive keep looping
 		while {
 			private ['_alive'];
 			
@@ -69,6 +81,7 @@ _groupCount = (_wave min _maxGroups);
 			sleep 1;
 		};
 		
+		//When all enemies are dead, pop a notification on everyone's screen
 		[-1, {
 			["TaskSucceeded",["","Wave Complete"]] call BIS_fnc_showNotification;
 		}] call CBA_fnc_globalExecute;
