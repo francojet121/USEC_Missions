@@ -32,10 +32,10 @@ _contents = [getItemCargo _this];
 	_sub = [];
 	
 	for [{_i=0}, {_i< count (_x select 0)}, {_i=_i+1}] do {
-		_sub = _sub + [[_x select 0 select _i,_x select 1 select _i]];
+		_sub pushBack [_x select 0 select _i,_x select 1 select _i];
 	};
 	
-	_table = _table + [_sub];
+	_table pushBack _sub;
 } forEach _contents;
 
 _contents = [getMagazineCargo _box];
@@ -46,10 +46,10 @@ _contents = [getMagazineCargo _box];
 	_sub = [];
 	
 	for [{_i=0}, {_i< count (_x select 0)}, {_i=_i+1}] do {
-		_sub = _sub + [[_x select 0 select _i,_x select 1 select _i]];
+		_sub pushBack [_x select 0 select _i,_x select 1 select _i];
 	};
 	
-	_table = _table + [_sub];
+	_table pushBack _sub;
 } forEach _contents;
 
 _contents = [getWeaponCargo _box];
@@ -60,10 +60,10 @@ _contents = [getWeaponCargo _box];
 	_sub = [];
 	
 	for [{_i=0}, {_i< count (_x select 0)}, {_i=_i+1}] do {
-		_sub = _sub + [[[_x select 0 select _i] call BIS_fnc_baseWeapon,_x select 1 select _i]];
+		_sub pushBack [[_x select 0 select _i] call BIS_fnc_baseWeapon,_x select 1 select _i];
 	};
 	
-	_table = _table + [_sub];
+	_table pushBack _sub;
 } forEach _contents;
 
 _contents = [getBackpackCargo _box];
@@ -74,11 +74,11 @@ _contents = [getBackpackCargo _box];
 	_sub = [];
 	
 	for [{_i=0}, {_i< count (_x select 0)}, {_i=_i+1}] do {
-		_sub = _sub + [[_x select 0 select _i, _x select 1 select _i]];
+		_sub pushBack [_x select 0 select _i, _x select 1 select _i];
 
 	};
 	
-	_table = _table + [_sub];
+	_table pushBack _sub;
 } forEach _contents;
 
 deleteVehicle _box;

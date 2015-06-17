@@ -70,7 +70,7 @@ switch ([1,2,3,4,5,6,7] call BIS_fnc_selectRandom) do {
 	_unit setRank (_x select 1);
 	
 	[-2, {
-		BONYO_var_enemyList = BONYO_var_enemyList + [_this];
+		BONYO_var_enemyList pushBack _this;
 	}, _unit] call CBA_fnc_globalExecute;
 	
 	//Give the unit's killer money
