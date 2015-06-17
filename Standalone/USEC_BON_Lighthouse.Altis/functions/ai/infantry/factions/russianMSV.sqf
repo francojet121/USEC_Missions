@@ -1,0 +1,16 @@
+_rifleman = "rhs_msv_rifleman";
+_mg = "rhs_msv_machinegunner";
+_marksman = "rhs_msv_marksman";
+_teamLeader = "rhs_msv_junior_sergeant";
+_squadLeader = "rhs_msv_sergeant";
+_officer = "rhs_msv_officer";
+_riflemanAT = "rhs_msv_LAT";
+_medic = "rhs_msv_medic";
+_sniper = "rhs_msv_marksman";
+_spotter = "rhs_msv_rifleman";
+_engineer = "rhs_msv_engineer";
+_exSpecialist = "rhs_msv_grenadier_rpg";
+_grenadier = "rhs_msv_grenadier";
+_crewman = "rhs_msv_crew";
+_pilot = "rhs_pilot";
+_aircrew = "rhs_pilot_combat_heli";

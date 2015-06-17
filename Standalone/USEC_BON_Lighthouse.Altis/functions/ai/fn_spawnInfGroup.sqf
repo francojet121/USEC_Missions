@@ -27,9 +27,33 @@ _spawnPoint = (BONYO_var_enemySpawn_inf call BIS_fnc_selectRandom);
 _grp = createGroup EAST;
 
 //Choose a random faction to load
-switch ([1] call BIS_fnc_selectRandom) do {
+switch ([1,2,3,4,5,6,7] call BIS_fnc_selectRandom) do {
 	case 1: {
 		#include "infantry\factions\csat.sqf"
+	};
+	
+	case 2: {
+		#include "infantry\factions\nato.sqf"
+	};
+	
+	case 3: {
+		#include "infantry\factions\guerilla.sqf"
+	};
+	
+	case 4: {
+		#include "infantry\factions\indArmy.sqf"
+	};
+	
+	case 5: {
+		#include "infantry\factions\usArmyOCP.sqf"
+	};
+	
+	case 6: {
+		#include "infantry\factions\USMCMarpat.sqf"
+	};
+	
+	case 7: {
+		#include "infantry\factions\russianMSV.sqf"
 	};
 };
 
@@ -41,6 +65,7 @@ switch ([1] call BIS_fnc_selectRandom) do {
 	private ["_unit"];
 	
 	_unit = (_grp createUnit [_x select 0, getMarkerPos _spawnPoint, [], 0, "NONE"]);
+	[_unit] join _grp;
 	
 	_unit setRank (_x select 1);
 	

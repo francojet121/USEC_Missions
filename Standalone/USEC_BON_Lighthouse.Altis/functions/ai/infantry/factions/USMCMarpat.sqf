@@ -1,0 +1,16 @@
+_rifleman = "rhsusf_usmc_marpat_wd_rifleman";
+_mg = "rhsusf_usmc_marpat_wd_autorifleman_m249";
+_marksman = "rhsusf_usmc_marpat_wd_marksman";
+_teamLeader = "rhsusf_usmc_marpat_wd_teamleader";
+_squadLeader = "rhsusf_usmc_marpat_wd_squadleader";
+_officer = "rhsusf_usmc_marpat_wd_officer";
+_riflemanAT = "rhsusf_usmc_marpat_wd_riflemanat";
+_medic = "rhsusf_navy_marpat_wd_medic";
+_sniper = "rhsusf_usmc_marpat_wd_sniper";
+_spotter = "rhsusf_usmc_marpat_wd_spotter";
+_engineer = "rhsusf_usmc_marpat_wd_engineer";
+_exSpecialist = "rhsusf_usmc_marpat_wd_explosives";
+_grenadier = "rhsusf_usmc_marpat_wd_grenadier";
+_crewman = "rhsusf_usmc_marpat_wd_crewman";
+_pilot = "rhsusf_airforce_pilot";
+_aircrew = "rhsusf_usmc_marpat_wd_helicrew";

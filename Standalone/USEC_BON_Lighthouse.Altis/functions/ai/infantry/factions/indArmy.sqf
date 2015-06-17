@@ -1,0 +1,16 @@
+_rifleman = "I_soldier_F";
+_mg = "I_Soldier_AR_F";
+_marksman = "I_Soldier_M_F";
+_teamLeader = "I_Soldier_TL_F";
+_squadLeader = "I_Soldier_SL_F";
+_officer = "I_officer_F";
+_riflemanAT = "I_Soldier_LAT_F";
+_medic = "I_medic_F";
+_sniper = "I_Sniper_F";
+_spotter = "I_Spotter_F";
+_engineer = "I_engineer_F";
+_exSpecialist = "I_Soldier_exp_F";
+_grenadier = "I_Soldier_GL_F";
+_crewman = "I_crew_F";
+_pilot = "I_pilot_F";
+_aircrew = "I_helicrew_F";
