@@ -83,3 +83,9 @@ _object addAction ["Buy Trackers $100", {
 	
 	_alive;
 "];
+
+_object addAction ["Save Bonyo", {
+	[0, {
+		[] call BONYO_fnc_save;
+	}] call CBA_fnc_globalExecute;
+}];
