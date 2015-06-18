@@ -16,8 +16,10 @@ BONYO_info_saveVar = "bonyo_save_altis_lighthouse";
 if (isServer) then {
 	//Saving loop
 	[] spawn {
-		sleep 120;
-		call BONYO_fnc_save;
+		while {true} do {
+			sleep 120;
+			call BONYO_fnc_save;
+		};
 	};
 	
 	//Load saved objects
