@@ -1357,7 +1357,7 @@ class Mission
 			offsetY=-0.0035743699;
 			id=58;
 			side="EMPTY";
-			vehicle="RHS_AH1Z_GS_10";
+			vehicle="RHS_AH1Z_GS";
 			skill=0.60000002;
 			syncId=10;
 			synchronizations[]={0};
