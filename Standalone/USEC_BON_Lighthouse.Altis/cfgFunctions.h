@@ -15,6 +15,7 @@ class CfgFunctions
 			class save {};
 			class load {};
 			class collision {};
+			class randomPosition {}; 
 		};
 		
 		class money
@@ -43,6 +44,9 @@ class CfgFunctions
 			class spawnInfGroup {};
 			class spawnWave {};
 			class setWave {};
+			
+			//Away missions Stuff
+			class spawnAwayMission {};
 		};
 		
 		class objects

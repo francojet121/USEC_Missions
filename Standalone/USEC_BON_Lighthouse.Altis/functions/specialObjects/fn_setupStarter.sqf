@@ -27,7 +27,7 @@ _object addAction ["Start Wave", {
 	[0, {
 		(BONYO_var_wave + 1) call BONYO_fnc_spawnWave;
 		[-1, {
-			["TaskAssigned",["",format ["Wave %1",_this]]] call BIS_fnc_showNotification;
+			["WaveStart",[_this]] call BIS_fnc_showNotification;
 		}, BONYO_var_wave + 1] call CBA_fnc_globalExecute;
 		
 		(BONYO_var_wave + 1) call BONYO_fnc_setWave;

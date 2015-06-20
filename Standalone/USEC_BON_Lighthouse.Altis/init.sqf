@@ -8,6 +8,7 @@ BONYO_var_enemySpawn_vic = ["enemyspawn_vic_1","enemyspawn_vic_2"];
 BONYO_var_wave = 0;
 BONYO_var_enemyList = [];
 BONYO_var_objectList = [];
+BONYO_var_awayList = [];
 
 BONYO_info_saveVar = "bonyo_save_altis_lighthouse";
 

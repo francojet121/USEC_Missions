@@ -59,7 +59,15 @@ _groupCount = (_wave min _maxGroups);
 	
 	//Spawn the number of groups we need
 	for [{_i=1}, {_i<=_this}, {_i=_i+1}] do {
-		[] call BONYO_fnc_spawnInfGroup;
+		private ["_grp"];
+		_grp = (getMarkerPos (BONYO_var_enemySpawn_inf call BIS_fnc_selectRandom)) call BONYO_fnc_spawnInfGroup;
+		_grp addWaypoint [getMarkerPos "respawn_west", 50];
+		
+		[-2, {
+			{
+				BONYO_var_enemyList pushBack _x;
+			} forEach units _this;
+		}, _grp] call CBA_fnc_globalExecute;
 	};
 	
 	//Start the round tracker
@@ -83,7 +91,7 @@ _groupCount = (_wave min _maxGroups);
 		
 		//When all enemies are dead, pop a notification on everyone's screen
 		[-1, {
-			["TaskSucceeded",["","Wave Complete"]] call BIS_fnc_showNotification;
-		}] call CBA_fnc_globalExecute;
+			["WaveComplete",[_this]] call BIS_fnc_showNotification;
+		},BONYO_var_wave] call CBA_fnc_globalExecute;
 	};
 }, _groupCount] call CBA_fnc_globalExecute;

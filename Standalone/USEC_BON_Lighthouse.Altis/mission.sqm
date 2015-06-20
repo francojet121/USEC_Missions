@@ -837,7 +837,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=9;
+		items=11;
 		class Item0
 		{
 			position[]={28326.189,14.597859,25774.732};
@@ -892,6 +892,18 @@ class Mission
 		{
 			position[]={28282.816,16.374447,25738.529};
 			name="vehicleDeliveryArea";
+			type="Empty";
+		};
+		class Item9
+		{
+			position[]={16986.324,-0.054304473,4658.0405};
+			name="coord_bl";
+			type="Empty";
+		};
+		class Item10
+		{
+			position[]={28379.854,-0.15296583,24108.781};
+			name="coord_tr";
 			type="Empty";
 		};
 	};

@@ -2,28 +2,30 @@
 	BONYO_fnc_spawnInfGroup
 	
 	DESCRIPTION:
-		This function spawns a random group of infantry at a random ei spawnpoint
+		This function spawns a random group of infantry at the given point
 		This function must be called on the server
 		
 	PARAMETERS:
-		nothing
+		3DPosition
+			The location to spawn the AI
 			
 	RETURNS
-		nothing
+		Group
+			the group that was spawned
 		
 	EXAMPLE
-		 call BONYO_fnc_spawnInfGroup
+		 _pos call BONYO_fnc_spawnInfGroup
 */
 
 if (!isServer) then {
-	["This function can only be called on the server"] call BIS_fnc_error;
+	["This function must be executed on the server"] call BIS_fnc_error;
 };
 
 private ["_rifleman","_mg","_marksman","_teamLeader","_squadLeader","_officer","_riflemanAT","_medic","_sniper","_spotter","_engineer","_exSpecialist","_grenadier","_crewman","_pilot","_aircrew"];
 private ["_groupProto","_grp","_spawnPoint"];
 
 _groupProto = [];
-_spawnPoint = (BONYO_var_enemySpawn_inf call BIS_fnc_selectRandom);
+_spawnPoint = _this;
 _grp = createGroup EAST;
 
 //Choose a random faction to load
@@ -64,14 +66,10 @@ switch ([1,2,3,4,5,6,7] call BIS_fnc_selectRandom) do {
 {
 	private ["_unit"];
 	
-	_unit = (_grp createUnit [_x select 0, getMarkerPos _spawnPoint, [], 0, "NONE"]);
+	_unit = (_grp createUnit [_x select 0, _spawnPoint, [], 0, "NONE"]);
 	[_unit] join _grp;
 	
 	_unit setRank (_x select 1);
-	
-	[-2, {
-		BONYO_var_enemyList pushBack _this;
-	}, _unit] call CBA_fnc_globalExecute;
 	
 	//Give the unit's killer money
 	_unit addEventHandler ["killed", {
@@ -106,4 +104,4 @@ switch ([1,2,3,4,5,6,7] call BIS_fnc_selectRandom) do {
 	_x addCuratorEditableObjects [units _grp, true];
 } forEach allCurators;
 
-_grp addWaypoint [getMarkerPos "respawn_west", 50];
+_grp;

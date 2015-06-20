@@ -29,3 +29,4 @@ class Header {
 
 //Include our special functions
 #include "cfgFunctions.h"
+#include "cfgNotifications.h"
