@@ -37,7 +37,6 @@ _box addMagazineCargo ["20Rnd_762x51_Mag", round random 50];
 _box addMagazineCargo ["7Rnd_408_Mag", round random 50];
 _box addMagazineCargo ["5Rnd_127x108_Mag", round random 50];
 _box addMagazineCargo ["100Rnd_65x39_caseless_mag", round random 50];
-_box addMagazineCargo ["200Rnd_65x39_cased_Box", round random 50];
 _box addMagazineCargo ["30Rnd_9x21_Mag", round random 50];
 _box addMagazineCargo ["16Rnd_9x21_Mag", round random 50];
 _box addMagazineCargo ["200Rnd_65x39_Belt", round random 50];
