@@ -648,10 +648,10 @@ class Mission
 					position[]={28220.611,-0.16617779,25905.264};
 					class args
 					{
-						items=12;
+						items=13;
 						class Item0
 						{
-							value="2";
+							value="1";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="level";
 						};
@@ -693,7 +693,7 @@ class Mission
 						};
 						class Item7
 						{
-							value="1";
+							value="0";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="enableUnconsciousnessAI";
 						};
@@ -701,21 +701,27 @@ class Mission
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
-							typeName="preventInstaDeath";
+							typeName="remoteControlledAI";
 						};
 						class Item9
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
-							typeName="bleedingCoefficient";
+							typeName="preventInstaDeath";
 						};
 						class Item10
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
-							typeName="painCoefficient";
+							typeName="bleedingCoefficient";
 						};
 						class Item11
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="painCoefficient";
+						};
+						class Item12
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
@@ -825,8 +831,8 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={28342.301,14.490898,25781.9};
-			azimut=312.84698;
+			position[]={28276.596,16.541008,25738.287};
+			azimut=240.85905;
 			offsetY=-8.0108599e-005;
 			id=32;
 			side="EMPTY";

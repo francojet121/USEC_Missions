@@ -2,7 +2,10 @@ private ["_pos","_i","_box"];
 
 
 "awayMission" setMarkerText "Ammo Cache";
-["AwayMission",["Ammo Cache"]] call BIS_fnc_showNotification;
+
+[-1, {
+	["AwayMission",["Ammo Cache"]] call BIS_fnc_showNotification;
+}] call CBA_fnc_globalExecute;
 
 _pos = _this;
 
