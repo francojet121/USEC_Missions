@@ -55,7 +55,7 @@ _groupCount = (_wave min _maxGroups);
 private ["_i"];
 
 //Spawn the number of groups we need
-for [{_i=1}, {_i<=_this}, {_i=_i+1}] do {
+for [{_i=1}, {_i<=_groupCount}, {_i=_i+1}] do {
 	private ["_grp"];
 	_grp = (getMarkerPos (BONYO_var_enemySpawn_inf call BIS_fnc_selectRandom)) call BONYO_fnc_spawnInfGroup;
 	_grp addWaypoint [getMarkerPos "respawn_west", 50];
@@ -65,6 +65,26 @@ for [{_i=1}, {_i<=_this}, {_i=_i+1}] do {
 			BONYO_var_enemyList pushBack _x;
 		} forEach units _this;
 	}, _grp] call CBA_fnc_globalExecute;
+};
+
+//Spawn a vehicle maybe
+if (random _wave >= 5) then {
+	private ["_div"];
+	
+	_div = ((_wave - (_wave mod 5)) / 5);
+	
+	if (_div > count (call CBA_fnc_players)) then {
+		_div = count (call CBA_fnc_players);
+	};
+	
+	for [{_i=1}, {_i <=_div}, {_i=_i+1}] do {
+		private ["_vGrp"];
+		
+		"Going into fnc" call BONYO_fnc_print;
+		_vGrp = ((getMarkerPos (BONYO_var_enemySpawn_vic call BIS_fnc_selectRandom)) call BONYO_fnc_spawnVicGroup);
+		
+		
+	};
 };
 
 //Start the round tracker

@@ -42,6 +42,7 @@ class CfgFunctions
 		class ai
 		{
 			class spawnInfGroup {};
+			class spawnVicGroup {};
 			class spawnWave {};
 			class setWave {};
 			

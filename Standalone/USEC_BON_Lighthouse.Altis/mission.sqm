@@ -745,7 +745,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={28355.232,0.32944831,25862.826};
+					position[]={28222.705,-0.0028310148,25905.07};
 					class args
 					{
 						items=4;
