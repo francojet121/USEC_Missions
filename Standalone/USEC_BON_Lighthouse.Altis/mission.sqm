@@ -902,7 +902,7 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={16986.324,-0.054304473,4658.0405};
+			position[]={16797.527,0.2315955,4695.8003};
 			name="coord_bl";
 			type="Empty";
 		};

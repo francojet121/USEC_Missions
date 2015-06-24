@@ -28,5 +28,5 @@ class Header {
 // ----------------------------------------
 
 //Include our special functions
-#include "cfgFunctions.h"
-#include "cfgNotifications.h"
+#include "cfgFunctions.hpp"
+#include "cfgNotifications.hpp"
