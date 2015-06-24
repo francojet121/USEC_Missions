@@ -40,7 +40,8 @@ createMarker ["awayMission",_pos];
 
 //Objectives that can be anywhere
 _oList = [
-	"ammo_cache"
+	"ammo_cache",
+	"medical_cache"
 ];
 
 if (isOnRoad _pos) then {
