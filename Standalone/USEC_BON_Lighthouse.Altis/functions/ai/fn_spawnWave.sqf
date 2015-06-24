@@ -83,7 +83,7 @@ if (random _wave >= 5) then {
 		"Going into fnc" call BONYO_fnc_print;
 		_vGrp = ((getMarkerPos (BONYO_var_enemySpawn_vic call BIS_fnc_selectRandom)) call BONYO_fnc_spawnVicGroup);
 		
-		
+		_vGrp addWaypoint [getMarkerPos "respawn_west", 50];
 	};
 };
 
