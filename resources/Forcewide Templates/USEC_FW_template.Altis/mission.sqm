@@ -622,7 +622,7 @@ class Mission
 					position[]={15233.984,17.988251,17348.811};
 					class args
 					{
-						items=9;
+						items=11;
 						class Item0
 						{
 							value="0";
@@ -677,6 +677,18 @@ class Mission
 							parentCls="ACE_moduleAdvancedMedicalSettings";
 							typeName="useLocation_SurgicalKit";
 						};
+						class Item9
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="healHitPointAfterAdvBandage";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="painIsOnlySuppressed";
+						};
 					};
 					id=36;
 					side="LOGIC";
@@ -698,7 +710,7 @@ class Mission
 					position[]={15236.002,17.988411,17348.691};
 					class args
 					{
-						items=12;
+						items=13;
 						class Item0
 						{
 							value="2";
@@ -751,21 +763,27 @@ class Mission
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
-							typeName="preventInstaDeath";
+							typeName="remoteControlledAI";
 						};
 						class Item9
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
-							typeName="bleedingCoefficient";
+							typeName="preventInstaDeath";
 						};
 						class Item10
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
-							typeName="painCoefficient";
+							typeName="bleedingCoefficient";
 						};
 						class Item11
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="painCoefficient";
+						};
+						class Item12
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";

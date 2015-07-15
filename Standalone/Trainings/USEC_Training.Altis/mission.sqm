@@ -18,7 +18,6 @@ class Mission
 		"A3_Soft_F_HEMTT",
 		"a3_map_altis",
 		"A3_Modules_F_Curator_Curator",
-		"A3_Characters_F_Civil",
 		"A3_Modules_F_Multiplayer",
 		"ace_hearing",
 		"ace_medical",
@@ -975,7 +974,7 @@ class Mission
 					position[]={14544.516,17.806297,16853.189};
 					class args
 					{
-						items=9;
+						items=11;
 						class Item0
 						{
 							value="0";
@@ -1030,6 +1029,18 @@ class Mission
 							parentCls="ACE_moduleAdvancedMedicalSettings";
 							typeName="useLocation_SurgicalKit";
 						};
+						class Item9
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="healHitPointAfterAdvBandage";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="painIsOnlySuppressed";
+						};
 					};
 					id=45;
 					side="LOGIC";
@@ -1051,7 +1062,7 @@ class Mission
 					position[]={14545.951,17.810017,16853.109};
 					class args
 					{
-						items=12;
+						items=13;
 						class Item0
 						{
 							value="2";
@@ -1104,21 +1115,27 @@ class Mission
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
-							typeName="preventInstaDeath";
+							typeName="remoteControlledAI";
 						};
 						class Item9
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
-							typeName="bleedingCoefficient";
+							typeName="preventInstaDeath";
 						};
 						class Item10
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
-							typeName="painCoefficient";
+							typeName="bleedingCoefficient";
 						};
 						class Item11
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="painCoefficient";
+						};
+						class Item12
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
