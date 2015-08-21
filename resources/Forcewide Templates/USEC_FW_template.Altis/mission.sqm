@@ -1044,7 +1044,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					presenceCondition="false";
+					presenceCondition="";
 					position[]={15196.999,17.95756,17389.166};
 					class args
 					{

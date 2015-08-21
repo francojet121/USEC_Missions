@@ -36,7 +36,8 @@ class Mission
 		"A3_Supplies_F_Heli_CargoNets",
 		"A3_Supplies_F_Heli_Fuel",
 		"A3_Structures_F_Mil_BagFence",
-		"ace_mk6mortar"
+		"ace_mk6mortar",
+		"ace_zeus"
 	};
 	addOnsAuto[]=
 	{
@@ -44,10 +45,11 @@ class Mission
 		"a3_characters_f",
 		"A3_Modules_F_Multiplayer",
 		"A3_Modules_F_Curator_Curator",
+		"X39_XLib_Modules",
 		"ace_hearing",
 		"ace_medical",
-		"X39_XLib_Modules",
 		"ace_mk6mortar",
+		"ace_zeus",
 		"RHS_US_A2_AirImport",
 		"A3_Air_F_Heli_Light_01",
 		"rhsusf_c_m113",
@@ -943,23 +945,48 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14542.731,17.80154,16853.189};
+					position[]={15120.575,17.871813,17286.662};
 					class args
 					{
-						items=1;
+						items=5;
 						class Item0
 						{
+							value="3";
+							parentCls="X39_XLib_Resupply";
+							typeName="checkRate";
+						};
+						class Item1
+						{
+							value="6";
+							parentCls="X39_XLib_Resupply";
+							typeName="checkRange";
+						};
+						class Item2
+						{
+							value="AllVehicles";
+							parentCls="X39_XLib_Resupply";
+							typeName="vehicleClass";
+						};
+						class Item3
+						{
 							value="0";
-							parentCls="ACE_ModuleHearing";
-							typeName="EnableCombatDeafness";
+							parentCls="X39_XLib_Resupply";
+							typeName="createHelipad";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="X39_XLib_Resupply";
+							typeName="createMarker";
 						};
 					};
 					id=44;
 					side="LOGIC";
-					vehicle="ACE_ModuleHearing";
+					vehicle="X39_XLib_Resupply";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
+					text="Resupply";
 				};
 			};
 		};
@@ -971,83 +998,48 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14544.516,17.806297,16853.189};
+					position[]={15243.006,17.596012,17455.146};
 					class args
 					{
-						items=11;
+						items=5;
 						class Item0
 						{
-							value="0";
-							parentCls="ACE_moduleAdvancedMedicalSettings";
-							typeName="enableFor";
+							value="3";
+							parentCls="X39_XLib_Resupply";
+							typeName="checkRate";
 						};
 						class Item1
 						{
-							value="0";
-							parentCls="ACE_moduleAdvancedMedicalSettings";
-							typeName="enableAdvancedWounds";
+							value="6";
+							parentCls="X39_XLib_Resupply";
+							typeName="checkRange";
 						};
 						class Item2
 						{
-							value="1";
-							parentCls="ACE_moduleAdvancedMedicalSettings";
-							typeName="enableVehicleCrashes";
+							value="AllVehicles";
+							parentCls="X39_XLib_Resupply";
+							typeName="vehicleClass";
 						};
 						class Item3
 						{
 							value="0";
-							parentCls="ACE_moduleAdvancedMedicalSettings";
-							typeName="medicSetting_PAK";
+							parentCls="X39_XLib_Resupply";
+							typeName="createHelipad";
 						};
 						class Item4
 						{
 							value="1";
-							parentCls="ACE_moduleAdvancedMedicalSettings";
-							typeName="consumeItem_PAK";
-						};
-						class Item5
-						{
-							value="0";
-							parentCls="ACE_moduleAdvancedMedicalSettings";
-							typeName="useLocation_PAK";
-						};
-						class Item6
-						{
-							value="0";
-							parentCls="ACE_moduleAdvancedMedicalSettings";
-							typeName="medicSetting_SurgicalKit";
-						};
-						class Item7
-						{
-							value="0";
-							parentCls="ACE_moduleAdvancedMedicalSettings";
-							typeName="consumeItem_SurgicalKit";
-						};
-						class Item8
-						{
-							value="0";
-							parentCls="ACE_moduleAdvancedMedicalSettings";
-							typeName="useLocation_SurgicalKit";
-						};
-						class Item9
-						{
-							value="1";
-							parentCls="ACE_moduleAdvancedMedicalSettings";
-							typeName="healHitPointAfterAdvBandage";
-						};
-						class Item10
-						{
-							value="0";
-							parentCls="ACE_moduleAdvancedMedicalSettings";
-							typeName="painIsOnlySuppressed";
+							parentCls="X39_XLib_Resupply";
+							typeName="createMarker";
 						};
 					};
 					id=45;
 					side="LOGIC";
-					vehicle="ACE_moduleAdvancedMedicalSettings";
+					vehicle="X39_XLib_Resupply";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
+					text="Resupply_1";
 				};
 			};
 		};
@@ -1059,13 +1051,41 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14545.951,17.810017,16853.109};
+					position[]={14545.353,17.808115,16852.879};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="0";
+							parentCls="ACE_ModuleHearing";
+							typeName="EnableCombatDeafness";
+						};
+					};
+					id=46;
+					side="LOGIC";
+					vehicle="ACE_ModuleHearing";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item14
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14546.421,17.810982,16852.895};
 					class args
 					{
 						items=13;
 						class Item0
 						{
-							value="2";
+							value="1";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="level";
 						};
@@ -1142,65 +1162,12 @@ class Mission
 							typeName="keepLocalSettingsSynced";
 						};
 					};
-					id=46;
+					id=47;
 					side="LOGIC";
 					vehicle="ACE_moduleMedicalSettings";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
-				};
-			};
-		};
-		class Item14
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={15120.575,17.871813,17286.662};
-					class args
-					{
-						items=5;
-						class Item0
-						{
-							value="3";
-							parentCls="X39_XLib_Resupply";
-							typeName="checkRate";
-						};
-						class Item1
-						{
-							value="6";
-							parentCls="X39_XLib_Resupply";
-							typeName="checkRange";
-						};
-						class Item2
-						{
-							value="AllVehicles";
-							parentCls="X39_XLib_Resupply";
-							typeName="vehicleClass";
-						};
-						class Item3
-						{
-							value="0";
-							parentCls="X39_XLib_Resupply";
-							typeName="createHelipad";
-						};
-						class Item4
-						{
-							value="1";
-							parentCls="X39_XLib_Resupply";
-							typeName="createMarker";
-						};
-					};
-					id=47;
-					side="LOGIC";
-					vehicle="X39_XLib_Resupply";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-					text="Resupply";
 				};
 			};
 		};
@@ -1212,60 +1179,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15243.006,17.596012,17455.146};
-					class args
-					{
-						items=5;
-						class Item0
-						{
-							value="3";
-							parentCls="X39_XLib_Resupply";
-							typeName="checkRate";
-						};
-						class Item1
-						{
-							value="6";
-							parentCls="X39_XLib_Resupply";
-							typeName="checkRange";
-						};
-						class Item2
-						{
-							value="AllVehicles";
-							parentCls="X39_XLib_Resupply";
-							typeName="vehicleClass";
-						};
-						class Item3
-						{
-							value="0";
-							parentCls="X39_XLib_Resupply";
-							typeName="createHelipad";
-						};
-						class Item4
-						{
-							value="1";
-							parentCls="X39_XLib_Resupply";
-							typeName="createMarker";
-						};
-					};
-					id=48;
-					side="LOGIC";
-					vehicle="X39_XLib_Resupply";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-					text="Resupply_1";
-				};
-			};
-		};
-		class Item16
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={14547.581,17.814417,16853.148};
+					position[]={14544.317,17.805338,16852.867};
 					class args
 					{
 						items=3;
@@ -1288,9 +1202,62 @@ class Mission
 							typeName="allowCompass";
 						};
 					};
-					id=49;
+					id=48;
 					side="LOGIC";
 					vehicle="ace_mk6mortar_module";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item16
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					presenceCondition="";
+					position[]={14543.197,17.802309,16852.836};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="zeusAscension";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="zeusBird";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="remoteWind";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="radioOrdnance";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="revealMines";
+						};
+					};
+					id=49;
+					side="LOGIC";
+					vehicle="ace_zeus_moduleSettings";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
