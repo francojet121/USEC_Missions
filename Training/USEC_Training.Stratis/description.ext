@@ -1,0 +1,19 @@
+onLoadName = USEC Training Area;
+author = <82ndAB>SPC.Moose extended by MAJ P.Tutty;
+onLoadMission = Welcome to USEC's Arma 3 training area. When entering, await orders from the instructor before commencing activities.
+LoadScreen = "images\Loadscreen.jpg";
+
+disabledAI = 1;
+enableDebugConsole = 1;       	// Enables Debug Console in Pause menu (1 = Hosts and Admins)
+
+respawn = "BASE";                   // BASE (3) Respawn on markers "respawn_west_x". Multiple markers possible. If no marker present, player respawns where he started the mission.
+respawnButton = 1;          		// Respawn button enabled
+respawnDelay = 10;                  // Delay in seconds before playable unit respawns.
+respawnDialog = 0;                  // 0/1 to disable the scoreboard from showing automatically
+respawnOnStart = 0;					//Run respawn script when player first joins
+
+class Header {
+  gameType = Coop;  // Game Type
+  maxPlayers = 80;  // Maximum number of players the mission supports (number of playable units on the map, including Zeus Curators)
+  minPlayers = 1;   // Minimum number of players the mission supports (required for a game to start)
+};
